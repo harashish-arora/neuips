@@ -1,0 +1,98 @@
+% Extended canonicalization rationale (moved out of main §\ref{sec:canonicalization}).
+
+\section{Canonicalization policy: full rationale}
+\label{app:canonicalization}
+
+This appendix records the alternative SMILES-canonicalization policies we
+considered, the empirical evidence against the merging policies, and the
+chemical interpretation of that evidence.  The main text adopts \emph{Option
+D} (plain RDKit canonical with all stereochemistry preserved); the
+material below explains why.
+
+\subsection{Candidate policies}
+
+\begin{table}[h]
+\centering\small
+\caption{Candidate canonicalization policies for solute \SMILES{} and the
+resulting unique-solute count when applied to the \numval{1\,525} raw
+solute \SMILES{} in \textsc{BigSolDB}~v2.1.}
+\label{tab:canonicalization}
+\begin{tabular}{@{}clr@{}}
+\toprule
+Option & Definition & Unique solutes \\
+\midrule
+A & tautomer-enumerate + strip \texttt{@/@@} + strip \texttt{/\textbackslash} & 1\,506 \\
+B & no tautomer         + strip \texttt{@/@@} + strip \texttt{/\textbackslash} & 1\,508 \\
+C & no tautomer         + strip \texttt{@/@@}, keep \texttt{/\textbackslash} & 1\,510 \\
+\textbf{D} & plain canonical, \texttt{isomericSmiles=True} (keep all stereo) & \textbf{1\,525} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Options A--C all merge distinct compounds.  Two concrete failures of stereo
+stripping illustrate the cost: \emph{fumaric} acid (trans,
+\verb|O=C(O)/C=C/C(=O)O|) and \emph{maleic} acid (cis,
+\verb|O=C(O)/C=C\C(=O)O|), which differ in aqueous solubility by roughly
+$100\times$, become identical after removing
+\texttt{/}/\texttt{\textbackslash}.  A concrete failure of tautomer
+enumeration: a bicyclic norbornene anhydride is silently \emph{aromatized}
+by the RDKit tautomer enumerator into a structurally nonsensical
+``aromatic diol''.
+
+\subsection{Empirical audit of Option-C merges}
+
+To choose between the remaining options we audit every Option-C merge
+group: for each group we find all $(\text{solvent}, T)$ cells in which
+$\geq 2$ raw-SMILES members report measurements and compute
+$|\Delta \log_{10} S|$ at matched conditions.  If enantiomers genuinely
+had identical solubility in achiral solvents, these deltas should lie at
+or below the aleatoric floor ($\sim 0.1$~log~S; §\ref{sec:aleatoric}).
+We find the opposite: \emph{10 of 15} Option-C merge groups disagree by a
+\emph{median} of \numval{0.29}--\textbf{\numval{1.31}}~log~S across
+3--117 overlap pairs (Table~\ref{tab:stereo_audit}), i.e.\ 5--20$\times$
+the aleatoric floor.
+
+\begin{table}[h]
+  \centering\small
+  \caption{Empirical audit of Option-C stereo-merge groups.
+    Median / max $|\Delta \log_{10} S|$ across all $(\mathrm{solvent}, T)$
+    cells where $\ge 2$ raw-SMILES members of the merged group have
+    measurements.  The four ``silent'' merges (bottom) have no overlap
+    cells and cannot be empirically tested.}
+  \label{tab:stereo_audit}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Merge group (common name)              & total rows & overlap pairs & median $|\Delta|$ & max $|\Delta|$ \\
+\midrule
+Brassinolide (2 stereoisomers)         & 146 &  36 & \textbf{1.31} & 2.01 \\
+D / L-psicose                          & 179 &  36 & 0.61 & 0.89 \\
+D / L-malic acid                       & 141 &  21 & 0.52 & 0.99 \\
+D / L-tryptophan                       & 229 &  84 & 0.43 & 0.97 \\
+D / L-norbornene anhydride             & 245 & 117 & 0.40 & 0.56 \\
+L-leucine / mixed                      & 126 &   8 & 0.39 & 0.45 \\
+D / L-tyrosine                         & 123 &  16 & 0.37 & 1.07 \\
+N-acetyl-methionine D / L              & 188 &  45 & 0.37 & 0.73 \\
+Ibuprofen (S vs mixed)                 & 106 &   1 & 0.29 & 0.29 \\
+\midrule
+L-isoleucine (silent)                  & 126 &   0 &   --- &   --- \\
+Ofloxacin (silent)                     & 124 &   0 &   --- &   --- \\
+Naproxen (silent)                      & 115 &   0 &   --- &   --- \\
+Tartaric acid (silent)                 &  49 &   0 &   --- &   --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Chemical interpretation}
+
+The main chemically interpretable explanation for the observed
+disagreement is that enantiomeric compounds can be crystallized in
+different polymorphic modifications, for which solubility differences
+are commonly observed.  Other potential causes are
+lab~$\times$~chirality-label correlation in measurement protocol, or
+silent mislabelling of racemate as L (or vice versa) at the
+\textsc{BigSolDB} extraction stage.  We cannot disambiguate these from
+the data, but \emph{any} of the three implies that merging averages
+away a $\sim 0.4$-log-unit signal we cannot recover.  Adopting Option~D
+(stereo-preserving canonical \SMILES) keeps that signal in the labels;
+chirality-blind featurizations then pay the cost in model error rather
+than hiding it inside the label.

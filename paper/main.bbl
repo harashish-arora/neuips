@@ -81,15 +81,18 @@ Hojin Jung, Christopher~D Stubbs, Sabari Kumar, Ra{\'u}l P{\'e}rez-Soto, Su-min
   systems using semi-supervised graph neural networks.
 \newblock \emph{Digital Discovery}, 4\penalty0 (6):\penalty0 1492--1504, 2025.
 
-\bibitem[Krasnov et~al.(2025)Krasnov, Malikov, Kiseleva,
-  et~al.]{krasnov2025bigsoldb}
-Lev Krasnov, Denis Malikov, Marina Kiseleva, et~al.
+\bibitem[Krasnov et~al.(2025)Krasnov, Malikov, Kiseleva, Tatarin, Sosnin, and
+  Bezzubov]{krasnov2025bigsoldb}
+Lev Krasnov, Dmitry Malikov, Marina Kiseleva, Sergei Tatarin, Sergey Sosnin,
+  and Stanislav Bezzubov.
 \newblock {BigSolDB} 2.0, dataset of solubility values for organic compounds in
   different solvents at various temperatures.
 \newblock \emph{Scientific Data}, 12:\penalty0 1236, 2025.
 \newblock \doi{10.1038/s41597-025-05559-8}.
-\newblock v2.1 data release on Hugging Face (levakrasnov/BigSolDBv2.1); Zenodo
-  DOI 10.5281/zenodo.18552681.
+\newblock Tabular data used here are Zenodo release v2.1 (DOI
+  10.5281/zenodo.18552681). Repository documentation states that molar
+  solubility and log10(S) are recomputed from mole fraction using companion
+  experimental solvent-density tables vs.\ temperature.
 
 \bibitem[Llompart et~al.(2024)]{llompart2024curation}
 Pierre Llompart et~al.

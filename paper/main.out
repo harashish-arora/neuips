@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Data curation}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Raw-data audit}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Canonicalization policy}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Canonicalization}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Manual corrections}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{Cleaning waterfall}{section.2}% 6
 \BOOKMARK [1][-]{section.3}{Aleatoric limit}{}% 7
@@ -43,3 +43,10 @@
 \BOOKMARK [2][-]{subsection.11.7}{Graph-based interpretation: GCN}{section.11}% 43
 \BOOKMARK [2][-]{subsection.11.8}{What the interpretability says}{section.11}% 44
 \BOOKMARK [1][-]{section.12}{Discussion}{}% 45
+\BOOKMARK [1][-]{appendix.A}{Canonicalization policy: full rationale}{}% 46
+\BOOKMARK [2][-]{subsection.A.1}{Candidate policies}{appendix.A}% 47
+\BOOKMARK [2][-]{subsection.A.2}{Empirical audit of Option-C merges}{appendix.A}% 48
+\BOOKMARK [2][-]{subsection.A.3}{Chemical interpretation}{appendix.A}% 49
+\BOOKMARK [1][-]{appendix.B}{Extended aleatoric analysis}{}% 50
+\BOOKMARK [2][-]{subsection.B.1}{Threshold sensitivity for copycat merging \(B'\)}{appendix.B}% 51
+\BOOKMARK [2][-]{subsection.B.2}{Apelblat fit-quality diagnostics}{appendix.B}% 52
