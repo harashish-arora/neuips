@@ -1,0 +1,184 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abraham(1993)]{abraham1993scales}
+Michael~H Abraham.
+\newblock Scales of solute hydrogen-bonding: their construction and application
+  to physicochemical and biochemical processes.
+\newblock \emph{Chemical Society Reviews}, 22\penalty0 (2):\penalty0 73--83,
+  1993.
+
+\bibitem[Al~Ibrahim et~al.(2025)Al~Ibrahim, Morgan, Muller, Motati, and
+  Green]{al2025accurately}
+Emad Al~Ibrahim, Nathan Morgan, Simon Muller, Saikiran Motati, and William~H
+  Green.
+\newblock Accurately predicting solubility curves via a thermodynamic cycle,
+  machine learning, and solvent ensembles.
+\newblock \emph{Journal of the American Chemical Society}, 147\penalty0
+  (49):\penalty0 45057--45069, 2025.
+
+\bibitem[Attia et~al.(2025)Attia, Burns, Doyle, and Green]{attia2025data}
+Lucas Attia, Jackson~W Burns, Patrick~S Doyle, and William~H Green.
+\newblock Data-driven organic solubility prediction at the limit of aleatoric
+  uncertainty.
+\newblock \emph{Nature Communications}, 16\penalty0 (1):\penalty0 7497, 2025.
+
+\bibitem[Bolla et~al.(2022)Bolla, Sarma, and Nangia]{bolla2022crystals}
+Geetha Bolla, Bipul Sarma, and Ashwini~K. Nangia.
+\newblock Crystal engineering of pharmaceutical cocrystals in the discovery and
+  development of improved drugs.
+\newblock \emph{Chemical Reviews}, 122\penalty0 (13):\penalty0 11514--11603,
+  2022.
+\newblock \doi{10.1021/acs.chemrev.1c00987}.
+\newblock PMID: 35642550.
+
+\bibitem[Boobier et~al.(2020)Boobier, Hose, Blacker, and
+  Nguyen]{boobier2020machine}
+Samuel Boobier, David~RJ Hose, A~John Blacker, and Bao~N Nguyen.
+\newblock Machine learning with physicochemical relationships: solubility
+  prediction in organic solvents and water.
+\newblock \emph{Nature communications}, 11\penalty0 (1):\penalty0 5753, 2020.
+
+\bibitem[Broadbent et~al.(2025)Broadbent, Bailey, Li, Paul, De~Lescure,
+  Chauvin, Kogler-Anele, Jangjou, and Jager]{broadbent2025solvaformer}
+Jonathan Broadbent, Michael Bailey, Mingxuan Li, Abhishek Paul, Louis
+  De~Lescure, Paul Chauvin, Lorenzo Kogler-Anele, Yasser Jangjou, and Sven
+  Jager.
+\newblock Solvaformer: an se (3)-equivariant graph transformer for small
+  molecule solubility prediction.
+\newblock \emph{arXiv preprint arXiv:2511.09774}, 2025.
+
+\bibitem[Burns(2024)]{burns2024fastprop}
+Jackson Burns.
+\newblock Fast molecular property prediction with fastprop.
+\newblock alphaXiv:2404.02058, 2024.
+\newblock Software: \texttt{fastprop}.
+
+\bibitem[Diorazio et~al.(2016)Diorazio, Hose, and
+  Adlington]{diorazio2016toward}
+Louis~J Diorazio, David~RJ Hose, and Neil~K Adlington.
+\newblock Toward a more holistic framework for solvent selection.
+\newblock \emph{Organic Process Research \& Development}, 20\penalty0
+  (4):\penalty0 760--773, 2016.
+
+\bibitem[Fowles et~al.(2025)Fowles, Connaughton, Carter, Mitchell, and
+  Palmer]{fowles2025physics}
+Daniel~J Fowles, Benedict~J Connaughton, James~W Carter, John~BO Mitchell, and
+  David~S Palmer.
+\newblock Physics-based solubility prediction for organic molecules.
+\newblock \emph{Chemical Reviews}, 125\penalty0 (15):\penalty0 7057--7098,
+  2025.
+
+\bibitem[Jung et~al.(2025)Jung, Stubbs, Kumar, P{\'e}rez-Soto, Song, Kim, and
+  Kim]{jung2025enhancing}
+Hojin Jung, Christopher~D Stubbs, Sabari Kumar, Ra{\'u}l P{\'e}rez-Soto, Su-min
+  Song, Yeonjoon Kim, and Seonah Kim.
+\newblock Enhancing predictive models for solubility in multicomponent solvent
+  systems using semi-supervised graph neural networks.
+\newblock \emph{Digital Discovery}, 4\penalty0 (6):\penalty0 1492--1504, 2025.
+
+\bibitem[Krasnov et~al.(2025)Krasnov, Malikov, Kiseleva,
+  et~al.]{krasnov2025bigsoldb}
+Lev Krasnov, Denis Malikov, Marina Kiseleva, et~al.
+\newblock {BigSolDB} 2.0, dataset of solubility values for organic compounds in
+  different solvents at various temperatures.
+\newblock \emph{Scientific Data}, 12:\penalty0 1236, 2025.
+\newblock \doi{10.1038/s41597-025-05559-8}.
+\newblock v2.1 data release on Hugging Face (levakrasnov/BigSolDBv2.1); Zenodo
+  DOI 10.5281/zenodo.18552681.
+
+\bibitem[Llompart et~al.(2024)]{llompart2024curation}
+Pierre Llompart et~al.
+\newblock Will we ever be able to accurately predict solubility?
+\newblock \emph{Scientific Data}, 11:\penalty0 303, 2024.
+
+\bibitem[Lundberg and Lee(2017)]{lundberg2018consistent}
+Scott~M Lundberg and Su-In Lee.
+\newblock A unified approach to interpreting model predictions.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~30, 2017.
+
+\bibitem[Ma et~al.(2025)Ma, Gao, Mehta, Fu, Li, and Benyahia]{ma2025solecos}
+Yiming Ma, Shang Gao, Neel Mehta, Qinqing Fu, Wei Li, and Brahim Benyahia.
+\newblock Solecos: a data-driven platform for sustainable and comprehensive
+  solvent selection in pharmaceutical manufacturing.
+\newblock \emph{Green Chemistry}, 27\penalty0 (40):\penalty0 12621--12641,
+  2025.
+
+\bibitem[Malikov et~al.(2026)Malikov, Krasnov, Kiseleva, Meshcheriakova,
+  Kuznetsov, Elistratov, Vasiyarov, Tatarin, and Bezzubov]{malikov2026dataset}
+Dmitry Malikov, Lev Krasnov, Marina Kiseleva, Elizaveta Meshcheriakova, Fedor
+  Kuznetsov, Vladimir Elistratov, Matvei Vasiyarov, Sergei Tatarin, and
+  Stanislav Bezzubov.
+\newblock Dataset of solubility values for organic compounds in binary mixtures
+  of solvents at various temperatures.
+\newblock \emph{Scientific Data}, 2026.
+
+\bibitem[Mendis et~al.(2022)Mendis, Wang, and
+  Lakerveld]{mendis2022simultaneous}
+Nethrue~Pramuditha Mendis, Jiayuan Wang, and Richard Lakerveld.
+\newblock Simultaneous solvent selection and process design for continuous
+  reaction--extraction--crystallization systems.
+\newblock \emph{Industrial \& Engineering Chemistry Research}, 61\penalty0
+  (31):\penalty0 11504--11517, 2022.
+
+\bibitem[Palmer and Mitchell(2014)]{palmer2014dataquality}
+David~S. Palmer and John B.~O. Mitchell.
+\newblock Is experimental data quality the limiting factor in predicting the
+  aqueous solubility of druglike molecules?
+\newblock \emph{Molecular Pharmaceutics}, 11\penalty0 (8):\penalty0 2962--2972,
+  2014.
+\newblock \doi{10.1021/mp500103r}.
+
+\bibitem[Ramani et~al.(2026)Ramani, Arora, Kuchhal, Ranu, and
+  Karmakar]{ramani2026dissolvr}
+Vansh Ramani, Ashish Arora, Dhairya Kuchhal, Sayan Ranu, and Tarak Karmakar.
+\newblock Dissolvr: An interpretable and fast framework for aqueous and organic
+  solubility prediction.
+\newblock \emph{ChemRXiv}, 2026.
+
+\bibitem[Reichardt and Welton(2011)]{reichardt2011solvents}
+Christian Reichardt and Thomas Welton.
+\newblock \emph{Solvents and solvent effects in organic chemistry}.
+\newblock John Wiley \& Sons, 2011.
+
+\bibitem[Sheikholeslamzadeh et~al.(2012)Sheikholeslamzadeh, Chen, and
+  Rohani]{sheikholeslamzadeh2012optimal}
+Ehsan Sheikholeslamzadeh, Chau-Chyun Chen, and Sohrab Rohani.
+\newblock Optimal solvent screening for the crystallization of pharmaceutical
+  compounds from multisolvent systems.
+\newblock \emph{Industrial \& engineering chemistry research}, 51\penalty0
+  (42):\penalty0 13792--13802, 2012.
+
+\bibitem[Sorkun et~al.(2019)Sorkun, Khetan, and Er]{sorkun2019aqsoldb}
+Murat~Cihan Sorkun, Abhishek Khetan, and S{\"u}leyman Er.
+\newblock {AqSolDB}, a curated reference set of aqueous solubility and 2{D}
+  descriptors for a diverse set of compounds.
+\newblock \emph{Scientific Data}, 6\penalty0 (1):\penalty0 143, 2019.
+
+\bibitem[Tu et~al.(2025)Tu, Choure, Fong, Roh, Levin, Yu, Joung, Morgan, Li,
+  Sun, et~al.]{tu2025askcos}
+Zhengkai Tu, Sourabh~J Choure, Mun~Hong Fong, Jihye Roh, Itai Levin, Kevin Yu,
+  Joonyoung~F Joung, Nathan Morgan, Shih-Cheng Li, Xiaoqi Sun, et~al.
+\newblock Askcos: open-source, data-driven synthesis planning.
+\newblock \emph{Accounts of chemical research}, 58\penalty0 (11):\penalty0
+  1764--1775, 2025.
+
+\bibitem[Vermeire and Green(2021)]{vermeire2021transfer}
+Florence~H Vermeire and William~H Green.
+\newblock Transfer learning for solvation free energies: From quantum chemistry
+  to experiments.
+\newblock \emph{Chemical Engineering Journal}, 418:\penalty0 129307, 2021.
+
+\bibitem[Yalkowsky and Valvani(1980)]{yalkowsky1980solubility}
+Samuel~H Yalkowsky and Shri~C Valvani.
+\newblock Solubility and partitioning {I}: Solubility of nonelectrolytes in
+  water.
+\newblock \emph{Journal of Pharmaceutical Sciences}, 69\penalty0 (8):\penalty0
+  912--922, 1980.
+
+\end{thebibliography}

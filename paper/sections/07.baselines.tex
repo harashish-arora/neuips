@@ -2,10 +2,8 @@
 \section{Baselines}
 \label{sec:baselines}
 
-\todo{One short paragraph: $\sim 27$ baselines across seven families,
-all consuming the same $(\text{solute}, \text{solvent}, T)$ input,
-matched seeds, no per-method HP-tuning advantage in the headline
-table.  Full hyperparameters in Appendix~\ref{app:hparams}.}
+We evaluate approximately thirty methods spanning seven families (Table~\ref{tab:main_results}).
+Every model consumes the same $(\text{solute},\text{solvent},T)$ inputs via shared featurisation pipelines; seeds are matched across methods; hyperparameters are taken from a single tuned JSON registry (\texttt{configs/best\_hps.json} in the released code) so no family receives an ad~hoc tuning advantage in the headline comparison.
 
 \begin{itemize}[leftmargin=*]
   \item \textbf{Thermodynamic / group contribution} -- ESOL, GSE,
@@ -22,10 +20,6 @@ table.  Full hyperparameters in Appendix~\ref{app:hparams}.}
   \item \textbf{Sequence model} -- SolTranNet.
   \item \textbf{Foundation model} -- Uni-Mol2 (frozen and fine-tuned).
 \end{itemize}
-
-\todo{Optional: drop in Figure~\ref{fig:family_tree} schematic if we
-keep it; otherwise remove and let Table~\ref{tab:main_results} carry
-the family grouping.}
 
 \begin{figure}[h]
 \centering

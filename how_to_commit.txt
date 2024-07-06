@@ -1,0 +1,3 @@
+git add -A
+git commit -m "message"
+GIT_SSL_NO_VERIFY=true git push origin main

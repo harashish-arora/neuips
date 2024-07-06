@@ -1,0 +1,18 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\scthree{} is meant to separate what is knowable about multi-solvent solubility from what is an artifact of noisy literature aggregation.
+Three limitations deserve emphasis while headline benchmark numbers are still being finalised.
+
+\paragraph{Multi-source sparsity.}
+Consensus tiers and $\sigma$ rely on $(\text{solute},\text{solvent})$ pairs that appear in multiple independence groups after copycat merging.
+This subset is informative but thin relative to the full cleaned table; conclusions about $\epsA$, tier coverage, and Z-RMSE should be read as statements about \emph{that} multi-source slice, not about every measurement row.
+
+\paragraph{Comparable training protocols.}
+Some foundation-model rows remain incomplete or use provisional hyperparameters; until every method is trained with matched tuning budget and reported variance, ranking gaps involving those rows should be interpreted cautiously.
+
+\paragraph{Numerical harmonisation.}
+Several distinct quantities appear throughout the manuscript---global inter-group $\epsA$, duplicate-triple floors $\epsA^{(s)}$ per split (§\ref{sec:data_scaling}), and consensus $\sigma$ on tiers---each answering a different measurement question.
+Before submission, all headline figures should be checked for internal consistency (single definitional paragraph in §\ref{sec:aleatoric} and §\ref{sec:data_scaling}).
+
+Despite these caveats, the benchmark already enables analyses---scaling, transfer from quantum solvation data, feature attribution---that require calibrated uncertainty rather than point estimates alone.

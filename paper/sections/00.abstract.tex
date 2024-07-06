@@ -1,4 +1,9 @@
 \begin{abstract}
-  
-  \todo{TODO}
+We present \scthree{}, a multi-solvent experimental solubility benchmark built from \textsc{BigSolDB}~v2.1.
+Aggregated literature data mixes unit conventions, duplicated publications, and ambiguous stereochemistry; we describe a reproducible pipeline---raw audit, SMILES canonicalization that preserves stereo and distinct tautomers where relevant, and a staged cleaning waterfall---that yields a single unified measurement table suitable for modelling.
+We estimate an \emph{aleatoric} error floor by merging non-independent sources, fitting thermodynamic curves per independence group, and comparing interpolated values across groups, revisiting the widespread interpretation of $\sim\!0.6$--$0.8$~log~S figures from inter-lab studies.
+Pairs with multiple independent sources define nested Gold / Silver / Bronze evaluation tiers with consensus targets and per-point uncertainties~$\sigma$.
+These pair with standard train/eval splits on high-frequency solvents and an out-of-distribution solvent split; we advocate per-solvent RMSE (PS-RMSE) and uncertainty-aware Z-RMSE alongside aggregate RMSE so that headline numbers are not dominated by a handful of solvents.
+We benchmark diverse paradigms---physical baselines, boosted trees on descriptors and fingerprints, neural networks, graph networks, and pretrained molecular encoders---under fixed splits and seeds.
+\scthree{} is intended both as a fair comparison suite and as infrastructure for analyses that require calibrated measurement noise rather than noise-free labels.
 \end{abstract}

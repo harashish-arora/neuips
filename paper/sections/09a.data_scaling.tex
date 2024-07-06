@@ -1,0 +1,69 @@
+\section{Data scaling vs.\ the aleatoric floor}
+\label{sec:data_scaling}
+
+This section complements the pre-registered questions in §\ref{sec:ablations}: we ask how quickly error decreases when the training fraction of \scthree{} is increased, and whether extrapolated learning curves ever intersect the split-specific aleatoric RMSE floors derived from duplicate laboratory triples.
+
+\subsection{Split-specific aleatoric RMSE floors}
+\label{sec:scaling_floors_sub}
+
+For each benchmark split $s$ (Train, Eval, OOD, Gold-tier analogue \texttt{sc3\_gold}), we estimate an RMSE-comparable aleatoric floor from duplicate $(\text{solute},\text{solvent},\mathrm{round}(T,0))$ triples: observations within the same triple $g$ are treated as repeated draws of the same underlying label.
+Let $\bar{y}_g$ be the mean label in group $g$, $n_g$ the number of observations in $g$, and $N=\sum_g n_g$ the total count of observations participating in duplicate groups on split $s$.
+We define
+\begin{equation}
+  (\epsA^{(s)})^2 \;=\; \frac{1}{N}\sum_{g}\sum_{i\in g}\bigl(y_i-\bar{y}_g\bigr)^2 .
+  \label{eq:eps_split}
+\end{equation}
+Values are reported in Table~\ref{tab:scaling_floors}; they serve as split-specific references when interpreting the asymptotes of fitted scaling curves below.
+
+\subsection{Empirical scaling curves}
+\label{sec:scaling_curves_sub}
+
+We subsample the training pool at fractions $\{0.05,0.10,0.20,0.40,0.60,0.80,1.00\}$ (stratified by solvent) and retrain representative models---\textsc{LightGBM} on RDKit descriptors and several \textsc{FastProp} MLP widths---holding evaluation splits fixed.
+Figure~\ref{fig:data_scaling_curves} summarises test RMSE vs.\ training-set size; Figure~\ref{fig:data_scaling_train_vs_val} decomposes train vs.\ test behaviour; Figure~\ref{fig:data_scaling_lawfits} overlays saturating power-law fits $\mathrm{RMSE}(N)\approx a N^{-b}+c$.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/fig_data_scaling_curves.pdf}
+  \caption{Test RMSE vs.\ training-set fraction for representative models (seven fractions $\times$ fixed seeds).}
+  \label{fig:data_scaling_curves}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/fig_data_scaling_train_vs_val.pdf}
+  \caption{Train vs.\ test RMSE across fractions (diagnostic for overfitting vs.\ noise floor).}
+  \label{fig:data_scaling_train_vs_val}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/fig_data_scaling_lawfits.pdf}
+  \caption{Saturating power-law fits to the empirical scaling curves (same fits as Table~\ref{tab:scaling_fits}).}
+  \label{fig:data_scaling_lawfits}
+\end{figure}
+
+\input{tables/scaling_floors}
+
+\subsection{Power-law asymptotes}
+\label{sec:scaling_powerlaw}
+
+Table~\ref{tab:scaling_fits} lists least-squares fits of $\mathrm{RMSE}(N)=a N^{-b}+c$ on the seven-point scaling curves.
+The intercept $c$ is interpreted as the best RMSE achievable at infinite training data \emph{for the fixed representation and architecture}; it should be compared to $\epsA^{(s)}$ from Eq.~\ref{eq:eps_split}, not to the global inter-laboratory $\epsA$ of §\ref{sec:epsA}.
+
+\input{tables/scaling_fits}
+
+\subsection{Extrapolated crossing with the aleatoric floor}
+\label{sec:scaling_q4}
+
+Given a fitted asymptote $c$, split floor $\epsA^{(s)}$, and tolerance $\delta=0.05$~log~S, the hypothetical training-set size at which the power-law model would match the aleatoric reference satisfies
+\begin{equation}
+  a\,(N^\star_{\epsA})^{-b} + c \;\le\; \epsA^{(s)} + \delta .
+  \label{eq:nstar}
+\end{equation}
+Whenever $c>\epsA^{(s)}+\delta$, no finite $N^\star_{\epsA}$ exists within the saturating model---Table~\ref{tab:scaling_extrapolation} marks this case as $\infty$.
+We additionally report $N^\star_{95}$, the size at which RMSE reaches within $5$\% of the model's \emph{own} asymptote $c$, as a data-efficiency summary independent of $\epsA^{(s)}$.
+
+\input{tables/scaling_extrapolation}
+
+\paragraph{Relation to §\ref{sec:ablations}.}
+The headline conclusion cited there carries directly from Table~\ref{tab:scaling_extrapolation}: within this representation class, fitted asymptotes lie comfortably above the duplicate-triple floors on Eval/OOD, so---under the power-law model---error cannot be trained through the measurement-limited regime without changing features or architecture.

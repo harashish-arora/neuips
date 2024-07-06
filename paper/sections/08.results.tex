@@ -2,11 +2,9 @@
 \section{Main results}
 \label{sec:results}
 
-\todo{2--3 paragraphs of high-level analysis once
-Table~\ref{tab:main_results} is filled in.  Suggested talking points:
-(i)~which family wins on Bronze PS-RMSE; (ii)~same-features-different-model
-contrast (e.g.\ LightGBM vs.\ MLP on RDKit); (iii)~where the
-deep-learning baselines land relative to descriptor methods.}
+Table~\ref{tab:main_results} reports mean$\pm$std metrics across five random seeds on Eval, OOD, and the three consensus tiers.
+\textsc{LightGBM} with RDKit descriptors currently achieves the strongest headline PS-RMSE on Bronze among completed runs; graph baselines and several foundation-model rows remain pending reruns or hyperparameter passes---cells marked ``---'' should be interpreted as \emph{not yet reported}, not as missing experiments.
+Once all entries are populated, this section will summarise (i)~which modelling family dominates PS-RMSE and Z-RMSE at fixed compute, (ii)~descriptor vs.\ fingerprint vs.\ graph contrasts at matched inputs where possible, and (iii)~how far the best models sit above the aleatoric references of §\ref{sec:aleatoric} and §\ref{sec:data_scaling}.
 
 \input{tables/main_results}
 
@@ -18,7 +16,6 @@ deep-learning baselines land relative to descriptor methods.}
   lines at $\epsA = 0.11$ (aleatoric floor) and the dummy
   solvent-mean baseline.  Whiskers $= \pm 1$ std over $5$ seeds.%
 }
-\caption{Leaderboard at a glance.  \todo{Replace with real artwork after
-the v2 + HP-tuned rerun.}}
+\caption{Leaderboard at a glance (placeholder layout; regenerate after final benchmark sweep).}
 \label{fig:leaderboard}
 \end{figure}

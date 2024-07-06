@@ -1,0 +1,45 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Data curation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Raw-data audit}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Canonicalization policy}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Manual corrections}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Cleaning waterfall}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Aleatoric limit}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Source integrity}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Thermodynamic curve fits}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Aleatoric limit}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Benchmark design}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Tier construction}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Training, evaluation, and OOD splits}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Metrics}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Why multi-solvent is different}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{The SC3 metric suite}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Baselines}{}% 17
+\BOOKMARK [1][-]{section.7}{Main results}{}% 18
+\BOOKMARK [1][-]{section.8}{Ablations \046 future directions}{}% 19
+\BOOKMARK [2][-]{subsection.8.1}{Q1 \205 What constitutes a good solubility method: data, representation, or model?}{section.8}% 20
+\BOOKMARK [2][-]{subsection.8.2}{Q2 \205 What are the models actually learning? \(Interpretability\)}{section.8}% 21
+\BOOKMARK [2][-]{subsection.8.3}{Q3 \205 Can other chemical properties guide solubility? \(Transfer learning\)}{section.8}% 22
+\BOOKMARK [2][-]{subsection.8.4}{Q4 \205 Is lack of data the reason deep models fail?}{section.8}% 23
+\BOOKMARK [2][-]{subsection.8.5}{Q5 \205 Can a foundation model work for solubility?}{section.8}% 24
+\BOOKMARK [1][-]{section.9}{Data scaling vs. the aleatoric floor}{}% 25
+\BOOKMARK [2][-]{subsection.9.1}{Split-specific aleatoric RMSE floors}{section.9}% 26
+\BOOKMARK [2][-]{subsection.9.2}{Empirical scaling curves}{section.9}% 27
+\BOOKMARK [2][-]{subsection.9.3}{Power-law asymptotes}{section.9}% 28
+\BOOKMARK [2][-]{subsection.9.4}{Extrapolated crossing with the aleatoric floor}{section.9}% 29
+\BOOKMARK [1][-]{section.10}{Transfer learning: can adjacent chemistry guide solubility?}{}% 30
+\BOOKMARK [2][-]{subsection.10.1}{Experimental design}{section.10}% 31
+\BOOKMARK [2][-]{subsection.10.2}{Multi-temperature setup}{section.10}% 32
+\BOOKMARK [2][-]{subsection.10.3}{Temperature-isolated setup}{section.10}% 33
+\BOOKMARK [2][-]{subsection.10.4}{Discussion}{section.10}% 34
+\BOOKMARK [2][-]{subsection.10.5}{Reproducibility}{section.10}% 35
+\BOOKMARK [1][-]{section.11}{What does the model actually learn? Interpretability}{}% 36
+\BOOKMARK [2][-]{subsection.11.1}{Where the signal comes from}{section.11}% 37
+\BOOKMARK [2][-]{subsection.11.2}{Top global features and the General Solubility Equation}{section.11}% 38
+\BOOKMARK [2][-]{subsection.11.3}{Per-solvent profiles}{section.11}% 39
+\BOOKMARK [2][-]{subsection.11.4}{Solvents the model treats similarly}{section.11}% 40
+\BOOKMARK [2][-]{subsection.11.5}{Abraham/LSER axes per solvent}{section.11}% 41
+\BOOKMARK [2][-]{subsection.11.6}{Pairwise interactions}{section.11}% 42
+\BOOKMARK [2][-]{subsection.11.7}{Graph-based interpretation: GCN}{section.11}% 43
+\BOOKMARK [2][-]{subsection.11.8}{What the interpretability says}{section.11}% 44
+\BOOKMARK [1][-]{section.12}{Discussion}{}% 45
