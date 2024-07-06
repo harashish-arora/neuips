@@ -1,0 +1,278 @@
+\section{Data curation}
+\label{sec:data_curation}
+
+A benchmark is only as trustworthy as the data underneath it.
+Literature-aggregated solubility databases inherit errors at every
+stage --- unit mismatches between publications, silent cross-author
+data copying, undetected extraction artifacts, subtle mis-labelling of
+compounds --- and none of the downstream analyses (aleatoric floor,
+tier construction, model evaluation) can be interpreted before these
+have been audited out.  \scthree{} is constructed from
+\textsc{BigSolDB}~v2.1~\citep{krasnov2025bigsoldb} ---
+\numval{112\,465} measurements of mole-fraction solubility covering
+\numval{1\,525} solute \SMILES, \numval{218} solvent names,
+\numval{1\,687} literature sources, across
+\numval{243.15}--\numval{425.77}~K --- by applying a three-phase
+pipeline of \emph{raw audit}, \emph{canonicalization}, and a
+\emph{cleaning waterfall}.  
+
+THE REST I SUGGEST PUTTING IN SI:
+
+This section walks through the
+three phases of data curation in details and reports the final dataset on which the
+aleatoric analysis (§\ref{sec:aleatoric}) and benchmark splits
+(§\ref{sec:benchmark}) are built.
+
+\subsection{Raw-data audit}
+\label{sec:raw_audit}
+
+Before any filter is applied, we run an audit on the raw data.  Schema is
+clean in the key columns (zero \texttt{NaN} entries in
+\texttt{SMILES\_Solute}, \texttt{SMILES\_Solvent}, temperature or mole
+fraction); \numval{3\,187} rows (\numval{2.8\,\%}) have \texttt{NaN}-valued
+\logS, which are referred to complex organic solvents, for which \textsc{BigSolDB} lacks reliable information about their density, hindering units conversion.  All 1\,525 solute \SMILES{} were parsed with \texttt{RDKit}; one solvent
+\SMILES{} is invalid (the literal \texttt{"-"} placeholder used for polymer
+rows). Measurement temperatures are heavily clustered at 10 standard values of the
+form $x.15$~K from 278.15 to 323.15 (covering \numval{68.9\,\%} of all
+rows); the \emph{per}-DOI row count is right-skewed with median
+\numval{56}, so no single source dominates.
+
+\paragraph{Internal consistency of {\logS}.}
+We back-compute
+\[
+    \log_{10} S = \log_{10}\!\left(\frac{x}{1-x}\cdot\frac{\rho(T)\,\cdot\,10^{3}}{M_w}\right)
+\]
+for every non-\texttt{NaN} row where a linear solvent-density model
+$\rho(T) = aT + b$ is available, and compare to \textsc{BigSolDB}'s reported
+\logS.  Across \numval{109\,278} testable rows the residuals are essentially
+floating-point noise: median $|\mathrm{residual}| = 9.9\times 10^{-6}$,
+P99 = $1.3\times 10^{-3}$.  Only in \numval{8} rows the error exceed $0.01$ log~S, all of which belong to a single DOI (\verb|10.1016/j.molliq.2017.02.075|,
+$\beta$-alanine in methanol, systematic $-0.36$ log~S offset).  This DOI
+is added to our bad-DOI list (§\ref{sec:waterfall}).
+
+\paragraph{Cross-DOI bit-exact copycat detection.}
+Grouped by $(\texttt{Solute\_Canon},\texttt{Solvent\_Canon},\texttt{round}(T,1),\texttt{round}(\logS,4))$,
+\numval{86} four-tuples are reported by two or more DOIs at identical
+values to the fourth decimal.  This affects \numval{172} rows across
+\numval{46} distinct DOIs; the worst offender pair
+(\verb|10.1016/jct.2024.107365| $\leftrightarrow$ \verb|10.1016/j.molliq.2025.127552|)
+shares \numval{29} bit-identical rows.  These serve as Stage~A of the
+source-integrity analysis in §\ref{sec:source}; in such case no threshold needs to be
+tuned because the evidence is deterministic.
+
+\paragraph{Inconsistent compound naming.}
+The raw \texttt{Compound\_Name} column contains inconsistencies that do
+not affect data integrity because our pipeline keys on \SMILES.  One
+notable case: \numval{261} rows share a single raw \SMILES
+(\verb|Cc1c(Cl)cccc1Nc1ccccc1C(=O)O|), a single CAS (\numval{13710-19-5})
+and a single PubChem CID (\numval{610479}) --- all correct for tolfenamic
+acid --- but two contributing DOIs label them inconsistently as either
+``Tolfenamic acid'' or ``Pentoxifylline'' (the latter is a different
+molecule; the \SMILES{} and CAS prove it is tolfenamic acid).  We flag
+the case but take no action.
+
+\subsection{Canonicalization policy}
+\label{sec:canonicalization}
+
+Molecule identification in this dataset hinges on \SMILES{}
+canonicalization.  We compare four candidate policies against the raw
+data and measure their empirical impact before choosing one
+(Table~\ref{tab:canonicalization}).
+
+\begin{table}[h]
+\centering\small
+\caption{Candidate canonicalization policies for solute \SMILES{}.}
+\label{tab:canonicalization}
+\begin{tabular}{@{}clr@{}}
+\toprule
+Option & Definition & Unique solutes \\
+\midrule
+A & tautomer-enumerate + strip \texttt{@/@@} + strip \texttt{/\textbackslash} & 1\,506 \\
+B & no tautomer         + strip \texttt{@/@@} + strip \texttt{/\textbackslash} & 1\,508 \\
+C & no tautomer         + strip \texttt{@/@@}, keep \texttt{/\textbackslash} & 1\,510 \\
+\textbf{D} & plain canonical, \texttt{isomericSmiles=True} (keep all stereo) & \textbf{1\,525} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Options A--C all merge distinct compounds.  Two concrete failures of
+stereo stripping: \emph{fumaric} acid (trans, \verb|O=C(O)/C=C/C(=O)O|)
+and \emph{maleic} acid (cis, \verb|O=C(O)/C=C\C(=O)O|), which differ in
+aqueous solubility by roughly $100\times$, become identical after
+removing \texttt{/}/\texttt{\textbackslash}.  A concrete failure of
+tautomer enumeration: a bicyclic norbornene anhydride is silently
+\emph{aromatized} by the RDKit tautomer enumerator into a structurally
+nonsensical ``aromatic diol''.
+
+To choose between the remaining options we empirically audit every
+Option-C merge group.  For each group, we find all
+$(\texttt{solvent}, T)$ cells where $\ge 2$ raw-SMILES members report
+measurements and compute $|\Delta \log_{10} S|$ at matched conditions.
+If enantiomers genuinely had identical solubility in achiral solvents,
+these deltas should lie at or below the aleatoric floor
+($\sim 0.1$ log~S; §\ref{sec:aleatoric}).  We find the opposite:
+\emph{10 of 15} Option-C merge groups disagree by a \emph{median} of
+\numval{0.29}--\textbf{\numval{1.31}} log~S across 3--117 overlap pairs
+(Table~\ref{tab:stereo_audit}), i.e.\ 5--20$\times$ the aleatoric floor.
+
+\begin{table}[h]
+  \centering\small
+  \caption{Empirical audit of Option-C stereo-merge groups.
+    Median / max $|\Delta \log_{10} S|$ across all $(\mathrm{solvent}, T)$
+    cells where $\ge 2$ raw-SMILES members of the merged group have
+    measurements.  The four ``silent'' merges (bottom) have no overlap
+    cells and cannot be empirically tested; they are structurally
+    analogous to the tested cases (all D/L pairs) and we expect similar
+    disagreement.}
+  \label{tab:stereo_audit}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Merge group (common name)              & total rows & overlap pairs & median $|\Delta|$ & max $|\Delta|$ \\
+\midrule
+Brassinolide (2 stereoisomers)         & 146 &  36 & \textbf{1.31} & 2.01 \\
+D / L-psicose                          & 179 &  36 & 0.61 & 0.89 \\
+D / L-malic acid                       & 141 &  21 & 0.52 & 0.99 \\
+D / L-tryptophan                       & 229 &  84 & 0.43 & 0.97 \\
+D / L-norbornene anhydride             & 245 & 117 & 0.40 & 0.56 \\
+L-leucine / mixed                      & 126 &   8 & 0.39 & 0.45 \\
+D / L-tyrosine                         & 123 &  16 & 0.37 & 1.07 \\
+N-acetyl-methionine D / L              & 188 &  45 & 0.37 & 0.73 \\
+Ibuprofen (S vs mixed)                 & 106 &   1 & 0.29 & 0.29 \\
+\midrule
+L-isoleucine (silent)                  & 126 &   0 &   --- &   --- \\
+Ofloxacin (silent)                     & 124 &   0 &   --- &   --- \\
+Naproxen (silent)                      & 115 &   0 &   --- &   --- \\
+Tartaric acid (silent)                 &  49 &   0 &   --- &   --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The main chemically interpretable explanation is that enantiomeric compounds can potentially be crystallized in non-uniform conditions, being thus different polymorphic modifications (for which differences in solubility are commonly observed).
+The other potential causes may be (ii) lab~$\times$~chirality-label
+correlation in measurement protocol, (iii) silent mislabelling of
+racemate as L (or vice versa) at the \textsc{BigSolDB} extraction stage.
+We cannot disambiguate these from the data, but \emph{any} of the three
+implies that merging averages away a 0.4-log-unit signal we cannot
+recover.  We therefore adopt Option~D: trust the raw \SMILES, keep
+every stereoisomer distinct, and let chirality-blind featurizations pay
+their cost in model error rather than hiding that cost inside the label.
+
+\subsection{Manual corrections}
+\label{sec:sergei}
+
+Some errors in the source database are fixable rather than only
+detectable.  The source-integrity analysis of §\ref{sec:source}
+flagged \numval{22} DOIs with inter-lab deviation exceeding $0.6$
+log~S against peer consensus; we reviewed these candidates manually against the original papers and,
+in several cases, identified specific transcription bugs rather than
+the source paper being an outlier.  Four classes of correction were applied pre-cleaning
+(Table~\ref{tab:sergei}); together they restore \numval{58} rows of
+genuine data that would otherwise be dropped as bad sources.
+
+\begin{table}[h]
+\centering\small
+\caption{Manual corrections applied before the cleaning waterfall.}
+\label{tab:sergei}
+\begin{tabular}{@{}lll r@{}}
+\toprule
+Class & Correction & DOI & rows \\
+\midrule
+C1 & paracetamol / water: 4 specific $x$ values replaced with audited values
+   & \verb|10.1016/j.molliq.2020.113867|  &  4 \\
+C2 & $\log_{10} S$ shifted by $+1$ ($\times 10$ unit correction)
+   & \verb|10.1016/j.fluid.2013.09.018|   & 20 \\
+C2 & $\log_{10} S$ shifted by $+1$ ($\times 10$ unit correction)
+   & \verb|10.1016/j.molliq.2013.06.011|  & 10 \\
+C3 & ethanol $\leftrightarrow$ ethyl acetate labels swapped, \logS{} re-derived
+   & \verb|10.1016/j.fluid.2015.07.038|   & 24 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Cleaning waterfall}
+\label{sec:waterfall}
+
+Canonicalization and manual corrections fix individual rows.  The
+remaining cleaning is a seven-stage waterfall applied to the
+canonicalized, corrected table (Table~\ref{tab:waterfall}).  Each
+stage has a single, documentable purpose; the polymer and salt
+filters are based on \SMILES{} validity and structure rather than a
+hand-curated name list.
+
+\begin{table}[h]
+\centering\small
+\caption{Cleaning waterfall.  Each stage is applied in order to the
+manually corrected canonicalized data.}
+\label{tab:waterfall}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Step & Filter                                                    & Rows after & Removed \\
+\midrule
+    & Input (canonicalized, manually corrected raw)                & 112\,465  &      --- \\
+W1  & remove \numval{9} bad DOIs (see text)                      & 112\,019  &      446 \\
+W2  & invalid / polymer solvent \SMILES{} (\texttt{"-"})         & 111\,705  &      314 \\
+W3  & salts / mixtures (\texttt{.} in solute \SMILES)             & 101\,663  &  10\,042 \\
+W4  & $M_w > 1000$ Da                                            & 101\,634  &       29 \\
+W5  & \logS{} recovered for 2\,617 \texttt{NaN} rows; \numval{14} unrecoverable
+                                                                 & 101\,620  &       14 \\
+W6  & $\log_{10} S \notin [-15, 2]$                              & 101\,575  &       45 \\
+W7  & intra-DOI near-duplicate dedupe ($T$ rounded to 0.1~K)     & \textbf{101\,535}  & 40 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The \textbf{nine bad DOIs} excluded in W1 are: five confirmed as
+systematic outliers by the manual review of §\ref{sec:sergei}
+(\verb|10.1016/j.fluid.2011.09.033|,
+ \verb|10.1021/jced.9b00728|,
+ \verb|10.1021/jced.4c00179|,
+ \verb|10.1021/jced.6b00009|,
+ \verb|10.1016/j.molliq.2022.119759|);
+three identified by the Hall-of-Shame audit of §\ref{sec:source}
+(\verb|10.1021/je4000718|,
+ \verb|10.1016/s1004-9541(08)60201-3|,
+ \verb|10.1016/molliq.2016.11.036|);
+and the \logS{}-residual DOI of §\ref{sec:raw_audit}
+(\verb|10.1016/molliq.2017.02.075|).
+
+The \textbf{salt/mixture filter} drops \numval{10\,042} rows containing
+a \verb|.| in the solute \SMILES{} --- \numval{193} distinct
+multi-component forms.  These are pharmaceutically important but exhibit
+fundamentally different dissolution behaviour from the neutral form
+(different lattice energy, different solvation, sometimes different
+dissolution mechanism); modelling salt and/or cocrystals solubility properly requires
+salt-specific features and labels and is left to a future
+salt-aware split.
+
+The \textbf{\logS{} recovery} step (W5) uses a three-tier density
+lookup: (i) exact $(\text{solvent}, T)$ match from \textsc{BigSolDB}'s
+own density file; (ii) a linear $\rho(T) = aT+b$ fit if available;
+(iii) a lookup in the \texttt{thermo} library for the long tail.  Of
+\numval{2\,631} surviving \texttt{NaN} rows, \numval{2\,617} are
+recovered this way; the remaining \numval{14} use solvents the library
+cannot identify by name, CAS, or \SMILES{}.
+
+The \textbf{intra-DOI dedupe} in W7 removes \numval{40} rows, all from
+a single DOI (\verb|10.1016/j.jct.2020.106137|) that reports each
+nominal temperature twice ($T = x.15$~K and $T = x.16$~K) with \logS{}
+identical to the fourth decimal --- a data-entry rounding artifact.
+
+THE FINAL CLEANED DATASET SHOULD BELONG TO MAIN TEXT PROBABLY.
+
+\paragraph{Final cleaned dataset.}
+After canonicalization (Option D), manual corrections, and the
+seven-stage waterfall, \scthree{} contains:
+
+\begin{center}\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+measurements                                                 & \textbf{101\,535} \\
+unique solutes (canonical)                                   & \textbf{1\,327}   \\
+unique solvents                                              & \textbf{206}      \\
+unique DOIs                                                  & \textbf{1\,493}   \\
+temperature range                                            & 243.15--425.77 K  \\
+\logS{} range                                                 & $-7.56$--$+1.99$  \\
+$(\mathrm{solute},\mathrm{solvent})$ pairs with $\geq 2$ DOIs & \textbf{746} (6.8\%) \\
+\bottomrule
+\end{tabular}
+\end{center}

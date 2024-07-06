@@ -1,0 +1,73 @@
+% Main benchmark results table.  Format ported from the v1 paper
+% (sc3-benchmark/paper/tables/main_results.tex).  All numerical entries
+% are dashed pending the v2 + HP-tuned rerun on Gold/Silver/Bronze; only
+% the row structure is fixed.
+
+\definecolor{first}{HTML}{C6EFCE}
+\definecolor{second}{HTML}{DAEFC6}
+\definecolor{third}{HTML}{EEF5DD}
+
+\providecommand{\fst}[1]{\cellcolor{first}\textbf{#1}}
+\providecommand{\snd}[1]{\cellcolor{second}#1}
+\providecommand{\trd}[1]{\cellcolor{third}#1}
+
+\begin{table*}[t]
+  \caption{\scthree{} benchmark.  Mean{\scriptsize$\pm$std} over 5 seeds;
+  PS-RMSE is the primary metric (top 3 per column highlighted).
+  Time is per-seed on single CPU thread or A100 GPU.
+  Cells remain dashed where reruns are not yet available.}
+  \label{tab:main_results}
+  \centering
+  \footnotesize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}l l cc c ccc c r@{}}
+    \toprule
+    & & \multicolumn{2}{c}{Eval} & OOD & \multicolumn{3}{c}{PS-RMSE $\downarrow$} & Z$\downarrow$ & Time \\
+    \cmidrule(lr){3-4} \cmidrule(lr){6-8}
+    Method & Repr. & RMSE & $R^2$ & RMSE & Gold & Silver & Bronze & Bronze & (s) \\
+    \midrule
+    \multicolumn{10}{@{}l}{\textit{Descriptor + tree ensembles}} \\[2pt]
+    LightGBM      & RDKit   & 0.493 $\pm$ 0.003 & 0.816 $\pm$ 0.003 & 0.611 $\pm$ 0.004 & 0.604 $\pm$ 0.008 & 0.561 $\pm$ 0.009 & 0.561 $\pm$ 0.010 & 35.280 $\pm$ 0.308 & --- \\
+    Abraham ML    & RDKit   & --- & --- & --- & --- & --- & --- & --- & --- \\
+    CatBoost      & RDKit   & 0.477 $\pm$ 0.008 & 0.827 $\pm$ 0.006 & 0.611 $\pm$ 0.005 & 0.635 $\pm$ 0.029 & 0.597 $\pm$ 0.028 & 0.593 $\pm$ 0.032 & 36.070 $\pm$ 0.535 & --- \\
+    Dissolvr      & Domain  & 0.490 $\pm$ 0.004 & 0.818 $\pm$ 0.003 & 0.619 $\pm$ 0.003 & 0.623 $\pm$ 0.009 & 0.578 $\pm$ 0.004 & 0.576 $\pm$ 0.005 & 36.054 $\pm$ 0.501 & --- \\
+    XGBoost       & RDKit   & 0.494 $\pm$ 0.010 & 0.815 $\pm$ 0.007 & 0.641 $\pm$ 0.013 & 0.651 $\pm$ 0.015 & 0.614 $\pm$ 0.014 & 0.604 $\pm$ 0.016 & 36.601 $\pm$ 0.984 & --- \\
+    Random Forest & RDKit   & 0.517 $\pm$ 0.001 & 0.797 $\pm$ 0.001 & 0.624 $\pm$ 0.001 & 0.683 $\pm$ 0.004 & 0.629 $\pm$ 0.002 & 0.634 $\pm$ 0.002 & 36.721 $\pm$ 0.125 & --- \\
+    Tayyebi       & Mordred & 0.573 $\pm$ 0.001 & 0.752 $\pm$ 0.001 & 0.717 $\pm$ 0.001 & 0.795 $\pm$ 0.009 & 0.728 $\pm$ 0.006 & 0.738 $\pm$ 0.005 & 40.337 $\pm$ 0.228 & --- \\
+    \midrule
+    \multicolumn{10}{@{}l}{\textit{Fingerprint-based}} \\[2pt]
+    CatBoost      & Morgan   & 0.546 $\pm$ 0.002 & 0.774 $\pm$ 0.002 & 0.728 $\pm$ 0.008 & 0.878 $\pm$ 0.018 & 0.819 $\pm$ 0.017 & 0.766 $\pm$ 0.021 & 42.782 $\pm$ 0.596 & --- \\
+    XGBoost       & Morgan   & 0.565 $\pm$ 0.004 & 0.758 $\pm$ 0.003 & 0.778 $\pm$ 0.002 & 0.985 $\pm$ 0.018 & 0.918 $\pm$ 0.012 & 0.829 $\pm$ 0.014 & 47.372 $\pm$ 0.578 & --- \\
+    Random Forest & Morgan   & 0.578 $\pm$ 0.001 & 0.747 $\pm$ 0.001 & 0.756 $\pm$ 0.001 & 0.817 $\pm$ 0.003 & 0.782 $\pm$ 0.004 & 0.719 $\pm$ 0.004 & 44.722 $\pm$ 0.032 & --- \\
+    LightGBM      & Morgan   & 0.532 $\pm$ 0.004 & 0.785 $\pm$ 0.003 & 0.778 $\pm$ 0.006 & 0.924 $\pm$ 0.013 & 0.862 $\pm$ 0.010 & 0.792 $\pm$ 0.011 & 45.271 $\pm$ 0.384 & --- \\
+    GP            & Tanimoto & 0.627 $\pm$ 0.013 & 0.702 $\pm$ 0.012 & 0.958 $\pm$ 0.012 & 1.038 $\pm$ 0.054 & 0.967 $\pm$ 0.040 & 0.909 $\pm$ 0.028 & 50.170 $\pm$ 1.524 & --- \\
+    \midrule
+    \multicolumn{10}{@{}l}{\textit{Deep learning (descriptors)}} \\[2pt]
+    FastProp & RDKit & 0.465 $\pm$ 0.006 & 0.837 $\pm$ 0.004 & 0.675 $\pm$ 0.013 & 0.768 $\pm$ 0.041 & 0.732 $\pm$ 0.034 & 0.689 $\pm$ 0.031 & 38.609 $\pm$ 1.474 & --- \\
+    FastSolv & RDKit & 0.471 $\pm$ 0.006 & 0.832 $\pm$ 0.004 & 0.708 $\pm$ 0.008 & 0.791 $\pm$ 0.063 & 0.748 $\pm$ 0.045 & 0.693 $\pm$ 0.039 & 38.282 $\pm$ 0.927 & --- \\
+    MLP      & RDKit & 0.470 $\pm$ 0.004 & 0.833 $\pm$ 0.003 & 0.720 $\pm$ 0.007 & 0.813 $\pm$ 0.030 & 0.768 $\pm$ 0.034 & 0.708 $\pm$ 0.036 & 39.999 $\pm$ 1.087 & --- \\
+    \midrule
+    \multicolumn{10}{@{}l}{\textit{Graph neural networks}} \\[2pt]
+    Chemprop    & D-MPNN   & --- & --- & --- & --- & --- & --- & --- & --- \\
+    Solvaformer & SE(3)    & --- & --- & --- & --- & --- & --- & --- & --- \\
+    GCN         & Dual enc & 0.599 $\pm$ 0.016 & 0.728 $\pm$ 0.015 & 0.776 $\pm$ 0.031 & 1.066 $\pm$ 0.039 & 1.014 $\pm$ 0.049 & 0.979 $\pm$ 0.042 & 55.155 $\pm$ 2.883 & --- \\
+    SolubNet    & TAGConv  & --- & --- & --- & --- & --- & --- & --- & --- \\
+    RiLOOD      & CIGIN    & --- & --- & --- & --- & --- & --- & --- & --- \\
+    GAT         & Dual enc & 0.567 $\pm$ 0.028 & 0.756 $\pm$ 0.024 & 0.787 $\pm$ 0.028 & 1.082 $\pm$ 0.054 & 1.012 $\pm$ 0.061 & 0.963 $\pm$ 0.054 & 54.773 $\pm$ 2.405 & --- \\
+    GIN         & Dual enc & 0.553 $\pm$ 0.011 & 0.769 $\pm$ 0.009 & 0.784 $\pm$ 0.028 & 1.020 $\pm$ 0.024 & 0.966 $\pm$ 0.034 & 0.935 $\pm$ 0.032 & 55.274 $\pm$ 3.518 & --- \\
+    MolMerger   & Merged   & --- & --- & --- & --- & --- & --- & --- & --- \\
+    \midrule
+    \multicolumn{10}{@{}l}{\textit{Foundation / pretrained}} \\[2pt]
+    Uni-Mol2 + CB & 3D + Tree & --- & --- & --- & --- & --- & --- & --- & --- \\
+    Uni-Mol2      & 3D repr   & --- & --- & --- & --- & --- & --- & --- & --- \\
+    SolTranNet    & Char-TF   & --- & --- & --- & --- & --- & --- & --- & --- \\
+    ChemFM        & LLM       & --- & --- & --- & --- & --- & --- & --- & --- \\
+    \midrule
+    \multicolumn{10}{@{}l}{\textit{Physics / analytical}} \\[2pt]
+    UNIFAC       & Grp-contr & --- & --- & --- & --- & --- & --- & --- & --- \\
+    Abraham LFER & 5-param   & --- & --- & --- & --- & --- & --- & --- & --- \\
+    ESOL         & Linear    & --- & --- & --- & --- & --- & --- & --- & --- \\
+    GSE          & $-$logP   & --- & --- & --- & --- & --- & --- & --- & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

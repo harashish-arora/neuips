@@ -1,0 +1,36 @@
+\begin{table}[h]
+\centering\small
+\caption{Q4 extrapolation table.  For every (model, evaluation split)
+  pair we report the asymptote $c$ from
+  Table~\ref{tab:scaling_fits}, the per-split aleatoric floor $\epsA$
+  from Table~\ref{tab:scaling_floors}, the gap $\Delta = c - \epsA$,
+  the training-set size $N^{\star}_{95}$ at which RMSE comes within
+  $5\%$ of the model's own asymptote (a moderate, achievable target),
+  and the size $N^{\star}_{\epsA}$ that would bring RMSE to within
+  $0.05$ logS of the aleatoric floor (Eq.~\ref{eq:nstar}).
+  Entries marked $\infty$ have $c \geq \epsA + 0.05$, so no finite $N$
+  meets the target within the saturating power-law model.  All
+  $N^{\star}_{\epsA}$ are $\infty$ -- the central Q4 finding.}
+\label{tab:scaling_extrapolation}
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+model              & split             & $c$ (asymptote) & $\epsA$ & $\Delta = c - \epsA$ & $N^{\star}_{95}$ & $N^{\star}_{\epsA}$ \\
+\midrule
+\textsc{LightGBM}  & \texttt{eval}     & \numval{0.480} & \numval{0.147} & \numval{0.333} & \numval{59\,000}  & $\infty$ \\
+\textsc{LightGBM}  & \texttt{ood}      & \numval{0.601} & \numval{0.034} & \numval{0.567} & \numval{93\,000}  & $\infty$ \\
+\textsc{LightGBM}  & \texttt{sc3\_gold}& \numval{0.292} & \numval{0.008} & \numval{0.283} & --- (flat fit)    & $\infty$ \\
+\midrule
+\textsc{FastProp}  & \texttt{eval}     & \numval{0.438} & \numval{0.147} & \numval{0.292} & \numval{76\,000}  & $\infty$ \\
+\textsc{FastProp}  & \texttt{ood}      & \numval{0.659} & \numval{0.034} & \numval{0.625} & \numval{217\,000} & $\infty$ \\
+\textsc{FastProp}  & \texttt{sc3\_gold}& \numval{0.787} & \numval{0.008} & \numval{0.779} & --- (flat fit)    & $\infty$ \\
+\midrule
+\textsc{FastProp-Big}& \texttt{eval}   & \numval{0.475} & \numval{0.147} & \numval{0.328} & \numval{28\,000}  & $\infty$ \\
+\textsc{FastProp-Big}& \texttt{ood}    & \numval{0.648} & \numval{0.034} & \numval{0.614} & \numval{213\,000} & $\infty$ \\
+\textsc{FastProp-Big}& \texttt{sc3\_gold}& \numval{0.806}& \numval{0.008}& \numval{0.798} & --- (flat fit)    & $\infty$ \\
+\midrule
+\textsc{FastProp-XL} & \texttt{eval}   & \numval{0.468} & \numval{0.147} & \numval{0.321} & \numval{44\,000}  & $\infty$ \\
+\textsc{FastProp-XL} & \texttt{ood}    & \numval{0.696} & \numval{0.034} & \numval{0.662} & \numval{50\,000}  & $\infty$ \\
+\textsc{FastProp-XL} & \texttt{sc3\_gold}& \numval{0.777}& \numval{0.008}& \numval{0.769} & --- (flat fit)    & $\infty$ \\
+\bottomrule
+\end{tabular}
+\end{table}

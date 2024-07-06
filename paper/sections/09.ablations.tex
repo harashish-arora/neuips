@@ -1,0 +1,116 @@
+% =============================================================================
+\section{Ablations \& future directions}
+\label{sec:ablations}
+
+The benchmark is built around five pre-registered questions that
+together probe \emph{what} drives solubility prediction quality.  Each
+question was finalised before the headline numbers in
+§\ref{sec:results}, and each is answered by one or more of the focused
+studies that follow this section.  Rather than restate those results
+here, this section serves as a reading guide: it states each question,
+its hypothesis, and points to the section where it is actually
+addressed.  Code for every experiment is under
+\texttt{Additional\_Experiments/} in the released repository.
+
+% -----------------------------------------------------------------------------
+\subsection{Q1 -- What constitutes a good solubility method: data, representation, or model?}
+\label{sec:ablations_q1}
+
+The headline ablation disentangles three confounded levers --- training
+set size, molecular representation, and model capacity --- by varying
+each one while holding the others fixed.
+
+\paragraph{Scaling with data and capacity.}
+A representative method per family (LightGBM and three FastProp MLP
+variants spanning $\numval{310}$\,K to $\numval{9.0}$\,M parameters) is
+trained on $\{0.05, 0.10, 0.20, 0.40, 0.60, 0.80, 1.00\}$ fractions of
+\scthree-train, with all other splits held fixed.  All four models
+plateau on \texttt{eval}, \texttt{ood}, and \texttt{sc3\_gold} by
+$N \in [\numval{12}\text{K}, \numval{25}\text{K}]$ rows, and adding
+capacity does not move the asymptote.  Full curves, power-law fits and
+the train-vs-test decomposition are in §\ref{sec:data_scaling}.
+
+\paragraph{Representation ablation.}
+The model is held fixed (LightGBM with the tuned \texttt{lgb\_rdkit}
+hyperparameters) and the featurizer is swapped across seven choices
+(RDKit, Morgan, MACCS, Mordred, Abraham, Hansen, GCN).  Per-representation
+\texttt{eval}/\texttt{ood} \RMSE{}s and the resulting Tree-SHAP attribution
+maps are reported in §\ref{sec:interpretability}; that section is the
+authoritative source for the representation comparison and is the
+right place for it because the interpretability story it sets up
+(General Solubility Equation rediscovery, Abraham/LSER axes,
+substructure attribution) only makes sense once the per-featurizer
+\RMSE{}s are on the table.
+
+\paragraph{Multimodal / variance-normalised loss.}
+The label distribution is multimodal across solvents
+(§\ref{sec:multimodal}), which motivates a per-solvent
+variance-normalised MSE objective.  We have not run this comparison;
+the headline metric suite already exposes the same effect through
+PS-RMSE and Z-RMSE (§\ref{sec:metric_suite}), so the loss-side
+experiment is deferred to follow-up work.
+
+% -----------------------------------------------------------------------------
+\subsection{Q2 -- What are the models actually learning? (Interpretability)}
+\label{sec:ablations_q2}
+
+The full interpretability study is the dedicated section
+§\ref{sec:interpretability}.  It covers SHAP across the seven
+representations of Q1, block-wise (solute / solvent / temperature)
+attribution, top global features, per-solvent profiles, solvent
+clustering, Tree-SHAP interaction values, the Abraham/LSER axis
+breakdown, and graph-based atom and BRICS-substructure attribution
+for the GCN.  Headline finding: LightGBM\,$+$\,RDKit independently
+rediscovers the General Solubility Equation axes and Abraham/LSER
+cross-terms, and the GCN learns a BRICS substructure ontology that
+matches medicinal-chemistry intuition.
+
+% -----------------------------------------------------------------------------
+\subsection{Q3 -- Can other chemical properties guide solubility? (Transfer learning)}
+\label{sec:ablations_q3}
+
+Pretraining on an adjacent solvation task and fine-tuning on \scthree{}
+is the test for transfer.  We use \textsc{CombiSolv-QM}
+($\sim 10^6$ rows of \textsc{cosmo-rs} $\Delta G_{\text{solv}}$ at
+$\numval{298.15}$~K) as the pretraining source, with pair-level
+leakage filtering against every \scthree{} holdout.  The full design
+--- multi-temperature and temperature-isolated setups, full and
+head-only fine-tuning, fractions $\{5\%, 25\%, 100\%\}$, five seeds ---
+is in §\ref{sec:transfer}.  Headline finding: QM pretraining wins on
+$9{/}9$ multi-T cells and $8{/}9$ 298-K-locked cells, with the largest
+data-efficiency win at the smallest fine-tuning fraction.
+
+% -----------------------------------------------------------------------------
+\subsection{Q4 -- Is lack of data the reason deep models fail?}
+\label{sec:ablations_q4}
+
+This question \emph{builds on} the scaling experiment of Q1.  Q1 sets
+up the data-fraction curves; Q4 asks whether extrapolating those curves
+predicts a crossing with the aleatoric floor at any reachable $N$.
+We fit the saturating power law
+$\mathrm{RMSE}(N) = aN^{-b} + c$ to every (model, split) curve and
+solve for the training-set size $N^\star$ at which RMSE would come
+within $\delta$ of $\epsA(\text{split})$.  The closed-form result and
+the per-(model, split) extrapolations are in §\ref{sec:scaling_q4}.
+Headline finding: $c > \epsA + 0.05$ for every (model, split)
+combination, so $N^\star = \infty$ everywhere within this
+representation.  The deep-model gap is representation-limited (H2),
+not data-limited (H1).
+
+% -----------------------------------------------------------------------------
+\subsection{Q5 -- Can a foundation model work for solubility?}
+\label{sec:ablations_q5}
+
+Q5 ties Q2/Q3/representation together: large pretrained molecular
+encoders (Uni-Mol, GROVER, SolvBERT, ChemFM, MolMerger) produce
+high-dimensional learned representations, and the question is whether
+any of them unlocks a scaling regime the descriptor backbones in Q1
+cannot.  We have not yet run the full foundation-model sweep.  The
+infrastructure for it already exists --- the transfer protocol of
+§\ref{sec:transfer} provides the leakage filter and fine-tune recipe,
+the scaling protocol of §\ref{sec:data_scaling} provides the curve
+template, and the SHAP / GCN-attribution machinery of
+§\ref{sec:interpretability} provides the post-hoc analysis --- so the
+experiment reduces to swapping the trunk.  This is the most natural
+next step from the conclusions of Q1 and Q4, and we flag it as the
+primary outstanding ablation.

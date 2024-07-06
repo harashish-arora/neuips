@@ -1,0 +1,41 @@
+\documentclass{article}
+
+% NeurIPS 2026 — Evaluations & Datasets track (double-blind)
+\usepackage[eandd]{neurips_2026}
+
+% Packages and macros
+\input{00.packages}
+\input{00.macros}
+
+% Metadata
+\input{00.metadata}
+
+\begin{document}
+
+\maketitle
+
+% ─── Body ───────────────────────────────────────────────────────────────────
+%
+% Scope of this build: data curation and aleatoric limit (Sections 3--4).
+% Abstract, introduction, and remaining sections are placeholders to be
+% filled in once the full paper scope is finalised.
+%
+\input{sections/00.abstract}
+\input{sections/01.introduction}
+\input{sections/03.data_curation}
+\input{sections/04.aleatoric_theory}
+\input{sections/05.benchmark_design}
+\input{sections/06.metrics}
+\input{sections/07.baselines}
+\input{sections/08.results}
+\input{sections/09.ablations}
+\input{sections/09a.data_scaling}
+\input{sections/transfer}
+\input{sections/interpretations}
+% \input{sections/10.discussion}
+
+% ─── References ─────────────────────────────────────────────────────────────
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

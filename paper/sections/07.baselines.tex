@@ -1,0 +1,40 @@
+% =============================================================================
+\section{Baselines}
+\label{sec:baselines}
+
+\todo{One short paragraph: $\sim 27$ baselines across seven families,
+all consuming the same $(\text{solute}, \text{solvent}, T)$ input,
+matched seeds, no per-method HP-tuning advantage in the headline
+table.  Full hyperparameters in Appendix~\ref{app:hparams}.}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Thermodynamic / group contribution} -- ESOL, GSE,
+        UNIFAC, Abraham LFER.
+  \item \textbf{Descriptor + GBDT} -- LightGBM, CatBoost, XGBoost,
+        Random Forest on RDKit + temperature features.  Includes
+        Abraham-ML and UNIFAC-ML variants.
+  \item \textbf{Fingerprint + ML} -- same trees on Morgan ECFP4; GP
+        with Tanimoto kernel.
+  \item \textbf{Learned descriptors} -- FastProp, FastSolv, Dissolvr,
+        MLP on RDKit.
+  \item \textbf{Graph neural networks} -- GCN, GAT, GIN, SolubNet,
+        Chemprop D-MPNN, MolMerger.
+  \item \textbf{Sequence model} -- SolTranNet.
+  \item \textbf{Foundation model} -- Uni-Mol2 (frozen and fine-tuned).
+\end{itemize}
+
+\todo{Optional: drop in Figure~\ref{fig:family_tree} schematic if we
+keep it; otherwise remove and let Table~\ref{tab:main_results} carry
+the family grouping.}
+
+\begin{figure}[h]
+\centering
+\figplaceholder{fig_family_tree.pdf}{0.30}{%
+  Compact taxonomy of the $\sim 27$ baselines, grouped by the seven
+  families above.  Decorate each leaf with input type
+  (\SMILES{} / descriptor / graph) and parameter count where
+  applicable.%
+}
+\caption{Baseline taxonomy.}
+\label{fig:family_tree}
+\end{figure}

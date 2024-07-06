@@ -1,0 +1,24 @@
+% =============================================================================
+\section{Main results}
+\label{sec:results}
+
+\todo{2--3 paragraphs of high-level analysis once
+Table~\ref{tab:main_results} is filled in.  Suggested talking points:
+(i)~which family wins on Bronze PS-RMSE; (ii)~same-features-different-model
+contrast (e.g.\ LightGBM vs.\ MLP on RDKit); (iii)~where the
+deep-learning baselines land relative to descriptor methods.}
+
+\input{tables/main_results}
+
+\begin{figure}[h]
+\centering
+\figplaceholder{fig_leaderboard.pdf}{0.45}{%
+  Horizontal bar chart of Bronze PS-RMSE for every method in
+  Table~\ref{tab:main_results}, family-coloured, with vertical reference
+  lines at $\epsA = 0.11$ (aleatoric floor) and the dummy
+  solvent-mean baseline.  Whiskers $= \pm 1$ std over $5$ seeds.%
+}
+\caption{Leaderboard at a glance.  \todo{Replace with real artwork after
+the v2 + HP-tuned rerun.}}
+\label{fig:leaderboard}
+\end{figure}

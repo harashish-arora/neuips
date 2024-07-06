@@ -1,0 +1,38 @@
+\begin{table}[h]
+\centering\small
+\caption{Power-law fits $\mathrm{RMSE}(N) = a \cdot N^{-b} + c$ per
+  (model, evaluation split), plus the train-side fit (only available for
+  the deep models; LightGBM does not save a per-fraction train-RMSE
+  diagnostic).  $b$ is the scaling exponent (larger = more bang per
+  data row).  $c$ is the model's irreducible asymptote (smaller =
+  better in the limit of infinite data).  $R^{2}$ is the coefficient
+  of determination of the fit on the seven $(N, \mathrm{RMSE})$ points.
+  The asymptote $c$ is the column to read for Q4: it is the model's
+  best achievable RMSE on this split, given infinite data and the same
+  representation.}
+\label{tab:scaling_fits}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+model              & split           & $a$           & $b$    & $c$            & $R^{2}$ \\
+\midrule
+\textsc{LightGBM}  & \texttt{eval}    & \numval{588.43} & \numval{1.02} & \numval{0.480} & \numval{0.98} \\
+\textsc{LightGBM}  & \texttt{ood}     & \numval{131.38} & \numval{0.88} & \numval{0.601} & \numval{0.99} \\
+\textsc{LightGBM}  & \texttt{sc3\_gold}& \numval{0.49}   & \numval{0.01} & \numval{0.292} & \numval{0.13} \\
+\midrule
+\textsc{FastProp}  & \texttt{eval}    & \numval{382.15} & \numval{0.94} & \numval{0.438} & \numval{0.99} \\
+\textsc{FastProp}  & \texttt{ood}     & \numval{45.07}  & \numval{0.70} & \numval{0.659} & \numval{0.98} \\
+\textsc{FastProp}  & \texttt{sc3\_gold}& \numval{$\sim$0}& \numval{2.06} & \numval{0.787} & --- \\
+\textsc{FastProp}  & \texttt{train}   & \numval{0.44}   & \numval{0.06} & \numval{$\sim 0$} & \numval{0.36} \\
+\midrule
+\textsc{FastProp-Big}& \texttt{eval}  & \numval{10\,262.47}& \numval{1.35}& \numval{0.475} & \numval{0.98} \\
+\textsc{FastProp-Big}& \texttt{ood}   & \numval{47.26}  & \numval{0.71} & \numval{0.648} & \numval{0.94} \\
+\textsc{FastProp-Big}& \texttt{sc3\_gold}& \numval{$\sim$0}& \numval{1.52}& \numval{0.806} & --- \\
+\textsc{FastProp-Big}& \texttt{train} & \numval{$10^{6}$}& \numval{2.13}& \numval{0.291} & \numval{0.35} \\
+\midrule
+\textsc{FastProp-XL} & \texttt{eval}  & \numval{1\,740.30}& \numval{1.13}& \numval{0.468} & \numval{0.99} \\
+\textsc{FastProp-XL} & \texttt{ood}   & \numval{734.60} & \numval{1.08} & \numval{0.696} & \numval{0.95} \\
+\textsc{FastProp-XL} & \texttt{sc3\_gold}& \numval{0.83}& \numval{2.81} & \numval{0.777} & --- \\
+\textsc{FastProp-XL} & \texttt{train} & \numval{$10^{6}$}& \numval{2.21}& \numval{0.351} & \numval{0.13} \\
+\bottomrule
+\end{tabular}
+\end{table}

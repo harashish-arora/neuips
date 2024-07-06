@@ -1,0 +1,56 @@
+% ─── Custom macros ──────────────────────────────────────────────────────────
+
+% Benchmark name
+\newcommand{\scthree}{SC\textsuperscript{3}\xspace}
+
+% Dataset splits
+\newcommand{\easy}{\textsc{SC\textsuperscript{3}-Easy}\xspace}
+\newcommand{\medium}{\textsc{SC\textsuperscript{3}-Medium}\xspace}
+\newcommand{\hard}{\textsc{SC\textsuperscript{3}-Hard}\xspace}
+
+% Units / quantities
+\newcommand{\logS}{\ensuremath{\log_{10} S}\xspace}
+\newcommand{\logSunit}{\ensuremath{\log_{10}(\text{mol\,L}^{-1})}\xspace}
+\newcommand{\eps}{\ensuremath{\varepsilon}\xspace}
+\newcommand{\epsA}{\ensuremath{\varepsilon_{\text{aleatoric}}}\xspace}
+\newcommand{\epsD}{\ensuremath{\varepsilon_{\text{direct}}}\xspace}
+\newcommand{\deltaI}{\ensuremath{\delta_{\text{interp}}}\xspace}
+
+% Chemical notation
+\newcommand{\SMILES}{\textsc{smiles}\xspace}
+
+% Statistics
+\newcommand{\MAE}{\textsc{mae}\xspace}
+\newcommand{\RMSE}{\textsc{rmse}\xspace}
+\newcommand{\Rr}{\ensuremath{R^2}\xspace}
+
+% Temperature
+\newcommand{\Tref}{\ensuremath{T_{\text{ref}}}\xspace}
+
+% Shortcuts
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\cf}{\textit{cf.}\xspace}
+\newcommand{\etal}{\textit{et~al.}\xspace}
+\newcommand{\wrt}{w.r.t.\xspace}
+
+% Highlight color for TODO
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\newcommand{\numval}[1]{\textcolor{blue!70!black}{#1}}
+
+% ─── Visible figure placeholder ─────────────────────────────────────────────
+% Renders a framed box with the planned figure tag and a one-line description,
+% so reviewers and co-authors can see what is supposed to go where while the
+% real artwork is still being produced.  Drop-in replacement for an
+% \includegraphics call inside a {figure} environment.
+%
+% Usage: \figplaceholder{filename.pdf}{height-fraction}{One-line description.}
+% \long allows multi-line / multi-paragraph descriptions inside the third arg.
+\long\def\figplaceholder#1#2#3{%
+  \fcolorbox{red!50!black}{red!4}{\parbox[c][#2\linewidth][c]{0.96\linewidth}{%
+    \centering\small
+    \textsc{\textbf{Figure placeholder}}\\[0.3em]
+    \texttt{paper/figures/\detokenize{#1}}\\[0.4em]
+    \footnotesize\itshape #3%
+  }}%
+}

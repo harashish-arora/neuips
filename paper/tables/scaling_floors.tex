@@ -1,0 +1,25 @@
+\begin{table}[h]
+\centering\small
+\caption{Per-split aleatoric RMSE floors $\epsA$ from
+  Eq.~\ref{eq:eps_split}, computed on duplicate
+  $(\text{solute}, \text{solvent}, \mathrm{round}(T,0))$ triples within
+  each split.  $n_{\text{trip}}$ is the number of duplicate triples;
+  $n_{\text{obs}}$ is the total number of observations participating
+  in those triples (each contributes one residual against its group
+  mean).  Median per-triple std and the $90$th percentile capture the
+  shape of the within-triple disagreement distribution: medians are
+  sub-millimolar everywhere, and the heavy right tail is what drives
+  $\epsA$ above the median.  $\epsA$ is RMSE-comparable to the model
+  RMSE reported on the same split.}
+\label{tab:scaling_floors}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+split & $n_{\text{trip}}$ & $n_{\text{obs}}$ & $\epsA$ (RMSE) & MAE floor & $P_{50}$ & $P_{90}$ \\
+\midrule
+\texttt{train}    & \numval{905} & \numval{1\,839} & \numval{0.230} & \numval{0.074} & \numval{0.005} & \numval{0.430} \\
+\texttt{eval}     & \numval{101} & \numval{202}    & \numval{0.147} & \numval{0.038} & \numval{0.005} & \numval{0.026} \\
+\texttt{ood}      & \numval{83}  & \numval{166}    & \numval{0.034} & \numval{0.009} & \numval{0.002} & \numval{0.024} \\
+\texttt{sc3\_gold} & \numval{490} & \numval{988}   & \numval{0.008} & \numval{0.004} & \numval{0.002} & \numval{0.012} \\
+\bottomrule
+\end{tabular}
+\end{table}
