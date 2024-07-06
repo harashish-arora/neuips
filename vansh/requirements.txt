@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+rdkit-pypi
+xgboost
+lightgbm
+catboost
+torch
+torch-geometric
+gpytorch
+mordred

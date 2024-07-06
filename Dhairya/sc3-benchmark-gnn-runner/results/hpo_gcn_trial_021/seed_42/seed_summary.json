@@ -1,0 +1,58 @@
+{
+  "train_time_s": 483.3257751464844,
+  "best_epoch": 89,
+  "best_val_loss": 0.33817026019096375,
+  "eval": {
+    "RMSE": 0.5815240821960767,
+    "MAE": 0.39660257296912516,
+    "R2": 0.743892018438597,
+    "N": 6969,
+    "PS_RMSE": 0.579149928703654,
+    "PS_R2": 0.6805402950972375,
+    "N_solvents": 25
+  },
+  "test_hard": {
+    "RMSE": 1.135690534413039,
+    "MAE": 0.8548755236120673,
+    "R2": 0.06228274828620295,
+    "N": 4507,
+    "PS_RMSE": 0.952222216257045,
+    "PS_R2": -7.298613114477854,
+    "N_solvents": 26,
+    "Z_RMSE": 62.25319668555794,
+    "f_aleatoric": 0.0623369092490577,
+    "N_with_uncertainty": 3449
+  },
+  "test_medium": {
+    "RMSE": 1.0816865021967477,
+    "MAE": 0.8051769253713468,
+    "R2": 0.09096751138936243,
+    "N": 5475,
+    "PS_RMSE": 0.9083067613006613,
+    "PS_R2": -6.230204110360181,
+    "N_solvents": 27,
+    "Z_RMSE": 56.897794633261874,
+    "f_aleatoric": 0.08998100664767332,
+    "N_with_uncertainty": 4212
+  },
+  "test_easy": {
+    "RMSE": 1.0697052807325702,
+    "MAE": 0.8012171848570677,
+    "R2": 0.07695295851292305,
+    "N": 6331,
+    "PS_RMSE": 0.9170863532596655,
+    "PS_R2": -4.709374725975333,
+    "N_solvents": 30,
+    "Z_RMSE": 53.274839370882724,
+    "f_aleatoric": 0.12272075394386396,
+    "N_with_uncertainty": 4881
+  },
+  "artifacts": {
+    "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42",
+    "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/checkpoints",
+    "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/predictions",
+    "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/epoch_history.json",
+    "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/best_model.pkl",
+    "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/run_config.json"
+  }
+}

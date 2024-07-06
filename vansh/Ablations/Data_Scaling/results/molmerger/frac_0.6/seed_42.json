@@ -1,0 +1,54 @@
+{
+  "method": "molmerger",
+  "fraction": 0.6,
+  "seed": 42,
+  "params": {
+    "lr": 0.001,
+    "batch_size": 256,
+    "hidden_dim": 200,
+    "num_layers": 3,
+    "num_timesteps": 2,
+    "dropout": 0.2,
+    "epochs": 200,
+    "patience": 25
+  },
+  "wall_time_s": 480.53153562545776,
+  "metrics": {
+    "eval": {
+      "RMSE": 0.48892638838711067,
+      "MAE": 0.31024659198097804,
+      "R2": 0.8189599508816289,
+      "N": 6969,
+      "PS_RMSE": 0.48521193001539586,
+      "PS_R2": 0.7808703079283859,
+      "N_solvents": 25,
+      "n_skipped_unparseable": 0
+    },
+    "ood": {
+      "RMSE": 0.8316028026590113,
+      "MAE": 0.6019659261759294,
+      "R2": 0.3860722691344003,
+      "N": 11940,
+      "PS_RMSE": 0.7187922254415892,
+      "PS_R2": -22.869674079462566,
+      "N_solvents": 146,
+      "n_skipped_unparseable": 0
+    },
+    "sc3_gold": {
+      "RMSE": 0.8807172728949162,
+      "MAE": 0.6833720659946293,
+      "R2": 0.43607035818886697,
+      "N": 4507,
+      "PS_RMSE": 0.8545393404287597,
+      "PS_R2": -6.494298270499014,
+      "N_solvents": 26,
+      "Z_RMSE": 51.05921080614066,
+      "f_aleatoric": 0.06001739634676718,
+      "N_with_uncertainty": 3449,
+      "n_skipped_unparseable": 0
+    },
+    "_n_train": 36842,
+    "_n_train_skipped_unparseable": 0,
+    "_best_epoch": 79
+  }
+}

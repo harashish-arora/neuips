@@ -1,0 +1,9 @@
+Please read @sc3_agent_protocol.md 
+
+and for each phase, make a folder in Plan, with a md for that phase, and md for progress and updates mentioned cleanly within that plan
+also a way for agents to drop of work, so next agent has all context 
+ok?
+
+ask me if any questions
+dissolvr repo is there already for each access, feel free to move it wherever necesarry, it also has implementations of some baselines etc 
+make new folder if needed

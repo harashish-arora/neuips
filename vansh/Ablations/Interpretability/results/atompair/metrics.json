@@ -1,0 +1,40 @@
+{
+  "featurizer": "atompair",
+  "model": "lightgbm",
+  "hp_key": "lgb_rdkit",
+  "seed": 42,
+  "params": {
+    "n_estimators": 3000,
+    "learning_rate": 0.05,
+    "num_leaves": 127,
+    "min_child_samples": 10,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "reg_alpha": 0.1,
+    "reg_lambda": 5
+  },
+  "n_features": 2052,
+  "train_time_s": 19.372162580490112,
+  "best_iter": 668,
+  "metrics": {
+    "eval": {
+      "RMSE": 0.5532304600487328,
+      "MAE": 0.3748468459499839,
+      "R2": 0.7682072378226559,
+      "N": 6969,
+      "PS_RMSE": 0.5434303919013143,
+      "PS_R2": 0.7278361251919246,
+      "N_solvents": 25
+    },
+    "ood": {
+      "RMSE": 0.8824276149788913,
+      "MAE": 0.6416006875151318,
+      "R2": 0.3087366315346476,
+      "N": 11940,
+      "PS_RMSE": 0.6923866128190261,
+      "PS_R2": -13.912801557747562,
+      "N_solvents": 146
+    }
+  }
+}

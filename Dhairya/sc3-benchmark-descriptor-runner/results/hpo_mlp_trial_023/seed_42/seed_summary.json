@@ -1,0 +1,58 @@
+{
+  "train_time_s": 19.67149066925049,
+  "best_epoch": 17,
+  "best_val_loss": 0.23471054434776306,
+  "eval": {
+    "RMSE": 0.4844693441493401,
+    "MAE": 0.31216850235887966,
+    "R2": 0.8222456215889606,
+    "N": 6969,
+    "PS_RMSE": 0.47994223903226974,
+    "PS_R2": 0.7881137464736958,
+    "N_solvents": 25
+  },
+  "test_hard": {
+    "RMSE": 0.8587973548883827,
+    "MAE": 0.6411080622024005,
+    "R2": 0.4637919988809137,
+    "N": 4507,
+    "PS_RMSE": 0.8749838399184718,
+    "PS_R2": -13.60663079925259,
+    "N_solvents": 26,
+    "Z_RMSE": 50.27499214342275,
+    "f_aleatoric": 0.061467091910698754,
+    "N_with_uncertainty": 3449
+  },
+  "test_medium": {
+    "RMSE": 0.8329619127095979,
+    "MAE": 0.6193620520888043,
+    "R2": 0.4609527042460797,
+    "N": 5475,
+    "PS_RMSE": 0.8234598944067014,
+    "PS_R2": -9.178741276510463,
+    "N_solvents": 27,
+    "Z_RMSE": 45.96121134362395,
+    "f_aleatoric": 0.10280151946818614,
+    "N_with_uncertainty": 4212
+  },
+  "test_easy": {
+    "RMSE": 0.8086460954320323,
+    "MAE": 0.6007305154248679,
+    "R2": 0.4725120501142569,
+    "N": 6331,
+    "PS_RMSE": 0.7775519218107895,
+    "PS_R2": -3.7851048562117384,
+    "N_solvents": 30,
+    "Z_RMSE": 42.745021677073005,
+    "f_aleatoric": 0.16574472444171276,
+    "N_with_uncertainty": 4881
+  },
+  "artifacts": {
+    "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42",
+    "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/checkpoints",
+    "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/predictions",
+    "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/epoch_history.json",
+    "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/best_model.pkl",
+    "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/run_config.json"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "featurizer": "mordred",
+  "model": "lightgbm",
+  "hp_key": "lgb_rdkit",
+  "seed": 42,
+  "params": {
+    "n_estimators": 3000,
+    "learning_rate": 0.05,
+    "num_leaves": 127,
+    "min_child_samples": 10,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "reg_alpha": 0.1,
+    "reg_lambda": 5
+  },
+  "n_features": 3226,
+  "train_time_s": 74.84026598930359,
+  "best_iter": 874,
+  "metrics": {
+    "eval": {
+      "RMSE": 0.48661193183428453,
+      "MAE": 0.3047507900215821,
+      "R2": 0.8206698916608167,
+      "N": 6969,
+      "PS_RMSE": 0.47982237957114526,
+      "PS_R2": 0.7865035213350733,
+      "N_solvents": 25
+    },
+    "ood": {
+      "RMSE": 0.676830583737235,
+      "MAE": 0.4862522981866996,
+      "R2": 0.5933270260286416,
+      "N": 11940,
+      "PS_RMSE": 0.5538132702402403,
+      "PS_R2": -11.318702139595441,
+      "N_solvents": 146
+    }
+  }
+}

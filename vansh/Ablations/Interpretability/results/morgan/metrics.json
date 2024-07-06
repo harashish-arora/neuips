@@ -1,0 +1,40 @@
+{
+  "featurizer": "morgan",
+  "model": "lightgbm",
+  "hp_key": "lgb_rdkit",
+  "seed": 42,
+  "params": {
+    "n_estimators": 3000,
+    "learning_rate": 0.05,
+    "num_leaves": 127,
+    "min_child_samples": 10,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "reg_alpha": 0.1,
+    "reg_lambda": 5
+  },
+  "n_features": 2052,
+  "train_time_s": 26.69295620918274,
+  "best_iter": 1294,
+  "metrics": {
+    "eval": {
+      "RMSE": 0.5287579908702038,
+      "MAE": 0.3512603978454021,
+      "R2": 0.7882606425381766,
+      "N": 6969,
+      "PS_RMSE": 0.5167249710070988,
+      "PS_R2": 0.7512853856525713,
+      "N_solvents": 25
+    },
+    "ood": {
+      "RMSE": 0.7820398111172259,
+      "MAE": 0.5837281498003156,
+      "R2": 0.45707094159105566,
+      "N": 11940,
+      "PS_RMSE": 0.6441208994576876,
+      "PS_R2": -12.636832690011158,
+      "N_solvents": 146
+    }
+  }
+}

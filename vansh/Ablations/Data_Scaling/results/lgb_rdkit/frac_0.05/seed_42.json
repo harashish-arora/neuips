@@ -1,0 +1,51 @@
+{
+  "method": "lgb_rdkit",
+  "fraction": 0.05,
+  "seed": 42,
+  "params": {
+    "n_estimators": 3000,
+    "learning_rate": 0.05,
+    "num_leaves": 127,
+    "min_child_samples": 10,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "reg_alpha": 0.1,
+    "reg_lambda": 5
+  },
+  "wall_time_s": 8.967403650283813,
+  "metrics": {
+    "eval": {
+      "RMSE": 0.6424503811028118,
+      "MAE": 0.447392091597952,
+      "R2": 0.6874158983635503,
+      "N": 6969,
+      "PS_RMSE": 0.6333041166201528,
+      "PS_R2": 0.6420781429775044,
+      "N_solvents": 25
+    },
+    "ood": {
+      "RMSE": 0.7130151998701275,
+      "MAE": 0.5349149492167182,
+      "R2": 0.5486817054564741,
+      "N": 11940,
+      "PS_RMSE": 0.6528105553733494,
+      "PS_R2": -34.81828579773145,
+      "N_solvents": 146
+    },
+    "sc3_gold": {
+      "RMSE": 0.7346304235115053,
+      "MAE": 0.5788287404728355,
+      "R2": 0.6076354925260397,
+      "N": 4507,
+      "PS_RMSE": 0.5859178406628266,
+      "PS_R2": -3.290037792655851,
+      "N_solvents": 26,
+      "Z_RMSE": 41.44186853203375,
+      "f_aleatoric": 0.06987532618150188,
+      "N_with_uncertainty": 3449
+    },
+    "_n_train": 3070,
+    "_best_iter": 610
+  }
+}

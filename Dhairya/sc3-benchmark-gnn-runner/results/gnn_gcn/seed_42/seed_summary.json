@@ -1,0 +1,58 @@
+{
+  "train_time_s": 69.00794863700867,
+  "best_epoch": 29,
+  "best_val_loss": 0.7890309691429138,
+  "eval": {
+    "RMSE": 0.8882741640945031,
+    "MAE": 0.6829060545603294,
+    "R2": 0.4024396601802136,
+    "N": 6969,
+    "PS_RMSE": 0.8803406881055017,
+    "PS_R2": 0.27155488672879124,
+    "N_solvents": 25
+  },
+  "test_hard": {
+    "RMSE": 0.9778262091971155,
+    "MAE": 0.7618994818217679,
+    "R2": 0.3048552594435071,
+    "N": 4507,
+    "PS_RMSE": 0.8365477889425077,
+    "PS_R2": -6.403042126341426,
+    "N_solvents": 26,
+    "Z_RMSE": 52.87160584953358,
+    "f_aleatoric": 0.06262684836184401,
+    "N_with_uncertainty": 3449
+  },
+  "test_medium": {
+    "RMSE": 0.9653014221130354,
+    "MAE": 0.7608202453903464,
+    "R2": 0.2760601619683415,
+    "N": 5475,
+    "PS_RMSE": 0.8161539442850025,
+    "PS_R2": -3.2956589288587668,
+    "N_solvents": 27,
+    "Z_RMSE": 48.43978189068149,
+    "f_aleatoric": 0.08000949667616335,
+    "N_with_uncertainty": 4212
+  },
+  "test_easy": {
+    "RMSE": 0.9555113471299671,
+    "MAE": 0.7565090368137288,
+    "R2": 0.2635093242734007,
+    "N": 6331,
+    "PS_RMSE": 0.8229869656311349,
+    "PS_R2": -3.2791170549516,
+    "N_solvents": 30,
+    "Z_RMSE": 45.16211573743679,
+    "f_aleatoric": 0.11800860479409957,
+    "N_with_uncertainty": 4881
+  },
+  "artifacts": {
+    "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/gnn_gcn/seed_42",
+    "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/gnn_gcn/seed_42/checkpoints",
+    "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/gnn_gcn/seed_42/predictions",
+    "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/gnn_gcn/seed_42/epoch_history.json",
+    "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/gnn_gcn/seed_42/best_model.pkl",
+    "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/gnn_gcn/seed_42/run_config.json"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "fastprop": {
+    "best_val_loss": 0.2060876190662384,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_fastprop_trial_009",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_fastprop_trial_009",
+    "grid_a_best": {
+      "best_val_loss": 0.2060876190662384,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastprop_trial_009"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.2060876190662384,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastprop_trial_024"
+    }
+  },
+  "fastsolv": {
+    "best_val_loss": 0.14343488216400146,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_fastsolv_trial_008",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_fastsolv_trial_008",
+    "grid_a_best": {
+      "best_val_loss": 0.14343488216400146,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastsolv_trial_008"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.14343488216400146,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastsolv_trial_024"
+    }
+  },
+  "mlp": {
+    "best_val_loss": 0.20841236412525177,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_mlp_trial_013",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_013",
+    "grid_a_best": {
+      "best_val_loss": 0.20841236412525177,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_mlp_trial_013"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.20841236412525177,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_mlp_trial_024"
+    }
+  }
+}

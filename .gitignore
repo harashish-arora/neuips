@@ -1,0 +1,80 @@
+# Virtual environments & conda (never commit)
+myenv/
+conda_pkgs/
+.venv/
+venv/
+env/
+.env
+
+# Python / tooling
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Logs & experiment trackers
+logs/
+*.log
+wandb/
+catboost_info/
+
+# Heavy benchmark trees elsewhere in repo (multi‑GB bundles)
+sc3-benchmark/
+sc3_benchmark_data_curation_v2/
+
+# Large pretrained / baseline checkpoints under Dissolvr (~GB scale)
+Dissolvr/baselines/
+
+# --- Large tabular dumps (vansh/, Dhairya/, and rest of tree) ---
+*.csv
+*.tsv
+
+# --- Model weights & serialized blobs (anywhere) ---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.joblib
+*.bin
+
+# Common directories that only hold weights or cached runs
+**/checkpoints/
+**/saved_models/
+**/weights/
+**/lightning_logs/
+
+# Accidental home-style dotfiles under this tree (do not publish)
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.claude.json
+.gitconfig
+
+# IIT Delhi proxy secrets — never commit
+proxyAuth.txt
+proxy_auth.txt
+proxyAuth*.txt

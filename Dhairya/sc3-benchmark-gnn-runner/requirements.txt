@@ -1,0 +1,24 @@
+# SC3 Benchmark — Python dependencies
+# Install: pip install -r requirements.txt
+
+# Core
+numpy
+pandas
+scipy
+scikit-learn
+tqdm
+
+# Chemistry
+rdkit-pypi
+
+# Tree-based models
+xgboost
+lightgbm
+catboost
+
+# Deep learning
+torch
+
+# Plotting (optional, for figures)
+matplotlib
+seaborn

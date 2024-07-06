@@ -1,0 +1,677 @@
+{
+  "ethanol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.3170941174030304,
+      "mean_signed_shap": 0.005080272443592548
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.2202264368534088,
+      "mean_signed_shap": 0.031473107635974884
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.2036014348268509,
+      "mean_signed_shap": 0.003341373521834612
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.1565590798854828,
+      "mean_signed_shap": -0.014884366653859615
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.1329636126756668,
+      "mean_signed_shap": 0.011670490726828575
+    }
+  ],
+  "methanol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.36664727330207825,
+      "mean_signed_shap": 0.012581299059092999
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.21736623346805573,
+      "mean_signed_shap": 0.007656096015125513
+    },
+    {
+      "feature": "solv_abraham_E",
+      "mean_abs_shap": 0.1841830015182495,
+      "mean_signed_shap": 0.17912301421165466
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.17491871118545532,
+      "mean_signed_shap": -0.03741570934653282
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.168873131275177,
+      "mean_signed_shap": -0.03932018578052521
+    }
+  ],
+  "ethyl acetate": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.3088501989841461,
+      "mean_signed_shap": -0.04808291047811508
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.20995056629180908,
+      "mean_signed_shap": 0.07964665442705154
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.20735684037208557,
+      "mean_signed_shap": -0.03355201706290245
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.15884080529212952,
+      "mean_signed_shap": -0.018377289175987244
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.1334654837846756,
+      "mean_signed_shap": -0.06643403321504593
+    }
+  ],
+  "isopropanol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.3122364580631256,
+      "mean_signed_shap": 0.04138733074069023
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.21902436017990112,
+      "mean_signed_shap": 0.010735731571912766
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.17549645900726318,
+      "mean_signed_shap": -0.009830445982515812
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.15548191964626312,
+      "mean_signed_shap": -0.02241634950041771
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.14288319647312164,
+      "mean_signed_shap": 0.02227606810629368
+    }
+  ],
+  "n-propanol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.26919010281562805,
+      "mean_signed_shap": 0.06828677654266357
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.20904135704040527,
+      "mean_signed_shap": 0.009439422748982906
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.16180959343910217,
+      "mean_signed_shap": -0.08139771968126297
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.15291298925876617,
+      "mean_signed_shap": -0.01570606417953968
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.13296185433864594,
+      "mean_signed_shap": -0.05125294253230095
+    }
+  ],
+  "acetonitrile": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.32378560304641724,
+      "mean_signed_shap": 0.13372254371643066
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.2039256989955902,
+      "mean_signed_shap": 0.04662191495299339
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.18599459528923035,
+      "mean_signed_shap": 0.028562411665916443
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.14604979753494263,
+      "mean_signed_shap": 0.0014837877824902534
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.13809219002723694,
+      "mean_signed_shap": -0.008657571859657764
+    }
+  ],
+  "n-butanol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.27998316287994385,
+      "mean_signed_shap": -0.011813970282673836
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.22835026681423187,
+      "mean_signed_shap": 0.08587026596069336
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.19456994533538818,
+      "mean_signed_shap": 0.029392192140221596
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.13535693287849426,
+      "mean_signed_shap": -0.010617442429065704
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.1266537755727768,
+      "mean_signed_shap": -0.04624730348587036
+    }
+  ],
+  "acetone": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.30809974670410156,
+      "mean_signed_shap": 0.03587495908141136
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.2014784812927246,
+      "mean_signed_shap": 0.02091773971915245
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.17743366956710815,
+      "mean_signed_shap": -0.028545968234539032
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.17262066900730133,
+      "mean_signed_shap": -0.011215846985578537
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.14097556471824646,
+      "mean_signed_shap": -0.020402656868100166
+    }
+  ],
+  "water": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.5151933431625366,
+      "mean_signed_shap": 0.07872477173805237
+    },
+    {
+      "feature": "solv_abraham_B",
+      "mean_abs_shap": 0.47607797384262085,
+      "mean_signed_shap": -0.4758591055870056
+    },
+    {
+      "feature": "solv_abraham_E",
+      "mean_abs_shap": 0.348214715719223,
+      "mean_signed_shap": -0.3290634751319885
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.23251216113567352,
+      "mean_signed_shap": -0.07082387059926987
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.1963537484407425,
+      "mean_signed_shap": 0.006169802043586969
+    }
+  ],
+  "DMF": [
+    {
+      "feature": "solv_abraham_B",
+      "mean_abs_shap": 0.3751514256000519,
+      "mean_signed_shap": 0.3751514256000519
+    },
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.3312089443206787,
+      "mean_signed_shap": -0.09478486329317093
+    },
+    {
+      "feature": "solv_abraham_E",
+      "mean_abs_shap": 0.20471449196338654,
+      "mean_signed_shap": 0.20471449196338654
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.18066401779651642,
+      "mean_signed_shap": -0.09419052302837372
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.15093819797039032,
+      "mean_signed_shap": 0.004981549922376871
+    }
+  ],
+  "toluene": [
+    {
+      "feature": "solv_abraham_B",
+      "mean_abs_shap": 0.3536662757396698,
+      "mean_signed_shap": -0.3536662757396698
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.25211331248283386,
+      "mean_signed_shap": 0.01329709216952324
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.2503325343132019,
+      "mean_signed_shap": -0.039661988615989685
+    },
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.23994891345500946,
+      "mean_signed_shap": -0.03090859390795231
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.2080276906490326,
+      "mean_signed_shap": -0.044685449451208115
+    }
+  ],
+  "isobutanol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.22709713876247406,
+      "mean_signed_shap": 0.1481117308139801
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.1971784234046936,
+      "mean_signed_shap": 0.07103671133518219
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.18854479491710663,
+      "mean_signed_shap": 0.100194551050663
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.1676981896162033,
+      "mean_signed_shap": -0.0977713018655777
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.15387848019599915,
+      "mean_signed_shap": -0.010828190483152866
+    }
+  ],
+  "1,4-dioxane": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.26411911845207214,
+      "mean_signed_shap": 0.00017632730305194855
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.22813589870929718,
+      "mean_signed_shap": -0.04693304002285004
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.165381520986557,
+      "mean_signed_shap": -0.08836092799901962
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.16425056755542755,
+      "mean_signed_shap": -0.000818675325717777
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.142344132065773,
+      "mean_signed_shap": 0.03506820648908615
+    }
+  ],
+  "methyl acetate": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.31631582975387573,
+      "mean_signed_shap": -0.022333670407533646
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.2436194270849228,
+      "mean_signed_shap": -0.027505723759531975
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.18624083697795868,
+      "mean_signed_shap": -0.013417763635516167
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.18615184724330902,
+      "mean_signed_shap": 0.03161356598138809
+    },
+    {
+      "feature": "solute_pred_Tm",
+      "mean_abs_shap": 0.1323966532945633,
+      "mean_signed_shap": 0.06492982804775238
+    }
+  ],
+  "THF": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.33258867263793945,
+      "mean_signed_shap": -0.06298631429672241
+    },
+    {
+      "feature": "solv_abraham_E",
+      "mean_abs_shap": 0.2234332114458084,
+      "mean_signed_shap": 0.2234332114458084
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.21186025440692902,
+      "mean_signed_shap": -0.07040944695472717
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.16206388175487518,
+      "mean_signed_shap": 0.01640288159251213
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.13836513459682465,
+      "mean_signed_shap": 0.012609691359102726
+    }
+  ],
+  "n-pentanol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.2483513504266739,
+      "mean_signed_shap": -0.0027246016543358564
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.19856217503547668,
+      "mean_signed_shap": 0.03969016298651695
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.19151829183101654,
+      "mean_signed_shap": -0.0032323997002094984
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.1524658501148224,
+      "mean_signed_shap": -0.036533698439598083
+    },
+    {
+      "feature": "solute_pred_Tm",
+      "mean_abs_shap": 0.1373818963766098,
+      "mean_signed_shap": 0.03542334958910942
+    }
+  ],
+  "n-hexane": [
+    {
+      "feature": "solv_abraham_S",
+      "mean_abs_shap": 0.5190925002098083,
+      "mean_signed_shap": -0.5190925002098083
+    },
+    {
+      "feature": "solv_abraham_B",
+      "mean_abs_shap": 0.47210443019866943,
+      "mean_signed_shap": -0.47210443019866943
+    },
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.31965112686157227,
+      "mean_signed_shap": -0.04790278524160385
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.29641014337539673,
+      "mean_signed_shap": -0.006922776345163584
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.2374207228422165,
+      "mean_signed_shap": 0.1582292765378952
+    }
+  ],
+  "2-butanone": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.32079407572746277,
+      "mean_signed_shap": 0.044522810727357864
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.23651078343391418,
+      "mean_signed_shap": 0.07285895943641663
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.19215501844882965,
+      "mean_signed_shap": -0.13181856274604797
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.1899726837873459,
+      "mean_signed_shap": 0.025631574913859367
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.1546112447977066,
+      "mean_signed_shap": 0.08786274492740631
+    }
+  ],
+  "cyclohexane": [
+    {
+      "feature": "solv_abraham_B",
+      "mean_abs_shap": 0.4651819169521332,
+      "mean_signed_shap": -0.4651819169521332
+    },
+    {
+      "feature": "solv_abraham_S",
+      "mean_abs_shap": 0.3935212790966034,
+      "mean_signed_shap": -0.3935212790966034
+    },
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.3225923478603363,
+      "mean_signed_shap": 0.11692062765359879
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.31080570816993713,
+      "mean_signed_shap": 0.2223721295595169
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.27863743901252747,
+      "mean_signed_shap": 0.23983286321163177
+    }
+  ],
+  "n-butyl acetate": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.2801244854927063,
+      "mean_signed_shap": -0.04804479703307152
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.20097514986991882,
+      "mean_signed_shap": -0.0035580939147621393
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.18624188005924225,
+      "mean_signed_shap": 0.1291341632604599
+    },
+    {
+      "feature": "solv_abraham_E",
+      "mean_abs_shap": 0.13337306678295135,
+      "mean_signed_shap": -0.13337306678295135
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.13187317550182343,
+      "mean_signed_shap": 0.08309979736804962
+    }
+  ],
+  "sec-butanol": [
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.2726407051086426,
+      "mean_signed_shap": -0.006730139255523682
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.26458919048309326,
+      "mean_signed_shap": -0.06432247906923294
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.24577201902866364,
+      "mean_signed_shap": -0.20230942964553833
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.23771026730537415,
+      "mean_signed_shap": -0.14920414984226227
+    },
+    {
+      "feature": "solute_pred_Tm",
+      "mean_abs_shap": 0.17225368320941925,
+      "mean_signed_shap": 0.03531259670853615
+    }
+  ],
+  "ethylene glycol": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.30015119910240173,
+      "mean_signed_shap": 0.022980792447924614
+    },
+    {
+      "feature": "solv_abraham_A",
+      "mean_abs_shap": 0.2254122495651245,
+      "mean_signed_shap": -0.2254122495651245
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.19805669784545898,
+      "mean_signed_shap": -0.1548442542552948
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.1640239804983139,
+      "mean_signed_shap": -0.0003882520832121372
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.16352465748786926,
+      "mean_signed_shap": -0.005383697338402271
+    }
+  ],
+  "n-propyl acetate": [
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.24474097788333893,
+      "mean_signed_shap": 0.10808397829532623
+    },
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.18924929201602936,
+      "mean_signed_shap": -0.005360134411603212
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.13579398393630981,
+      "mean_signed_shap": 0.08101385086774826
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.12376636266708374,
+      "mean_signed_shap": -0.03363204002380371
+    },
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.10277116298675537,
+      "mean_signed_shap": 0.014904477633535862
+    }
+  ],
+  "n-octanol": [
+    {
+      "feature": "solute_abraham_B",
+      "mean_abs_shap": 0.3042340874671936,
+      "mean_signed_shap": 0.16547124087810516
+    },
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.2821493446826935,
+      "mean_signed_shap": 0.03404034674167633
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.27741143107414246,
+      "mean_signed_shap": -0.009412609972059727
+    },
+    {
+      "feature": "solv_abraham_V",
+      "mean_abs_shap": 0.19939956068992615,
+      "mean_signed_shap": -0.19939956068992615
+    },
+    {
+      "feature": "solv_abraham_E",
+      "mean_abs_shap": 0.12957528233528137,
+      "mean_signed_shap": -0.12608033418655396
+    }
+  ],
+  "chloroform": [
+    {
+      "feature": "solute_abraham_A",
+      "mean_abs_shap": 0.3149709105491638,
+      "mean_signed_shap": 0.03272532671689987
+    },
+    {
+      "feature": "solute_abraham_S",
+      "mean_abs_shap": 0.30257096886634827,
+      "mean_signed_shap": -0.10345403850078583
+    },
+    {
+      "feature": "solv_abraham_B",
+      "mean_abs_shap": 0.2899521589279175,
+      "mean_signed_shap": -0.2899521589279175
+    },
+    {
+      "feature": "solute_abraham_E",
+      "mean_abs_shap": 0.2679143249988556,
+      "mean_signed_shap": -0.06204676255583763
+    },
+    {
+      "feature": "solute_abraham_V",
+      "mean_abs_shap": 0.2300073653459549,
+      "mean_signed_shap": -0.21184618771076202
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "policy": {
+    "thresholds_pair_MAE": {
+      "gold": 0.1,
+      "silver": 0.2,
+      "bronze": 0.5
+    },
+    "sigma_floor_logS": 0.012,
+    "HoS_threshold_logS": 0.6,
+    "BAD_FIT_R2_min": 0.8,
+    "BAD_FIT_RMSE_max": 0.3,
+    "extrapolation_allowed": false,
+    "consensus_from": "non-HoS groups' Apelblat/vanthoff fits at measured reference Ts",
+    "sigma_from": "std across fit evaluations at each T (NaN if n<2, floored to 0.012)",
+    "nesting": "Gold \u2282 Silver \u2282 Bronze"
+  },
+  "tier_eligible_pairs": 481,
+  "per_tier": {
+    "gold": {
+      "n_rows": 4507,
+      "n_pairs": 335,
+      "n_solutes": 129,
+      "n_solvents": 26,
+      "n_rows_sigma_defined": 3449,
+      "sigma_coverage_frac": 0.7652540492567118,
+      "sigma_stats": {
+        "median": 0.018615182048115225,
+        "mean": 0.028450182226609437,
+        "P90": 0.05896189234255086,
+        "P95": 0.07797521468489219
+      }
+    },
+    "silver": {
+      "n_rows": 5475,
+      "n_pairs": 400,
+      "n_solutes": 141,
+      "n_solvents": 27,
+      "n_rows_sigma_defined": 4212,
+      "sigma_coverage_frac": 0.7693150684931507,
+      "sigma_stats": {
+        "median": 0.02367987535196084,
+        "mean": 0.04213283486647473,
+        "P90": 0.10409589699506605,
+        "P95": 0.12972309336932658
+      }
+    },
+    "bronze": {
+      "n_rows": 6331,
+      "n_pairs": 469,
+      "n_solutes": 148,
+      "n_solvents": 30,
+      "n_rows_sigma_defined": 4881,
+      "sigma_coverage_frac": 0.7709682514610646,
+      "sigma_stats": {
+        "median": 0.031117632007540186,
+        "mean": 0.0662033913208183,
+        "P90": 0.1803363324642545,
+        "P95": 0.24498061427435064
+      }
+    }
+  },
+  "n_contributing_groups_per_row_hist": {
+    "1": 1450,
+    "2": 4329,
+    "3": 467,
+    "4": 64,
+    "5": 13,
+    "6": 8
+  }
+}

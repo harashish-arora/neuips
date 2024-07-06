@@ -1,0 +1,646 @@
+{
+  "gnn_type": "GAT",
+  "n_trials_phase_a": 24,
+  "n_trials_phase_b": 6,
+  "n_trials_total": 30,
+  "trials": [
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 0,
+      "method_name": "hpo_gat_trial_000",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 64,
+        "hidden_dim": 48,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.5208880305290222,
+      "best_epoch": 30,
+      "train_time_s": 463.54868817329407,
+      "elapsed_wall_s": 463.54868817329407,
+      "eval_rmse": 0.7217257697757603,
+      "test_hard_ps_rmse": 0.9873976652398908
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 1,
+      "method_name": "hpo_gat_trial_001",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 64,
+        "hidden_dim": 48,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.3225920498371124,
+      "best_epoch": 67,
+      "train_time_s": 1717.5268456935883,
+      "elapsed_wall_s": 1717.5268456935883,
+      "eval_rmse": 0.5679718992816526,
+      "test_hard_ps_rmse": 0.9514304047510174
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 2,
+      "method_name": "hpo_gat_trial_002",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 64,
+        "hidden_dim": 64,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.29761621356010437,
+      "best_epoch": 70,
+      "train_time_s": 1487.2308614253998,
+      "elapsed_wall_s": 1487.2308614253998,
+      "eval_rmse": 0.5455421232922163,
+      "test_hard_ps_rmse": 1.2450561629042864
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 3,
+      "method_name": "hpo_gat_trial_003",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 64,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.280833899974823,
+      "best_epoch": 85,
+      "train_time_s": 1985.107791185379,
+      "elapsed_wall_s": 1985.107791185379,
+      "eval_rmse": 0.5299376291666152,
+      "test_hard_ps_rmse": 1.2101408992535334
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 4,
+      "method_name": "hpo_gat_trial_004",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 64,
+        "hidden_dim": 96,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.32432469725608826,
+      "best_epoch": 49,
+      "train_time_s": 1140.2951726913452,
+      "elapsed_wall_s": 1140.2951726913452,
+      "eval_rmse": 0.5694951094556203,
+      "test_hard_ps_rmse": 1.1809669454132439
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 5,
+      "method_name": "hpo_gat_trial_005",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 64,
+        "hidden_dim": 96,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2849770188331604,
+      "best_epoch": 45,
+      "train_time_s": 1257.6421434879303,
+      "elapsed_wall_s": 1257.6421434879303,
+      "eval_rmse": 0.5338323621111777,
+      "test_hard_ps_rmse": 1.0288695635944962
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 6,
+      "method_name": "hpo_gat_trial_006",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dim": 48,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.380387544631958,
+      "best_epoch": 96,
+      "train_time_s": 942.6270694732666,
+      "elapsed_wall_s": 942.6270694732666,
+      "eval_rmse": 0.6167556965734974,
+      "test_hard_ps_rmse": 1.109327486608945
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 7,
+      "method_name": "hpo_gat_trial_007",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dim": 48,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.32565537095069885,
+      "best_epoch": 90,
+      "train_time_s": 1124.423413515091,
+      "elapsed_wall_s": 1124.423413515091,
+      "eval_rmse": 0.5706621977909051,
+      "test_hard_ps_rmse": 1.0865128620398907
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 8,
+      "method_name": "hpo_gat_trial_008",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.30405643582344055,
+      "best_epoch": 80,
+      "train_time_s": 944.604912519455,
+      "elapsed_wall_s": 944.604912519455,
+      "eval_rmse": 0.5514131347802809,
+      "test_hard_ps_rmse": 1.0995620713973988
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 9,
+      "method_name": "hpo_gat_trial_009",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.29559358954429626,
+      "best_epoch": 96,
+      "train_time_s": 1124.7642214298248,
+      "elapsed_wall_s": 1124.7642214298248,
+      "eval_rmse": 0.5436851812892065,
+      "test_hard_ps_rmse": 1.034548476709455
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 10,
+      "method_name": "hpo_gat_trial_010",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dim": 96,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.28256574273109436,
+      "best_epoch": 88,
+      "train_time_s": 947.5194730758667,
+      "elapsed_wall_s": 947.5194730758667,
+      "eval_rmse": 0.5315691465899969,
+      "test_hard_ps_rmse": 1.0545475662932455
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 11,
+      "method_name": "hpo_gat_trial_011",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dim": 96,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.269172340631485,
+      "best_epoch": 98,
+      "train_time_s": 1120.9467005729675,
+      "elapsed_wall_s": 1120.9467005729675,
+      "eval_rmse": 0.5188182242593332,
+      "test_hard_ps_rmse": 1.112078235469245
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 12,
+      "method_name": "hpo_gat_trial_012",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 48,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.3086376190185547,
+      "best_epoch": 62,
+      "train_time_s": 1342.5419042110443,
+      "elapsed_wall_s": 1342.5419042110443,
+      "eval_rmse": 0.5555516116721003,
+      "test_hard_ps_rmse": 0.9893707319923413
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 13,
+      "method_name": "hpo_gat_trial_013",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 48,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.28188925981521606,
+      "best_epoch": 70,
+      "train_time_s": 1784.7844347953796,
+      "elapsed_wall_s": 1784.7844347953796,
+      "eval_rmse": 0.5309324706212344,
+      "test_hard_ps_rmse": 1.0524393161998247
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 14,
+      "method_name": "hpo_gat_trial_014",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 64,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.3287946879863739,
+      "best_epoch": 75,
+      "train_time_s": 1525.9803087711334,
+      "elapsed_wall_s": 1525.9803087711334,
+      "eval_rmse": 0.5734061860973961,
+      "test_hard_ps_rmse": 1.1032750626009276
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 15,
+      "method_name": "hpo_gat_trial_015",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2925510108470917,
+      "best_epoch": 32,
+      "train_time_s": 1012.7598268985748,
+      "elapsed_wall_s": 1012.7598268985748,
+      "eval_rmse": 0.540879836121786,
+      "test_hard_ps_rmse": 0.9920054924533306
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 16,
+      "method_name": "hpo_gat_trial_016",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 96,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.31099221110343933,
+      "best_epoch": 68,
+      "train_time_s": 1367.4267127513885,
+      "elapsed_wall_s": 1367.4267127513885,
+      "eval_rmse": 0.5576667388515333,
+      "test_hard_ps_rmse": 0.967020224080603
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 17,
+      "method_name": "hpo_gat_trial_017",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 96,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2687688171863556,
+      "best_epoch": 70,
+      "train_time_s": 1720.2184731960297,
+      "elapsed_wall_s": 1720.2184731960297,
+      "eval_rmse": 0.5184291627152648,
+      "test_hard_ps_rmse": 1.107084820103812
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 18,
+      "method_name": "hpo_gat_trial_018",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 48,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.3330133855342865,
+      "best_epoch": 99,
+      "train_time_s": 866.300891160965,
+      "elapsed_wall_s": 866.300891160965,
+      "eval_rmse": 0.5770731112549027,
+      "test_hard_ps_rmse": 1.3150139013753053
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 19,
+      "method_name": "hpo_gat_trial_019",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 48,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2868120074272156,
+      "best_epoch": 77,
+      "train_time_s": 1024.4344365596771,
+      "elapsed_wall_s": 1024.4344365596771,
+      "eval_rmse": 0.5355483297153525,
+      "test_hard_ps_rmse": 1.0316506568118522
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 20,
+      "method_name": "hpo_gat_trial_020",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.3486272692680359,
+      "best_epoch": 69,
+      "train_time_s": 793.3079288005829,
+      "elapsed_wall_s": 793.3079288005829,
+      "eval_rmse": 0.5904466875551551,
+      "test_hard_ps_rmse": 1.049945965432305
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 21,
+      "method_name": "hpo_gat_trial_021",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.26171568036079407,
+      "best_epoch": 99,
+      "train_time_s": 1067.4305608272552,
+      "elapsed_wall_s": 1067.4305608272552,
+      "eval_rmse": 0.5115815486679384,
+      "test_hard_ps_rmse": 0.9587429787986881
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 22,
+      "method_name": "hpo_gat_trial_022",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 96,
+        "num_layers": 3,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.32139259576797485,
+      "best_epoch": 69,
+      "train_time_s": 767.6739149093628,
+      "elapsed_wall_s": 767.6739149093628,
+      "eval_rmse": 0.5669149661264764,
+      "test_hard_ps_rmse": 1.0450461667119468
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_a",
+      "trial_idx": 23,
+      "method_name": "hpo_gat_trial_023",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 96,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2973097264766693,
+      "best_epoch": 45,
+      "train_time_s": 683.6943743228912,
+      "elapsed_wall_s": 683.6943743228912,
+      "eval_rmse": 0.5452611470646119,
+      "test_hard_ps_rmse": 1.0624827877463576
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_b",
+      "trial_idx": 24,
+      "method_name": "hpo_gat_trial_024",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 80,
+        "patience": 15
+      },
+      "best_val_loss": 0.28327539563179016,
+      "best_epoch": 72,
+      "train_time_s": 872.8076169490814,
+      "elapsed_wall_s": 872.8076169490814,
+      "eval_rmse": 0.5322362324463562,
+      "test_hard_ps_rmse": 1.0013949883484459
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_b",
+      "trial_idx": 25,
+      "method_name": "hpo_gat_trial_025",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 80,
+        "patience": 20
+      },
+      "best_val_loss": 0.317825049161911,
+      "best_epoch": 72,
+      "train_time_s": 847.0289554595947,
+      "elapsed_wall_s": 847.0289554595947,
+      "eval_rmse": 0.5637597559269436,
+      "test_hard_ps_rmse": 0.9795358021978683
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_b",
+      "trial_idx": 26,
+      "method_name": "hpo_gat_trial_026",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 15
+      },
+      "best_val_loss": 0.2860466241836548,
+      "best_epoch": 63,
+      "train_time_s": 833.3753561973572,
+      "elapsed_wall_s": 833.3753561973572,
+      "eval_rmse": 0.5348332833257736,
+      "test_hard_ps_rmse": 0.9878546775167697
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_b",
+      "trial_idx": 27,
+      "method_name": "hpo_gat_trial_027",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.30546802282333374,
+      "best_epoch": 69,
+      "train_time_s": 940.9884986877441,
+      "elapsed_wall_s": 940.9884986877441,
+      "eval_rmse": 0.5526916346455405,
+      "test_hard_ps_rmse": 0.9942812744763726
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_b",
+      "trial_idx": 28,
+      "method_name": "hpo_gat_trial_028",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 120,
+        "patience": 15
+      },
+      "best_val_loss": 0.2700406312942505,
+      "best_epoch": 49,
+      "train_time_s": 694.3276529312134,
+      "elapsed_wall_s": 694.3276529312134,
+      "eval_rmse": 0.519654346747478,
+      "test_hard_ps_rmse": 0.8265164761044996
+    },
+    {
+      "gnn_type": "GAT",
+      "hpo_phase": "grid_b",
+      "trial_idx": 29,
+      "method_name": "hpo_gat_trial_029",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 120,
+        "patience": 20
+      },
+      "best_val_loss": 0.3023397624492645,
+      "best_epoch": 63,
+      "train_time_s": 884.656646490097,
+      "elapsed_wall_s": 884.656646490097,
+      "eval_rmse": 0.5498543430004259,
+      "test_hard_ps_rmse": 0.9525529328935514
+    }
+  ],
+  "best": {
+    "best_val_loss": 0.26171568036079407,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_gat_trial_021",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gat_trial_021",
+    "grid_a_best": {
+      "best_val_loss": 0.26171568036079407,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_gat_trial_021"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.2700406312942505,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 120,
+        "patience": 15
+      },
+      "method_name": "hpo_gat_trial_028"
+    }
+  }
+}

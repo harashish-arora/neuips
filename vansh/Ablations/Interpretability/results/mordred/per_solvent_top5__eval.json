@@ -1,0 +1,677 @@
+{
+  "ethanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.1828797608613968,
+      "mean_signed_shap": 0.02214776910841465
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.12687142193317413,
+      "mean_signed_shap": 0.0031836319249123335
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.09962396323680878,
+      "mean_signed_shap": -0.0014292161213234067
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.08840607106685638,
+      "mean_signed_shap": -0.004216608125716448
+    },
+    {
+      "feature": "solute_nBase",
+      "mean_abs_shap": 0.05516428500413895,
+      "mean_signed_shap": -0.007410522550344467
+    }
+  ],
+  "methanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.16624823212623596,
+      "mean_signed_shap": 0.014355179853737354
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.13344989717006683,
+      "mean_signed_shap": 0.011732899583876133
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.09467118233442307,
+      "mean_signed_shap": -0.005719778127968311
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.08891290426254272,
+      "mean_signed_shap": -0.0056501212529838085
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.04902513325214386,
+      "mean_signed_shap": -0.0017701792530715466
+    }
+  ],
+  "ethyl acetate": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.16209551692008972,
+      "mean_signed_shap": -0.010860119946300983
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.12288904190063477,
+      "mean_signed_shap": -0.01604009047150612
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.08643681555986404,
+      "mean_signed_shap": -0.00504534924402833
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.07875517010688782,
+      "mean_signed_shap": -0.003558096010237932
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.048862356692552567,
+      "mean_signed_shap": -0.0007060141069814563
+    }
+  ],
+  "isopropanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.16457964479923248,
+      "mean_signed_shap": 0.0009903142927214503
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.12725752592086792,
+      "mean_signed_shap": 0.0064175627194345
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.09769876301288605,
+      "mean_signed_shap": -0.00798440258949995
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.09576629847288132,
+      "mean_signed_shap": -0.0015904951142147183
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.05626174435019493,
+      "mean_signed_shap": 0.0013565821573138237
+    }
+  ],
+  "n-propanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.1728920042514801,
+      "mean_signed_shap": -0.023121990263462067
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.11127589643001556,
+      "mean_signed_shap": 0.018441012129187584
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.10037265717983246,
+      "mean_signed_shap": -0.03287484496831894
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.08880429714918137,
+      "mean_signed_shap": -0.0037192583549767733
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.05276946350932121,
+      "mean_signed_shap": -0.0010090243304148316
+    }
+  ],
+  "acetonitrile": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.17401908338069916,
+      "mean_signed_shap": 0.018261181190609932
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.12323594838380814,
+      "mean_signed_shap": 0.03650755062699318
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.09177346527576447,
+      "mean_signed_shap": -0.005850976798683405
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.08022782951593399,
+      "mean_signed_shap": -0.01162413414567709
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.04860943555831909,
+      "mean_signed_shap": -0.005971801932901144
+    }
+  ],
+  "n-butanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.17901337146759033,
+      "mean_signed_shap": 0.009691738523542881
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.12014114111661911,
+      "mean_signed_shap": -0.00302526680752635
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.10247756540775299,
+      "mean_signed_shap": -0.0017769376281648874
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.09193270653486252,
+      "mean_signed_shap": -0.003962068818509579
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.0525195375084877,
+      "mean_signed_shap": -0.00034544244408607483
+    }
+  ],
+  "acetone": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.14826424419879913,
+      "mean_signed_shap": 2.0002456949441694e-05
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.1338372677564621,
+      "mean_signed_shap": -0.010704108513891697
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.08335407078266144,
+      "mean_signed_shap": -0.013363059610128403
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.07470065355300903,
+      "mean_signed_shap": -0.003581688739359379
+    },
+    {
+      "feature": "solute_nBase",
+      "mean_abs_shap": 0.05446472764015198,
+      "mean_signed_shap": 0.010435458272695541
+    }
+  ],
+  "water": [
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.1857779324054718,
+      "mean_signed_shap": -0.05251863971352577
+    },
+    {
+      "feature": "solv_ETA_epsilon_5",
+      "mean_abs_shap": 0.174760639667511,
+      "mean_signed_shap": -0.174760639667511
+    },
+    {
+      "feature": "solv_GATS1Z",
+      "mean_abs_shap": 0.13840007781982422,
+      "mean_signed_shap": -0.13840007781982422
+    },
+    {
+      "feature": "solv_GATS1are",
+      "mean_abs_shap": 0.13162951171398163,
+      "mean_signed_shap": -0.13162951171398163
+    },
+    {
+      "feature": "solv_GATS1se",
+      "mean_abs_shap": 0.084243044257164,
+      "mean_signed_shap": -0.084243044257164
+    }
+  ],
+  "DMF": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.1266733855009079,
+      "mean_signed_shap": -0.02342897281050682
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.12436407804489136,
+      "mean_signed_shap": -0.024501457810401917
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.09058179706335068,
+      "mean_signed_shap": 0.024153072386980057
+    },
+    {
+      "feature": "solv_ATSC4d",
+      "mean_abs_shap": 0.07435769587755203,
+      "mean_signed_shap": 0.07435769587755203
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.06708747893571854,
+      "mean_signed_shap": -0.0234456155449152
+    }
+  ],
+  "toluene": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.16905656456947327,
+      "mean_signed_shap": -0.02713402546942234
+    },
+    {
+      "feature": "solv_ETA_epsilon_5",
+      "mean_abs_shap": 0.15104633569717407,
+      "mean_signed_shap": -0.15104633569717407
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.0956975519657135,
+      "mean_signed_shap": -0.016937438398599625
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.07919266819953918,
+      "mean_signed_shap": 0.0004007610841654241
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.062280766665935516,
+      "mean_signed_shap": -0.004257870838046074
+    }
+  ],
+  "isobutanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.17411652207374573,
+      "mean_signed_shap": 0.07574999332427979
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.11224789917469025,
+      "mean_signed_shap": 0.020644033327698708
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.10369417816400528,
+      "mean_signed_shap": 0.06060969829559326
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.08666277676820755,
+      "mean_signed_shap": -0.010441956110298634
+    },
+    {
+      "feature": "solute_nBase",
+      "mean_abs_shap": 0.054848335683345795,
+      "mean_signed_shap": -0.003868195926770568
+    }
+  ],
+  "1,4-dioxane": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.16940809786319733,
+      "mean_signed_shap": 0.017633819952607155
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.10738754272460938,
+      "mean_signed_shap": 0.011401848867535591
+    },
+    {
+      "feature": "solute_nBase",
+      "mean_abs_shap": 0.08440472930669785,
+      "mean_signed_shap": -0.03784204646945
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.08190653473138809,
+      "mean_signed_shap": -0.012235204689204693
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.07373683154582977,
+      "mean_signed_shap": 0.02836846001446247
+    }
+  ],
+  "methyl acetate": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.15331384539604187,
+      "mean_signed_shap": 0.024264108389616013
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.12709195911884308,
+      "mean_signed_shap": -0.018535157665610313
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.09677651524543762,
+      "mean_signed_shap": 0.0008676174329593778
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.07705298811197281,
+      "mean_signed_shap": 0.00016771919035818428
+    },
+    {
+      "feature": "solute_nBase",
+      "mean_abs_shap": 0.05292100831866264,
+      "mean_signed_shap": -0.0016456611920148134
+    }
+  ],
+  "THF": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.14706513285636902,
+      "mean_signed_shap": 0.07609638571739197
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.1310274749994278,
+      "mean_signed_shap": 4.8058918764581904e-05
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.08511671423912048,
+      "mean_signed_shap": 0.04361094534397125
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.0773015022277832,
+      "mean_signed_shap": 0.009601349011063576
+    },
+    {
+      "feature": "solv_ATSC4d",
+      "mean_abs_shap": 0.0688055008649826,
+      "mean_signed_shap": 0.0688055008649826
+    }
+  ],
+  "n-pentanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.1565530151128769,
+      "mean_signed_shap": -0.01218069065362215
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.10409262776374817,
+      "mean_signed_shap": 0.0046162595972418785
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.09350087493658066,
+      "mean_signed_shap": 0.02227679081261158
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.08976232260465622,
+      "mean_signed_shap": -0.010224747471511364
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.056263551115989685,
+      "mean_signed_shap": 0.013153765350580215
+    }
+  ],
+  "n-hexane": [
+    {
+      "feature": "solv_ETA_epsilon_5",
+      "mean_abs_shap": 0.1854797899723053,
+      "mean_signed_shap": -0.1854797899723053
+    },
+    {
+      "feature": "solv_GATS1are",
+      "mean_abs_shap": 0.15321166813373566,
+      "mean_signed_shap": -0.15321166813373566
+    },
+    {
+      "feature": "solv_AATS0dv",
+      "mean_abs_shap": 0.1335250735282898,
+      "mean_signed_shap": -0.1335250735282898
+    },
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.12384085357189178,
+      "mean_signed_shap": 0.06731916218996048
+    },
+    {
+      "feature": "solv_GATS1se",
+      "mean_abs_shap": 0.10540490597486496,
+      "mean_signed_shap": -0.10540490597486496
+    }
+  ],
+  "2-butanone": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.15456685423851013,
+      "mean_signed_shap": 0.05018937215209007
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.1226067915558815,
+      "mean_signed_shap": 0.026352547109127045
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.09742869436740875,
+      "mean_signed_shap": 0.022517278790473938
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.06771686673164368,
+      "mean_signed_shap": -0.012254875153303146
+    },
+    {
+      "feature": "T_log",
+      "mean_abs_shap": 0.036993358284235,
+      "mean_signed_shap": -0.0093918452039361
+    }
+  ],
+  "cyclohexane": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.18981043994426727,
+      "mean_signed_shap": 0.16281355917453766
+    },
+    {
+      "feature": "solv_GATS1are",
+      "mean_abs_shap": 0.17787222564220428,
+      "mean_signed_shap": -0.17787222564220428
+    },
+    {
+      "feature": "solv_ETA_epsilon_5",
+      "mean_abs_shap": 0.1634550392627716,
+      "mean_signed_shap": -0.1634550392627716
+    },
+    {
+      "feature": "solv_GATS1se",
+      "mean_abs_shap": 0.1375412791967392,
+      "mean_signed_shap": -0.1375412791967392
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.1265849471092224,
+      "mean_signed_shap": 0.022817479446530342
+    }
+  ],
+  "n-butyl acetate": [
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.11711623519659042,
+      "mean_signed_shap": -0.025430532172322273
+    },
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.1125553622841835,
+      "mean_signed_shap": 0.0012228143168613315
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.07464002817869186,
+      "mean_signed_shap": -0.006242288276553154
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.07304710149765015,
+      "mean_signed_shap": -0.006436881609261036
+    },
+    {
+      "feature": "solute_MIC2",
+      "mean_abs_shap": 0.05206283926963806,
+      "mean_signed_shap": 0.04013657569885254
+    }
+  ],
+  "sec-butanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.20105932652950287,
+      "mean_signed_shap": -0.13430199027061462
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.12561921775341034,
+      "mean_signed_shap": -0.07871789485216141
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.08212996274232864,
+      "mean_signed_shap": -0.008532785810530186
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.0729931890964508,
+      "mean_signed_shap": 0.011257365345954895
+    },
+    {
+      "feature": "solute_nBase",
+      "mean_abs_shap": 0.06582403182983398,
+      "mean_signed_shap": -0.034594111144542694
+    }
+  ],
+  "ethylene glycol": [
+    {
+      "feature": "solv_GATS1are",
+      "mean_abs_shap": 0.15658380091190338,
+      "mean_signed_shap": -0.15658380091190338
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.11112756282091141,
+      "mean_signed_shap": 0.009956704452633858
+    },
+    {
+      "feature": "solv_GATS1se",
+      "mean_abs_shap": 0.10665661096572876,
+      "mean_signed_shap": -0.10665661096572876
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.08013401925563812,
+      "mean_signed_shap": 0.0017124409787356853
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.062281571328639984,
+      "mean_signed_shap": 0.009036367759108543
+    }
+  ],
+  "n-propyl acetate": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.18010780215263367,
+      "mean_signed_shap": 0.09803586453199387
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.10337793081998825,
+      "mean_signed_shap": 0.033204320818185806
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.09676466882228851,
+      "mean_signed_shap": 0.03229314833879471
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.07563343644142151,
+      "mean_signed_shap": -0.007687701843678951
+    },
+    {
+      "feature": "solute_nBase",
+      "mean_abs_shap": 0.06580731272697449,
+      "mean_signed_shap": -0.017712252214550972
+    }
+  ],
+  "n-octanol": [
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.2474447786808014,
+      "mean_signed_shap": 0.05612999573349953
+    },
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.20883256196975708,
+      "mean_signed_shap": -0.03431994095444679
+    },
+    {
+      "feature": "solv_GATS1Z",
+      "mean_abs_shap": 0.12628516554832458,
+      "mean_signed_shap": -0.12628516554832458
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.11923196166753769,
+      "mean_signed_shap": 0.05699652060866356
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.06931855529546738,
+      "mean_signed_shap": 0.032443150877952576
+    }
+  ],
+  "chloroform": [
+    {
+      "feature": "solute_BertzCT",
+      "mean_abs_shap": 0.15611757338047028,
+      "mean_signed_shap": -0.02249528281390667
+    },
+    {
+      "feature": "solute_TopoPSA(NO)",
+      "mean_abs_shap": 0.1508118063211441,
+      "mean_signed_shap": 0.022595828399062157
+    },
+    {
+      "feature": "solute_TopoPSA",
+      "mean_abs_shap": 0.07139264792203903,
+      "mean_signed_shap": 0.002916403580456972
+    },
+    {
+      "feature": "T_norm",
+      "mean_abs_shap": 0.06399387866258621,
+      "mean_signed_shap": -0.007630711421370506
+    },
+    {
+      "feature": "solute_ZMIC1",
+      "mean_abs_shap": 0.06311517208814621,
+      "mean_signed_shap": -0.057018328458070755
+    }
+  ]
+}

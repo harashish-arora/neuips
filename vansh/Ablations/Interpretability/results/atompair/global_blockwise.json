@@ -1,0 +1,36 @@
+{
+  "eval": {
+    "solute": {
+      "sum_mean_abs": 2.450237274169922,
+      "n_features": 1024,
+      "share": 0.7283974885940552
+    },
+    "solvent": {
+      "sum_mean_abs": 0.7255090475082397,
+      "n_features": 1024,
+      "share": 0.21567665040493011
+    },
+    "T": {
+      "sum_mean_abs": 0.1881277710199356,
+      "n_features": 4,
+      "share": 0.05592592805624008
+    }
+  },
+  "ood": {
+    "solute": {
+      "sum_mean_abs": 2.434567451477051,
+      "n_features": 1024,
+      "share": 0.6941962242126465
+    },
+    "solvent": {
+      "sum_mean_abs": 0.8668836355209351,
+      "n_features": 1024,
+      "share": 0.24718450009822845
+    },
+    "T": {
+      "sum_mean_abs": 0.2055796980857849,
+      "n_features": 4,
+      "share": 0.05861930176615715
+    }
+  }
+}

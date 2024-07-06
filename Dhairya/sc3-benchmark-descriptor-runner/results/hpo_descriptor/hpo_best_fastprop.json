@@ -1,0 +1,706 @@
+{
+  "model_type": "fastprop",
+  "n_trials_phase_a": 24,
+  "n_trials_phase_b": 3,
+  "n_trials_total": 27,
+  "trials": [
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 0,
+      "method_name": "hpo_fastprop_trial_000",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.22222870588302612,
+      "best_epoch": 93,
+      "train_time_s": 97.89630770683289,
+      "elapsed_wall_s": 97.89630770683289,
+      "eval_rmse": 0.4714113914309152,
+      "test_hard_ps_rmse": 0.83934090499736
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 1,
+      "method_name": "hpo_fastprop_trial_001",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21037782728672028,
+      "best_epoch": 40,
+      "train_time_s": 58.10946011543274,
+      "elapsed_wall_s": 58.10946011543274,
+      "eval_rmse": 0.4586696075142509,
+      "test_hard_ps_rmse": 0.7263245992742997
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 2,
+      "method_name": "hpo_fastprop_trial_002",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2116011679172516,
+      "best_epoch": 33,
+      "train_time_s": 64.35702443122864,
+      "elapsed_wall_s": 64.35702443122864,
+      "eval_rmse": 0.4600012693480222,
+      "test_hard_ps_rmse": 0.7936454787595391
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 3,
+      "method_name": "hpo_fastprop_trial_003",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2085665911436081,
+      "best_epoch": 64,
+      "train_time_s": 101.94835591316223,
+      "elapsed_wall_s": 101.94835591316223,
+      "eval_rmse": 0.45669092557582586,
+      "test_hard_ps_rmse": 0.7292730624194755
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 4,
+      "method_name": "hpo_fastprop_trial_004",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21180608868598938,
+      "best_epoch": 57,
+      "train_time_s": 113.39143991470337,
+      "elapsed_wall_s": 113.39143991470337,
+      "eval_rmse": 0.4602239591266295,
+      "test_hard_ps_rmse": 0.7613613397014489
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 5,
+      "method_name": "hpo_fastprop_trial_005",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21414075791835785,
+      "best_epoch": 20,
+      "train_time_s": 59.18205714225769,
+      "elapsed_wall_s": 59.18205714225769,
+      "eval_rmse": 0.4627534547692032,
+      "test_hard_ps_rmse": 0.7465944417905165
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 6,
+      "method_name": "hpo_fastprop_trial_006",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21324928104877472,
+      "best_epoch": 72,
+      "train_time_s": 45.29521608352661,
+      "elapsed_wall_s": 45.29521608352661,
+      "eval_rmse": 0.4617892204075126,
+      "test_hard_ps_rmse": 0.7244543859399302
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 7,
+      "method_name": "hpo_fastprop_trial_007",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21141484379768372,
+      "best_epoch": 79,
+      "train_time_s": 48.824185609817505,
+      "elapsed_wall_s": 48.824185609817505,
+      "eval_rmse": 0.4597987250541558,
+      "test_hard_ps_rmse": 0.7214365868239365
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 8,
+      "method_name": "hpo_fastprop_trial_008",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2177048921585083,
+      "best_epoch": 47,
+      "train_time_s": 41.41105842590332,
+      "elapsed_wall_s": 41.41105842590332,
+      "eval_rmse": 0.46658857827811995,
+      "test_hard_ps_rmse": 0.7365225731826412
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 9,
+      "method_name": "hpo_fastprop_trial_009",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2060876190662384,
+      "best_epoch": 78,
+      "train_time_s": 59.68144726753235,
+      "elapsed_wall_s": 59.68144726753235,
+      "eval_rmse": 0.45396874957395195,
+      "test_hard_ps_rmse": 0.752789764240509
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 10,
+      "method_name": "hpo_fastprop_trial_010",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21327777206897736,
+      "best_epoch": 53,
+      "train_time_s": 53.79757475852966,
+      "elapsed_wall_s": 53.79757475852966,
+      "eval_rmse": 0.46182006550845084,
+      "test_hard_ps_rmse": 0.8002969644504705
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 11,
+      "method_name": "hpo_fastprop_trial_011",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21104870736598969,
+      "best_epoch": 57,
+      "train_time_s": 56.62675595283508,
+      "elapsed_wall_s": 56.62675595283508,
+      "eval_rmse": 0.45940038139905925,
+      "test_hard_ps_rmse": 0.7934780044446537
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 12,
+      "method_name": "hpo_fastprop_trial_012",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21455320715904236,
+      "best_epoch": 92,
+      "train_time_s": 87.81111431121826,
+      "elapsed_wall_s": 87.81111431121826,
+      "eval_rmse": 0.46319889591720326,
+      "test_hard_ps_rmse": 0.8077868566355767
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 13,
+      "method_name": "hpo_fastprop_trial_013",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21097257733345032,
+      "best_epoch": 39,
+      "train_time_s": 57.24209952354431,
+      "elapsed_wall_s": 57.24209952354431,
+      "eval_rmse": 0.45931752622380567,
+      "test_hard_ps_rmse": 0.7625354967474003
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 14,
+      "method_name": "hpo_fastprop_trial_014",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.209455668926239,
+      "best_epoch": 41,
+      "train_time_s": 72.63942265510559,
+      "elapsed_wall_s": 72.63942265510559,
+      "eval_rmse": 0.4576632681534157,
+      "test_hard_ps_rmse": 0.7692443009878217
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 15,
+      "method_name": "hpo_fastprop_trial_015",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2165030688047409,
+      "best_epoch": 25,
+      "train_time_s": 54.44720911979675,
+      "elapsed_wall_s": 54.44720911979675,
+      "eval_rmse": 0.46529890756407327,
+      "test_hard_ps_rmse": 0.7850711504509296
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 16,
+      "method_name": "hpo_fastprop_trial_016",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21461647748947144,
+      "best_epoch": 53,
+      "train_time_s": 107.24716401100159,
+      "elapsed_wall_s": 107.24716401100159,
+      "eval_rmse": 0.4632671716989874,
+      "test_hard_ps_rmse": 0.8481158046111212
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 17,
+      "method_name": "hpo_fastprop_trial_017",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2196192890405655,
+      "best_epoch": 41,
+      "train_time_s": 89.08991980552673,
+      "elapsed_wall_s": 89.08991980552673,
+      "eval_rmse": 0.46863557101371983,
+      "test_hard_ps_rmse": 0.854446052325026
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 18,
+      "method_name": "hpo_fastprop_trial_018",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2113225758075714,
+      "best_epoch": 73,
+      "train_time_s": 45.40258526802063,
+      "elapsed_wall_s": 45.40258526802063,
+      "eval_rmse": 0.45969835138692156,
+      "test_hard_ps_rmse": 0.7678683873528127
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 19,
+      "method_name": "hpo_fastprop_trial_019",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21342012286186218,
+      "best_epoch": 88,
+      "train_time_s": 49.008315563201904,
+      "elapsed_wall_s": 49.008315563201904,
+      "eval_rmse": 0.46197415324901653,
+      "test_hard_ps_rmse": 0.7476646281172178
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 20,
+      "method_name": "hpo_fastprop_trial_020",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.20724676549434662,
+      "best_epoch": 56,
+      "train_time_s": 46.8091082572937,
+      "elapsed_wall_s": 46.8091082572937,
+      "eval_rmse": 0.4552436207685294,
+      "test_hard_ps_rmse": 0.7803266766468172
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 21,
+      "method_name": "hpo_fastprop_trial_021",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.21069025993347168,
+      "best_epoch": 50,
+      "train_time_s": 43.69040632247925,
+      "elapsed_wall_s": 43.69040632247925,
+      "eval_rmse": 0.4590100774001761,
+      "test_hard_ps_rmse": 0.7847296739736443
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 22,
+      "method_name": "hpo_fastprop_trial_022",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2104702591896057,
+      "best_epoch": 46,
+      "train_time_s": 49.95714068412781,
+      "elapsed_wall_s": 49.95714068412781,
+      "eval_rmse": 0.45877037304511165,
+      "test_hard_ps_rmse": 0.8181555303876625
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_a",
+      "trial_idx": 23,
+      "method_name": "hpo_fastprop_trial_023",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.22341981530189514,
+      "best_epoch": 15,
+      "train_time_s": 26.38059139251709,
+      "elapsed_wall_s": 26.38059139251709,
+      "eval_rmse": 0.4726730509936776,
+      "test_hard_ps_rmse": 0.8574121819040585
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_b",
+      "trial_idx": 24,
+      "method_name": "hpo_fastprop_trial_024",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.2060876190662384,
+      "best_epoch": 78,
+      "train_time_s": 61.00491642951965,
+      "elapsed_wall_s": 61.00491642951965,
+      "eval_rmse": 0.45396874957395195,
+      "test_hard_ps_rmse": 0.752789764240509
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_b",
+      "trial_idx": 25,
+      "method_name": "hpo_fastprop_trial_025",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 150,
+        "patience": 20
+      },
+      "best_val_loss": 0.2060876190662384,
+      "best_epoch": 78,
+      "train_time_s": 60.88758111000061,
+      "elapsed_wall_s": 60.88758111000061,
+      "eval_rmse": 0.45396874957395195,
+      "test_hard_ps_rmse": 0.752789764240509
+    },
+    {
+      "model_type": "fastprop",
+      "hpo_phase": "grid_b",
+      "trial_idx": 26,
+      "method_name": "hpo_fastprop_trial_026",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 200,
+        "patience": 20
+      },
+      "best_val_loss": 0.2060876190662384,
+      "best_epoch": 78,
+      "train_time_s": 61.14210224151611,
+      "elapsed_wall_s": 61.14210224151611,
+      "eval_rmse": 0.45396874957395195,
+      "test_hard_ps_rmse": 0.752789764240509
+    }
+  ],
+  "best": {
+    "best_val_loss": 0.2060876190662384,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_fastprop_trial_009",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_fastprop_trial_009",
+    "grid_a_best": {
+      "best_val_loss": 0.2060876190662384,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastprop_trial_009"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.2060876190662384,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastprop_trial_024"
+    }
+  }
+}

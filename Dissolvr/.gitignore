@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ML/DL artifacts
+*.joblib
+*.pth
+*.pt
+*.p
+*.ckpt
+catboost_info/
+lightning_logs/
+wandb/
+runs/
+
+# Data files
+*.csv
+*.parquet
+*.numbers
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+
+# Results and outputs
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.log
+*.out
+
+# Logs
+*.tmp
+*.temp
+.cache/
+
+# API keys
+*.env
+secrets.json
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Generated outputs
+survey/
+arxiv/
+*_results/
+*_explanations/
+enhanced_explanations/
+cgboost_explanations/
+form_explanations/
+threshold_analysis/
+feature_store/
+model/
+
+# Allow figures directory
+!figures/
+!figures/**

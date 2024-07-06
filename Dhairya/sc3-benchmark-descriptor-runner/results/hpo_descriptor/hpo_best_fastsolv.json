@@ -1,0 +1,706 @@
+{
+  "model_type": "fastsolv",
+  "n_trials_phase_a": 24,
+  "n_trials_phase_b": 3,
+  "n_trials_total": 27,
+  "trials": [
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 0,
+      "method_name": "hpo_fastsolv_trial_000",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.16777698695659637,
+      "best_epoch": 100,
+      "train_time_s": 324.02829003334045,
+      "elapsed_wall_s": 324.02829003334045,
+      "eval_rmse": 0.5016981457533743,
+      "test_hard_ps_rmse": 0.8885757721542006
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 1,
+      "method_name": "hpo_fastsolv_trial_001",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.1629837602376938,
+      "best_epoch": 91,
+      "train_time_s": 324.5578978061676,
+      "elapsed_wall_s": 324.5578978061676,
+      "eval_rmse": 0.49447971525463513,
+      "test_hard_ps_rmse": 0.8158398345148539
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 2,
+      "method_name": "hpo_fastsolv_trial_002",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.14902451634407043,
+      "best_epoch": 41,
+      "train_time_s": 234.48324632644653,
+      "elapsed_wall_s": 234.48324632644653,
+      "eval_rmse": 0.47283015459717975,
+      "test_hard_ps_rmse": 0.7907671054448646
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 3,
+      "method_name": "hpo_fastsolv_trial_003",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15010415017604828,
+      "best_epoch": 50,
+      "train_time_s": 269.0426604747772,
+      "elapsed_wall_s": 269.0426604747772,
+      "eval_rmse": 0.4745398070632032,
+      "test_hard_ps_rmse": 0.7630835152212897
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 4,
+      "method_name": "hpo_fastsolv_trial_004",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15308865904808044,
+      "best_epoch": 40,
+      "train_time_s": 264.7949151992798,
+      "elapsed_wall_s": 264.7949151992798,
+      "eval_rmse": 0.4792342025291728,
+      "test_hard_ps_rmse": 0.8301611676831027
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 5,
+      "method_name": "hpo_fastsolv_trial_005",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.1542503535747528,
+      "best_epoch": 33,
+      "train_time_s": 234.0960304737091,
+      "elapsed_wall_s": 234.0960304737091,
+      "eval_rmse": 0.48104908399973406,
+      "test_hard_ps_rmse": 0.8319091498285486
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 6,
+      "method_name": "hpo_fastsolv_trial_006",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.18469379842281342,
+      "best_epoch": 7,
+      "train_time_s": 43.57241940498352,
+      "elapsed_wall_s": 43.57241940498352,
+      "eval_rmse": 0.52638374650547,
+      "test_hard_ps_rmse": 0.7736846623187202
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 7,
+      "method_name": "hpo_fastsolv_trial_007",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.1753355711698532,
+      "best_epoch": 36,
+      "train_time_s": 90.26369023323059,
+      "elapsed_wall_s": 90.26369023323059,
+      "eval_rmse": 0.5128747387792815,
+      "test_hard_ps_rmse": 0.8104214948240477
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 8,
+      "method_name": "hpo_fastsolv_trial_008",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.14343488216400146,
+      "best_epoch": 44,
+      "train_time_s": 122.9257185459137,
+      "elapsed_wall_s": 122.9257185459137,
+      "eval_rmse": 0.4638778886933617,
+      "test_hard_ps_rmse": 0.7870739017099938
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 9,
+      "method_name": "hpo_fastsolv_trial_009",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.14946649968624115,
+      "best_epoch": 50,
+      "train_time_s": 134.76512002944946,
+      "elapsed_wall_s": 134.76512002944946,
+      "eval_rmse": 0.47353079736561193,
+      "test_hard_ps_rmse": 0.7290509387912534
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 10,
+      "method_name": "hpo_fastsolv_trial_010",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.1554107815027237,
+      "best_epoch": 98,
+      "train_time_s": 222.55106163024902,
+      "elapsed_wall_s": 222.55106163024902,
+      "eval_rmse": 0.48285515282788694,
+      "test_hard_ps_rmse": 0.8086104265471403
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 11,
+      "method_name": "hpo_fastsolv_trial_011",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.1451895534992218,
+      "best_epoch": 81,
+      "train_time_s": 221.61871600151062,
+      "elapsed_wall_s": 221.61871600151062,
+      "eval_rmse": 0.46670664876841383,
+      "test_hard_ps_rmse": 0.8300805905623428
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 12,
+      "method_name": "hpo_fastsolv_trial_012",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.176526740193367,
+      "best_epoch": 37,
+      "train_time_s": 183.8540554046631,
+      "elapsed_wall_s": 183.8540554046631,
+      "eval_rmse": 0.5146139391530036,
+      "test_hard_ps_rmse": 0.9513435741833342
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 13,
+      "method_name": "hpo_fastsolv_trial_013",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.16095109283924103,
+      "best_epoch": 58,
+      "train_time_s": 253.0828356742859,
+      "elapsed_wall_s": 253.0828356742859,
+      "eval_rmse": 0.4913865591184054,
+      "test_hard_ps_rmse": 0.7970005880628596
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 14,
+      "method_name": "hpo_fastsolv_trial_014",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15566162765026093,
+      "best_epoch": 30,
+      "train_time_s": 191.81632256507874,
+      "elapsed_wall_s": 191.81632256507874,
+      "eval_rmse": 0.48324467612564914,
+      "test_hard_ps_rmse": 0.8447501184469495
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 15,
+      "method_name": "hpo_fastsolv_trial_015",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15761563181877136,
+      "best_epoch": 26,
+      "train_time_s": 176.76505088806152,
+      "elapsed_wall_s": 176.76505088806152,
+      "eval_rmse": 0.48626828034672337,
+      "test_hard_ps_rmse": 0.7894847373788623
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 16,
+      "method_name": "hpo_fastsolv_trial_016",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15723267197608948,
+      "best_epoch": 48,
+      "train_time_s": 300.7270472049713,
+      "elapsed_wall_s": 300.7270472049713,
+      "eval_rmse": 0.4856771758649928,
+      "test_hard_ps_rmse": 0.8515443634234992
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 17,
+      "method_name": "hpo_fastsolv_trial_017",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15801146626472473,
+      "best_epoch": 77,
+      "train_time_s": 427.9557240009308,
+      "elapsed_wall_s": 427.9557240009308,
+      "eval_rmse": 0.4868784876869984,
+      "test_hard_ps_rmse": 0.8559368953406944
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 18,
+      "method_name": "hpo_fastsolv_trial_018",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.16383793950080872,
+      "best_epoch": 65,
+      "train_time_s": 138.069091796875,
+      "elapsed_wall_s": 138.069091796875,
+      "eval_rmse": 0.4957737714864396,
+      "test_hard_ps_rmse": 0.9356970757017515
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 19,
+      "method_name": "hpo_fastsolv_trial_019",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.16867132484912872,
+      "best_epoch": 70,
+      "train_time_s": 146.48682951927185,
+      "elapsed_wall_s": 146.48682951927185,
+      "eval_rmse": 0.5030335210482638,
+      "test_hard_ps_rmse": 0.8833090579015039
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 20,
+      "method_name": "hpo_fastsolv_trial_020",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15060082077980042,
+      "best_epoch": 34,
+      "train_time_s": 103.90215516090393,
+      "elapsed_wall_s": 103.90215516090393,
+      "eval_rmse": 0.47532424508240967,
+      "test_hard_ps_rmse": 0.8332423237858209
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 21,
+      "method_name": "hpo_fastsolv_trial_021",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.14893843233585358,
+      "best_epoch": 53,
+      "train_time_s": 140.31554985046387,
+      "elapsed_wall_s": 140.31554985046387,
+      "eval_rmse": 0.47269356036719384,
+      "test_hard_ps_rmse": 0.8154502320514259
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 22,
+      "method_name": "hpo_fastsolv_trial_022",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15408170223236084,
+      "best_epoch": 52,
+      "train_time_s": 160.5636591911316,
+      "elapsed_wall_s": 160.5636591911316,
+      "eval_rmse": 0.48078602313208557,
+      "test_hard_ps_rmse": 0.8444607481254868
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_a",
+      "trial_idx": 23,
+      "method_name": "hpo_fastsolv_trial_023",
+      "config": {
+        "lr": 0.001,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.15793012082576752,
+      "best_epoch": 31,
+      "train_time_s": 113.30842471122742,
+      "elapsed_wall_s": 113.30842471122742,
+      "eval_rmse": 0.48675316458847917,
+      "test_hard_ps_rmse": 0.8834326737131488
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_b",
+      "trial_idx": 24,
+      "method_name": "hpo_fastsolv_trial_024",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "best_val_loss": 0.14343488216400146,
+      "best_epoch": 44,
+      "train_time_s": 123.18293285369873,
+      "elapsed_wall_s": 123.18293285369873,
+      "eval_rmse": 0.4638778886933617,
+      "test_hard_ps_rmse": 0.7870739017099938
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_b",
+      "trial_idx": 25,
+      "method_name": "hpo_fastsolv_trial_025",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 150,
+        "patience": 20
+      },
+      "best_val_loss": 0.14343488216400146,
+      "best_epoch": 44,
+      "train_time_s": 123.08046817779541,
+      "elapsed_wall_s": 123.08046817779541,
+      "eval_rmse": 0.4638778886933617,
+      "test_hard_ps_rmse": 0.7870739017099938
+    },
+    {
+      "model_type": "fastsolv",
+      "hpo_phase": "grid_b",
+      "trial_idx": 26,
+      "method_name": "hpo_fastsolv_trial_026",
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 200,
+        "patience": 20
+      },
+      "best_val_loss": 0.14343488216400146,
+      "best_epoch": 44,
+      "train_time_s": 123.21414542198181,
+      "elapsed_wall_s": 123.21414542198181,
+      "eval_rmse": 0.4638778886933617,
+      "test_hard_ps_rmse": 0.7870739017099938
+    }
+  ],
+  "best": {
+    "best_val_loss": 0.14343488216400146,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_fastsolv_trial_008",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_fastsolv_trial_008",
+    "grid_a_best": {
+      "best_val_loss": 0.14343488216400146,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastsolv_trial_008"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.14343488216400146,
+      "config": {
+        "lr": 0.0005,
+        "batch_size": 256,
+        "hidden_dims": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.05,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_fastsolv_trial_024"
+    }
+  }
+}

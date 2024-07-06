@@ -1,0 +1,116 @@
+{
+  "GCN": {
+    "best_val_loss": 0.2909880578517914,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_gcn_trial_017",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_017",
+    "grid_a_best": {
+      "best_val_loss": 0.2909880578517914,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 96,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_gcn_trial_017"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.2913612723350525,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 64,
+        "hidden_dim": 96,
+        "num_layers": 4,
+        "epochs": 80,
+        "patience": 15
+      },
+      "method_name": "hpo_gcn_trial_024"
+    }
+  },
+  "GAT": {
+    "best_val_loss": 0.26171568036079407,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_gat_trial_021",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gat_trial_021",
+    "grid_a_best": {
+      "best_val_loss": 0.26171568036079407,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_gat_trial_021"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.2700406312942505,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 120,
+        "patience": 15
+      },
+      "method_name": "hpo_gat_trial_028"
+    }
+  },
+  "GIN": {
+    "best_val_loss": 0.25399500131607056,
+    "best_phase": "grid_a",
+    "best_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "method_name": "hpo_gin_trial_021",
+    "results_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gin_trial_021",
+    "grid_a_best": {
+      "best_val_loss": 0.25399500131607056,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 100,
+        "patience": 20
+      },
+      "method_name": "hpo_gin_trial_021"
+    },
+    "grid_b_best": {
+      "best_val_loss": 0.2661149203777313,
+      "config": {
+        "lr": 0.001,
+        "batch_size": 128,
+        "hidden_dim": 64,
+        "num_layers": 4,
+        "epochs": 80,
+        "patience": 20
+      },
+      "method_name": "hpo_gin_trial_025"
+    }
+  }
+}

@@ -1,0 +1,1970 @@
+{
+  "0": {
+    "train_time_s": 30.75897789001465,
+    "best_epoch": 23,
+    "best_val_loss": 0.22632315754890442,
+    "eval": {
+      "RMSE": 0.47573434761834776,
+      "MAE": 0.30249838041802857,
+      "R2": 0.8285976701937241,
+      "N": 6969,
+      "PS_RMSE": 0.4734027574781562,
+      "PS_R2": 0.7903950474192807,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8415698551660863,
+      "MAE": 0.622733318889736,
+      "R2": 0.4850889221828554,
+      "N": 4507,
+      "PS_RMSE": 0.8266116377974894,
+      "PS_R2": -15.30134921109487,
+      "N_solvents": 26,
+      "Z_RMSE": 48.13378383600408,
+      "f_aleatoric": 0.07190489997100609,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8082854783354559,
+      "MAE": 0.5971102466258873,
+      "R2": 0.49241808848115676,
+      "N": 5475,
+      "PS_RMSE": 0.7599743484509459,
+      "PS_R2": -7.046731677235083,
+      "N_solvents": 27,
+      "Z_RMSE": 43.89163789110846,
+      "f_aleatoric": 0.11562203228869895,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7827042895737835,
+      "MAE": 0.5786515648037607,
+      "R2": 0.505813379706415,
+      "N": 6331,
+      "PS_RMSE": 0.6983591125309395,
+      "PS_R2": -1.3377316125126282,
+      "N_solvents": 30,
+      "Z_RMSE": 40.81032478057557,
+      "f_aleatoric": 0.17557877484122106,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_000/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_000/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_000/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_000/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_000/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_000/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 0,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 30.75897789001465
+  },
+  "1": {
+    "train_time_s": 44.2071316242218,
+    "best_epoch": 42,
+    "best_val_loss": 0.22211138904094696,
+    "eval": {
+      "RMSE": 0.47128693903186647,
+      "MAE": 0.2996482464388637,
+      "R2": 0.831787404251409,
+      "N": 6969,
+      "PS_RMSE": 0.4693458866357387,
+      "PS_R2": 0.7893212953875134,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8228137499932956,
+      "MAE": 0.5817877274735305,
+      "R2": 0.5077848521314714,
+      "N": 4507,
+      "PS_RMSE": 0.8132982969882513,
+      "PS_R2": -10.962176893593904,
+      "N_solvents": 26,
+      "Z_RMSE": 45.46472652398301,
+      "f_aleatoric": 0.08060307335459553,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7944126198227891,
+      "MAE": 0.5691008550933717,
+      "R2": 0.5096921420807254,
+      "N": 5475,
+      "PS_RMSE": 0.7754855996460123,
+      "PS_R2": -7.591093032331549,
+      "N_solvents": 27,
+      "Z_RMSE": 41.505849548578766,
+      "f_aleatoric": 0.1177587844254511,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7643519345761837,
+      "MAE": 0.5482988333158466,
+      "R2": 0.5287164367058752,
+      "N": 6331,
+      "PS_RMSE": 0.7080126413426182,
+      "PS_R2": -1.649923831742916,
+      "N_solvents": 30,
+      "Z_RMSE": 38.588219784560756,
+      "f_aleatoric": 0.182339684490883,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_001/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_001/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_001/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_001/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_001/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_001/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 1,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 44.2071316242218
+  },
+  "2": {
+    "train_time_s": 50.71163845062256,
+    "best_epoch": 40,
+    "best_val_loss": 0.22382672131061554,
+    "eval": {
+      "RMSE": 0.47310329110802274,
+      "MAE": 0.29595304656595456,
+      "R2": 0.8304883142966751,
+      "N": 6969,
+      "PS_RMSE": 0.4652029491358217,
+      "PS_R2": 0.7970088508461107,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8970573035380048,
+      "MAE": 0.6227157615349809,
+      "R2": 0.4149509658821421,
+      "N": 4507,
+      "PS_RMSE": 0.843296989251551,
+      "PS_R2": -14.409259920797076,
+      "N_solvents": 26,
+      "Z_RMSE": 52.573095889395425,
+      "f_aleatoric": 0.040011597564511454,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.87542832877743,
+      "MAE": 0.6136318084799852,
+      "R2": 0.40458773469025267,
+      "N": 5475,
+      "PS_RMSE": 0.7971423833753389,
+      "PS_R2": -7.63902087602997,
+      "N_solvents": 27,
+      "Z_RMSE": 48.0855577007655,
+      "f_aleatoric": 0.08974358974358974,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8473038173261044,
+      "MAE": 0.5975241544763337,
+      "R2": 0.42087290913293474,
+      "N": 6331,
+      "PS_RMSE": 0.7476079055539288,
+      "PS_R2": -2.1687011250997643,
+      "N_solvents": 30,
+      "Z_RMSE": 44.73007286040392,
+      "f_aleatoric": 0.15140340094242982,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_002/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_002/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_002/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_002/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_002/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_002/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 2,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 50.71163845062256
+  },
+  "3": {
+    "train_time_s": 32.12101912498474,
+    "best_epoch": 18,
+    "best_val_loss": 0.21913659572601318,
+    "eval": {
+      "RMSE": 0.4681202935999258,
+      "MAE": 0.2959734459276982,
+      "R2": 0.8340402997236496,
+      "N": 6969,
+      "PS_RMSE": 0.45845145322372133,
+      "PS_R2": 0.8019705297915419,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8678968519172706,
+      "MAE": 0.6079990878981633,
+      "R2": 0.45236887955974514,
+      "N": 4507,
+      "PS_RMSE": 0.819844171877109,
+      "PS_R2": -9.90887469150985,
+      "N_solvents": 26,
+      "Z_RMSE": 51.27585503299184,
+      "f_aleatoric": 0.05914757900840823,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8489007208892977,
+      "MAE": 0.6011351073730459,
+      "R2": 0.440125884890776,
+      "N": 5475,
+      "PS_RMSE": 0.7830913416509246,
+      "PS_R2": -6.755820738961495,
+      "N_solvents": 27,
+      "Z_RMSE": 47.00795033798297,
+      "f_aleatoric": 0.09781576448243115,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8220956602319683,
+      "MAE": 0.5856681863454379,
+      "R2": 0.45481955931514473,
+      "N": 6331,
+      "PS_RMSE": 0.7138657138120466,
+      "PS_R2": -1.932445471717992,
+      "N_solvents": 30,
+      "Z_RMSE": 43.72212284103517,
+      "f_aleatoric": 0.16164720344191763,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_003/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_003/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_003/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_003/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_003/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_003/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 3,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 32.12101912498474
+  },
+  "4": {
+    "train_time_s": 104.63075709342957,
+    "best_epoch": 79,
+    "best_val_loss": 0.21768304705619812,
+    "eval": {
+      "RMSE": 0.4665651692346189,
+      "MAE": 0.2897356352795952,
+      "R2": 0.8351411248108421,
+      "N": 6969,
+      "PS_RMSE": 0.4517083359969697,
+      "PS_R2": 0.8083442770487861,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8072543510819332,
+      "MAE": 0.5845595093471486,
+      "R2": 0.5262244080616201,
+      "N": 4507,
+      "PS_RMSE": 0.8163735000568642,
+      "PS_R2": -10.968275296862291,
+      "N_solvents": 26,
+      "Z_RMSE": 47.16671802936726,
+      "f_aleatoric": 0.07480429109886924,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7872361361839098,
+      "MAE": 0.572038381854439,
+      "R2": 0.5185107153468187,
+      "N": 5475,
+      "PS_RMSE": 0.7720106292780821,
+      "PS_R2": -7.456926248339966,
+      "N_solvents": 27,
+      "Z_RMSE": 43.212394877305,
+      "f_aleatoric": 0.11657169990503324,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7659915696536266,
+      "MAE": 0.5586691998544845,
+      "R2": 0.5266923380318131,
+      "N": 6331,
+      "PS_RMSE": 0.7239224176448048,
+      "PS_R2": -1.972424284591614,
+      "N_solvents": 30,
+      "Z_RMSE": 40.19603642730862,
+      "f_aleatoric": 0.17455439459127228,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_004/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_004/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_004/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_004/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_004/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_004/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 4,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 104.63075709342957
+  },
+  "5": {
+    "train_time_s": 100.32683444023132,
+    "best_epoch": 74,
+    "best_val_loss": 0.22039134800434113,
+    "eval": {
+      "RMSE": 0.46945857475570296,
+      "MAE": 0.2849467496954939,
+      "R2": 0.8330900387851243,
+      "N": 6969,
+      "PS_RMSE": 0.4535950579101125,
+      "PS_R2": 0.8062395532906997,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8120685659664832,
+      "MAE": 0.6031306186828768,
+      "R2": 0.5205566562126732,
+      "N": 4507,
+      "PS_RMSE": 0.8367022503083734,
+      "PS_R2": -12.148893132995342,
+      "N_solvents": 26,
+      "Z_RMSE": 48.257527869967994,
+      "f_aleatoric": 0.053928674978254564,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7941727942756573,
+      "MAE": 0.5919499910898245,
+      "R2": 0.5099881358702434,
+      "N": 5475,
+      "PS_RMSE": 0.7848549269617081,
+      "PS_R2": -7.401460790835298,
+      "N_solvents": 27,
+      "Z_RMSE": 44.098939456119965,
+      "f_aleatoric": 0.09354226020892688,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7711464472166043,
+      "MAE": 0.5739980541020414,
+      "R2": 0.5203004851065349,
+      "N": 6331,
+      "PS_RMSE": 0.7352938803014989,
+      "PS_R2": -2.9265038092175573,
+      "N_solvents": 30,
+      "Z_RMSE": 41.05710928513683,
+      "f_aleatoric": 0.1622618315918869,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_005/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_005/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_005/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_005/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_005/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_005/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 5,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 100.32683444023132
+  },
+  "6": {
+    "train_time_s": 35.43620681762695,
+    "best_epoch": 77,
+    "best_val_loss": 0.21259348094463348,
+    "eval": {
+      "RMSE": 0.46107860302240145,
+      "MAE": 0.2971617945646437,
+      "R2": 0.8389956382327206,
+      "N": 6969,
+      "PS_RMSE": 0.4533952465545529,
+      "PS_R2": 0.8044473820260343,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8665413379378437,
+      "MAE": 0.633784073678332,
+      "R2": 0.4540781655071364,
+      "N": 4507,
+      "PS_RMSE": 0.8557747093920862,
+      "PS_R2": -15.219958294389475,
+      "N_solvents": 26,
+      "Z_RMSE": 49.502852677872774,
+      "f_aleatoric": 0.0585677007828356,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8364548015593506,
+      "MAE": 0.6132134105576272,
+      "R2": 0.4564224131634247,
+      "N": 5475,
+      "PS_RMSE": 0.8063066856963634,
+      "PS_R2": -6.8728738089398975,
+      "N_solvents": 27,
+      "Z_RMSE": 45.104363050973056,
+      "f_aleatoric": 0.10161443494776828,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8090647030409762,
+      "MAE": 0.5950822616443433,
+      "R2": 0.47196578488500895,
+      "N": 6331,
+      "PS_RMSE": 0.7407385310911578,
+      "PS_R2": -1.5682875303640413,
+      "N_solvents": 30,
+      "Z_RMSE": 41.95811781439847,
+      "f_aleatoric": 0.1585740626920713,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_006/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_006/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_006/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_006/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_006/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_006/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 6,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 35.43620681762695
+  },
+  "7": {
+    "train_time_s": 21.50900959968567,
+    "best_epoch": 39,
+    "best_val_loss": 0.22406011819839478,
+    "eval": {
+      "RMSE": 0.47334989777900977,
+      "MAE": 0.30241559866386947,
+      "R2": 0.8303115511745732,
+      "N": 6969,
+      "PS_RMSE": 0.4625119569504102,
+      "PS_R2": 0.8013554256133236,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8168233196988087,
+      "MAE": 0.6145784873337335,
+      "R2": 0.5149258292475689,
+      "N": 4507,
+      "PS_RMSE": 0.8239260780598889,
+      "PS_R2": -13.264406972939764,
+      "N_solvents": 26,
+      "Z_RMSE": 46.68873892868664,
+      "f_aleatoric": 0.061177152797912436,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7844991821650849,
+      "MAE": 0.5907598632585723,
+      "R2": 0.5218528465706085,
+      "N": 5475,
+      "PS_RMSE": 0.778977335642224,
+      "PS_R2": -8.395384591495743,
+      "N_solvents": 27,
+      "Z_RMSE": 42.58257161287629,
+      "f_aleatoric": 0.10754985754985755,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7635307372631442,
+      "MAE": 0.5764729570324815,
+      "R2": 0.5297285592075887,
+      "N": 6331,
+      "PS_RMSE": 0.707773388152031,
+      "PS_R2": -1.5721246258742416,
+      "N_solvents": 30,
+      "Z_RMSE": 39.625701350109985,
+      "f_aleatoric": 0.15959844294202008,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_007/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_007/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_007/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_007/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_007/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_007/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 7,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 21.50900959968567
+  },
+  "8": {
+    "train_time_s": 45.94114303588867,
+    "best_epoch": 77,
+    "best_val_loss": 0.22169464826583862,
+    "eval": {
+      "RMSE": 0.4708446147503309,
+      "MAE": 0.2884449544755672,
+      "R2": 0.8321030064605313,
+      "N": 6969,
+      "PS_RMSE": 0.4565367112633256,
+      "PS_R2": 0.8071042243686154,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8470584413672081,
+      "MAE": 0.591493354577036,
+      "R2": 0.478350682643389,
+      "N": 4507,
+      "PS_RMSE": 0.8070259441692798,
+      "PS_R2": -11.340951013115358,
+      "N_solvents": 26,
+      "Z_RMSE": 49.643900143031054,
+      "f_aleatoric": 0.0742244128732966,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.82159883069696,
+      "MAE": 0.5808501930008206,
+      "R2": 0.4755595163051236,
+      "N": 5475,
+      "PS_RMSE": 0.7841577502363675,
+      "PS_R2": -7.929330474897428,
+      "N_solvents": 27,
+      "Z_RMSE": 45.374166129836944,
+      "f_aleatoric": 0.10185185185185185,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7961737343418829,
+      "MAE": 0.5639224291984983,
+      "R2": 0.48865825699855325,
+      "N": 6331,
+      "PS_RMSE": 0.7356070666028214,
+      "PS_R2": -2.3857244117487166,
+      "N_solvents": 30,
+      "Z_RMSE": 42.2158921895654,
+      "f_aleatoric": 0.17086662569145666,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_008/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_008/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_008/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_008/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_008/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_008/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 8,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 45.94114303588867
+  },
+  "9": {
+    "train_time_s": 38.47334408760071,
+    "best_epoch": 61,
+    "best_val_loss": 0.2222655713558197,
+    "eval": {
+      "RMSE": 0.4714504852812669,
+      "MAE": 0.29008424218068624,
+      "R2": 0.8316706375421331,
+      "N": 6969,
+      "PS_RMSE": 0.4598192697031117,
+      "PS_R2": 0.7995396176932235,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8271040730241016,
+      "MAE": 0.5994764797534787,
+      "R2": 0.5026384442854146,
+      "N": 4507,
+      "PS_RMSE": 0.7905405756541335,
+      "PS_R2": -8.676490931797195,
+      "N_solvents": 26,
+      "Z_RMSE": 48.10946951455227,
+      "f_aleatoric": 0.07915337779066396,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8001113445603245,
+      "MAE": 0.5830582368960572,
+      "R2": 0.5026324572186538,
+      "N": 5475,
+      "PS_RMSE": 0.7471861894285822,
+      "PS_R2": -4.497636461071517,
+      "N_solvents": 27,
+      "Z_RMSE": 43.90364132626724,
+      "f_aleatoric": 0.1144349477682811,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7758898994687025,
+      "MAE": 0.5679231571893509,
+      "R2": 0.5143809090382343,
+      "N": 6331,
+      "PS_RMSE": 0.6852238099458139,
+      "PS_R2": -1.5479395713059716,
+      "N_solvents": 30,
+      "Z_RMSE": 40.82499780072905,
+      "f_aleatoric": 0.17475927064126204,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_009/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_009/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_009/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_009/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_009/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_009/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 9,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 38.47334408760071
+  },
+  "10": {
+    "train_time_s": 39.32646942138672,
+    "best_epoch": 53,
+    "best_val_loss": 0.22716237604618073,
+    "eval": {
+      "RMSE": 0.47661555483808515,
+      "MAE": 0.29694886182354263,
+      "R2": 0.8279621017990132,
+      "N": 6969,
+      "PS_RMSE": 0.4601422746253931,
+      "PS_R2": 0.8000004907803776,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8558061106838062,
+      "MAE": 0.62476598850615,
+      "R2": 0.4675207848970483,
+      "N": 4507,
+      "PS_RMSE": 0.81503211127673,
+      "PS_R2": -12.46623010488169,
+      "N_solvents": 26,
+      "Z_RMSE": 50.70388712692778,
+      "f_aleatoric": 0.0701652652942882,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.827689538256625,
+      "MAE": 0.6089364906244636,
+      "R2": 0.4677550910028515,
+      "N": 5475,
+      "PS_RMSE": 0.7535763546374136,
+      "PS_R2": -6.455869002455298,
+      "N_solvents": 27,
+      "Z_RMSE": 46.181527956530346,
+      "f_aleatoric": 0.09876543209876543,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8035755372482987,
+      "MAE": 0.5899185010918065,
+      "R2": 0.4791064620038046,
+      "N": 6331,
+      "PS_RMSE": 0.6972513284858379,
+      "PS_R2": -1.589771964539833,
+      "N_solvents": 30,
+      "Z_RMSE": 42.94370085910913,
+      "f_aleatoric": 0.16574472444171276,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_010/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_010/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_010/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_010/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_010/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_010/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 10,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 39.32646942138672
+  },
+  "11": {
+    "train_time_s": 25.838093757629395,
+    "best_epoch": 28,
+    "best_val_loss": 0.22954726219177246,
+    "eval": {
+      "RMSE": 0.47911090325427697,
+      "MAE": 0.30122083388618265,
+      "R2": 0.8261559572426048,
+      "N": 6969,
+      "PS_RMSE": 0.47087101034366396,
+      "PS_R2": 0.7915430196065294,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8764437092558521,
+      "MAE": 0.6417483606860955,
+      "R2": 0.44152986927659654,
+      "N": 4507,
+      "PS_RMSE": 0.8171718988926404,
+      "PS_R2": -10.895834660393843,
+      "N_solvents": 26,
+      "Z_RMSE": 50.857153962449345,
+      "f_aleatoric": 0.07480429109886924,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8460125542479826,
+      "MAE": 0.6244652896069818,
+      "R2": 0.44392905992109866,
+      "N": 5475,
+      "PS_RMSE": 0.7694351444746251,
+      "PS_R2": -6.042302190377671,
+      "N_solvents": 27,
+      "Z_RMSE": 46.398448847034466,
+      "f_aleatoric": 0.10944919278252611,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8187104505084091,
+      "MAE": 0.6017369946922329,
+      "R2": 0.45930018227072644,
+      "N": 6331,
+      "PS_RMSE": 0.7128184717559971,
+      "PS_R2": -1.6152098197830915,
+      "N_solvents": 30,
+      "Z_RMSE": 43.13210293917843,
+      "f_aleatoric": 0.1786519155910674,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_011/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_011/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_011/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_011/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_011/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_011/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 11,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 25.838093757629395
+  },
+  "12": {
+    "train_time_s": 30.18500065803528,
+    "best_epoch": 22,
+    "best_val_loss": 0.21237774193286896,
+    "eval": {
+      "RMSE": 0.4608445988444697,
+      "MAE": 0.2949686933351055,
+      "R2": 0.8391590209296725,
+      "N": 6969,
+      "PS_RMSE": 0.45222456460271127,
+      "PS_R2": 0.8134387188995212,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8668499493114322,
+      "MAE": 0.6199868986408097,
+      "R2": 0.45368924536959765,
+      "N": 4507,
+      "PS_RMSE": 0.8001246264026243,
+      "PS_R2": -9.598958636949408,
+      "N_solvents": 26,
+      "Z_RMSE": 50.067147870541085,
+      "f_aleatoric": 0.05363873586546825,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8303807482644018,
+      "MAE": 0.5975885486420612,
+      "R2": 0.46428830439687174,
+      "N": 5475,
+      "PS_RMSE": 0.7524875652000946,
+      "PS_R2": -5.749003605022814,
+      "N_solvents": 27,
+      "Z_RMSE": 45.613126917327094,
+      "f_aleatoric": 0.08784425451092118,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8012192221527753,
+      "MAE": 0.5779088267252371,
+      "R2": 0.482156803185978,
+      "N": 6331,
+      "PS_RMSE": 0.6939472492904525,
+      "PS_R2": -1.6759316958358752,
+      "N_solvents": 30,
+      "Z_RMSE": 42.42608303753672,
+      "f_aleatoric": 0.14812538414259374,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_012/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_012/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_012/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_012/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_012/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_012/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 12,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 30.18500065803528
+  },
+  "13": {
+    "train_time_s": 72.09214115142822,
+    "best_epoch": 98,
+    "best_val_loss": 0.20841236412525177,
+    "eval": {
+      "RMSE": 0.4565220325531635,
+      "MAE": 0.2798264172423148,
+      "R2": 0.8421621382974687,
+      "N": 6969,
+      "PS_RMSE": 0.4483294113074981,
+      "PS_R2": 0.811189531899916,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8208220656259596,
+      "MAE": 0.617809091578115,
+      "R2": 0.510164857872333,
+      "N": 4507,
+      "PS_RMSE": 0.8182846419632946,
+      "PS_R2": -10.875497432839355,
+      "N_solvents": 26,
+      "Z_RMSE": 46.855941854404946,
+      "f_aleatoric": 0.07741374311394607,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7931325638911526,
+      "MAE": 0.5948116640892936,
+      "R2": 0.5112709584678408,
+      "N": 5475,
+      "PS_RMSE": 0.7651431754722019,
+      "PS_R2": -6.122313214612198,
+      "N_solvents": 27,
+      "Z_RMSE": 42.78155966915936,
+      "f_aleatoric": 0.11918328584995251,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7721750358684099,
+      "MAE": 0.5769354474280032,
+      "R2": 0.5190199435252305,
+      "N": 6331,
+      "PS_RMSE": 0.7290426407643672,
+      "PS_R2": -2.088692812712416,
+      "N_solvents": 30,
+      "Z_RMSE": 39.77361272266301,
+      "f_aleatoric": 0.17619340299119032,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_013/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_013/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_013/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_013/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_013/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_013/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 13,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 72.09214115142822
+  },
+  "14": {
+    "train_time_s": 46.71087074279785,
+    "best_epoch": 35,
+    "best_val_loss": 0.2401246577501297,
+    "eval": {
+      "RMSE": 0.4900251459688689,
+      "MAE": 0.2935535775015576,
+      "R2": 0.8181453385387338,
+      "N": 6969,
+      "PS_RMSE": 0.4682885609482997,
+      "PS_R2": 0.7914919567947625,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8269497316300028,
+      "MAE": 0.6076406341641848,
+      "R2": 0.5028240468381671,
+      "N": 4507,
+      "PS_RMSE": 0.8569854901763236,
+      "PS_R2": -20.12753972969163,
+      "N_solvents": 26,
+      "Z_RMSE": 48.77765798717878,
+      "f_aleatoric": 0.05885763989562192,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8152513593678344,
+      "MAE": 0.6052593899632062,
+      "R2": 0.4836316113214474,
+      "N": 5475,
+      "PS_RMSE": 0.8142301849169299,
+      "PS_R2": -14.66050400763768,
+      "N_solvents": 27,
+      "Z_RMSE": 44.50415558939048,
+      "f_aleatoric": 0.0909306742640076,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7983459047679435,
+      "MAE": 0.5935830329631864,
+      "R2": 0.4858643025305506,
+      "N": 6331,
+      "PS_RMSE": 0.7560624057041139,
+      "PS_R2": -2.6184534863089155,
+      "N_solvents": 30,
+      "Z_RMSE": 41.44331329889542,
+      "f_aleatoric": 0.1538619135423069,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_014/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_014/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_014/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_014/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_014/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_014/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 14,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 46.71087074279785
+  },
+  "15": {
+    "train_time_s": 32.95167803764343,
+    "best_epoch": 19,
+    "best_val_loss": 0.22519372403621674,
+    "eval": {
+      "RMSE": 0.4745458153820559,
+      "MAE": 0.3033531828883265,
+      "R2": 0.8294530329437136,
+      "N": 6969,
+      "PS_RMSE": 0.4637112077954019,
+      "PS_R2": 0.8012624409862156,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8241371058216945,
+      "MAE": 0.6170961279128423,
+      "R2": 0.5062002903803141,
+      "N": 4507,
+      "PS_RMSE": 0.8340734206701116,
+      "PS_R2": -14.406524971120835,
+      "N_solvents": 26,
+      "Z_RMSE": 48.62146834817476,
+      "f_aleatoric": 0.06407654392577558,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7983365529434242,
+      "MAE": 0.6021585584691987,
+      "R2": 0.5048365122692724,
+      "N": 5475,
+      "PS_RMSE": 0.7964144389576465,
+      "PS_R2": -9.701960424283936,
+      "N_solvents": 27,
+      "Z_RMSE": 44.34095967303265,
+      "f_aleatoric": 0.09283000949667616,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.779538690958742,
+      "MAE": 0.5868166918358907,
+      "R2": 0.5098027099033733,
+      "N": 6331,
+      "PS_RMSE": 0.7531382719833478,
+      "PS_R2": -3.0032153868837383,
+      "N_solvents": 30,
+      "Z_RMSE": 41.25727576378813,
+      "f_aleatoric": 0.15447654169227618,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_015/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_015/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_015/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_015/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_015/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_015/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 15,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 32.95167803764343
+  },
+  "16": {
+    "train_time_s": 49.6738965511322,
+    "best_epoch": 27,
+    "best_val_loss": 0.22633840143680573,
+    "eval": {
+      "RMSE": 0.4757503531558505,
+      "MAE": 0.2962543899920114,
+      "R2": 0.828586136729384,
+      "N": 6969,
+      "PS_RMSE": 0.46326140488411804,
+      "PS_R2": 0.7996612320930895,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8041243253349549,
+      "MAE": 0.6043200422194308,
+      "R2": 0.5298912941267783,
+      "N": 4507,
+      "PS_RMSE": 0.7781348660768277,
+      "PS_R2": -9.533334924003707,
+      "N_solvents": 26,
+      "Z_RMSE": 46.517785858039844,
+      "f_aleatoric": 0.07248477819657873,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7808588361065546,
+      "MAE": 0.5909293445226785,
+      "R2": 0.5262800852587513,
+      "N": 5475,
+      "PS_RMSE": 0.7559716272364392,
+      "PS_R2": -5.71078191074211,
+      "N_solvents": 27,
+      "Z_RMSE": 42.41634735061314,
+      "f_aleatoric": 0.10565052231718898,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7595961693029705,
+      "MAE": 0.5754332519097616,
+      "R2": 0.534562804649247,
+      "N": 6331,
+      "PS_RMSE": 0.7317589168709614,
+      "PS_R2": -2.5964898674973034,
+      "N_solvents": 30,
+      "Z_RMSE": 39.458825473666046,
+      "f_aleatoric": 0.16594960049170251,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_016/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_016/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_016/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_016/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_016/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_016/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 16,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 49.6738965511322
+  },
+  "17": {
+    "train_time_s": 71.69406461715698,
+    "best_epoch": 48,
+    "best_val_loss": 0.23127298057079315,
+    "eval": {
+      "RMSE": 0.48090849887961495,
+      "MAE": 0.3096316738570986,
+      "R2": 0.8248490050035414,
+      "N": 6969,
+      "PS_RMSE": 0.46842376494814586,
+      "PS_R2": 0.7866968632852022,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8126662648190948,
+      "MAE": 0.5966285184866179,
+      "R2": 0.519850636532891,
+      "N": 4507,
+      "PS_RMSE": 0.8330738733353092,
+      "PS_R2": -12.556710946562482,
+      "N_solvents": 26,
+      "Z_RMSE": 48.35018024251229,
+      "f_aleatoric": 0.06465642215134822,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7861389168107725,
+      "MAE": 0.5795141022936303,
+      "R2": 0.5198519424200363,
+      "N": 5475,
+      "PS_RMSE": 0.7816050596755981,
+      "PS_R2": -8.445758073849229,
+      "N_solvents": 27,
+      "Z_RMSE": 44.11333523240289,
+      "f_aleatoric": 0.09829059829059829,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7608589689989018,
+      "MAE": 0.5614560759407226,
+      "R2": 0.5330139750689742,
+      "N": 6331,
+      "PS_RMSE": 0.7315198580310803,
+      "PS_R2": -3.336598484209745,
+      "N_solvents": 30,
+      "Z_RMSE": 41.03633303102898,
+      "f_aleatoric": 0.16410571604179472,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_017/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_017/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_017/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_017/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_017/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_017/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 17,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 71.69406461715698
+  },
+  "18": {
+    "train_time_s": 22.825151920318604,
+    "best_epoch": 43,
+    "best_val_loss": 0.22364552319049835,
+    "eval": {
+      "RMSE": 0.4729117600738946,
+      "MAE": 0.2972752395193822,
+      "R2": 0.8306255366629276,
+      "N": 6969,
+      "PS_RMSE": 0.45759580350787027,
+      "PS_R2": 0.800954340827363,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8795240275750146,
+      "MAE": 0.6301784958520612,
+      "R2": 0.43759741189445267,
+      "N": 4507,
+      "PS_RMSE": 0.824234732199063,
+      "PS_R2": -11.366224207197707,
+      "N_solvents": 26,
+      "Z_RMSE": 51.811706127005614,
+      "f_aleatoric": 0.07190489997100609,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8429917122730444,
+      "MAE": 0.6090922068821566,
+      "R2": 0.44789307536762435,
+      "N": 5475,
+      "PS_RMSE": 0.7852498948100205,
+      "PS_R2": -7.498437901778893,
+      "N_solvents": 27,
+      "Z_RMSE": 47.209141053649844,
+      "f_aleatoric": 0.10968660968660969,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8157510478065374,
+      "MAE": 0.5900781982852513,
+      "R2": 0.4632020659276299,
+      "N": 6331,
+      "PS_RMSE": 0.7269310595954723,
+      "PS_R2": -1.553154118027045,
+      "N_solvents": 30,
+      "Z_RMSE": 43.90518694794846,
+      "f_aleatoric": 0.16431059209178447,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_018/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_018/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_018/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_018/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_018/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_018/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 18,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 256,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 22.825151920318604
+  },
+  "19": {
+    "train_time_s": 31.39482593536377,
+    "best_epoch": 66,
+    "best_val_loss": 0.21438291668891907,
+    "eval": {
+      "RMSE": 0.46301502463621746,
+      "MAE": 0.2936475876946197,
+      "R2": 0.8376404375827995,
+      "N": 6969,
+      "PS_RMSE": 0.4523585496097345,
+      "PS_R2": 0.8102716037858122,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8157622457270113,
+      "MAE": 0.610319541421952,
+      "R2": 0.5161852577206414,
+      "N": 4507,
+      "PS_RMSE": 0.7996993288860341,
+      "PS_R2": -10.322073004134921,
+      "N_solvents": 26,
+      "Z_RMSE": 46.90555829768293,
+      "f_aleatoric": 0.06552623948970716,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7802796668234661,
+      "MAE": 0.5819594933803685,
+      "R2": 0.5269825483973407,
+      "N": 5475,
+      "PS_RMSE": 0.7555713191612722,
+      "PS_R2": -6.931590442723113,
+      "N_solvents": 27,
+      "Z_RMSE": 42.74019720130742,
+      "f_aleatoric": 0.11277302943969611,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.75775350828371,
+      "MAE": 0.5651705766129782,
+      "R2": 0.5368182207711698,
+      "N": 6331,
+      "PS_RMSE": 0.6760991390426766,
+      "PS_R2": -1.2415383728342857,
+      "N_solvents": 30,
+      "Z_RMSE": 39.7523967817776,
+      "f_aleatoric": 0.17332513829133375,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_019/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_019/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_019/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_019/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_019/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_019/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 19,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 256,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 31.39482593536377
+  },
+  "20": {
+    "train_time_s": 29.7957763671875,
+    "best_epoch": 43,
+    "best_val_loss": 0.21543492376804352,
+    "eval": {
+      "RMSE": 0.4641496773579711,
+      "MAE": 0.29704305590059416,
+      "R2": 0.8368437142192318,
+      "N": 6969,
+      "PS_RMSE": 0.45658282497820907,
+      "PS_R2": 0.8041283842231572,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8699128091954961,
+      "MAE": 0.6128407278973502,
+      "R2": 0.4498218415530897,
+      "N": 4507,
+      "PS_RMSE": 0.8318885150514046,
+      "PS_R2": -12.616243584700232,
+      "N_solvents": 26,
+      "Z_RMSE": 51.381609751167595,
+      "f_aleatoric": 0.06697593505363873,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8375938527834919,
+      "MAE": 0.5940840932207881,
+      "R2": 0.454940960034686,
+      "N": 5475,
+      "PS_RMSE": 0.7777219153764954,
+      "PS_R2": -4.774470510969603,
+      "N_solvents": 27,
+      "Z_RMSE": 46.8249288897892,
+      "f_aleatoric": 0.10351377018043685,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8117201861981946,
+      "MAE": 0.5790340048981296,
+      "R2": 0.4684939066492114,
+      "N": 6331,
+      "PS_RMSE": 0.7181207533253762,
+      "PS_R2": -1.3888669845937014,
+      "N_solvents": 30,
+      "Z_RMSE": 43.56184233991884,
+      "f_aleatoric": 0.16635935259168202,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_020/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_020/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_020/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_020/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_020/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_020/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 20,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 29.7957763671875
+  },
+  "21": {
+    "train_time_s": 17.44490909576416,
+    "best_epoch": 18,
+    "best_val_loss": 0.22756245732307434,
+    "eval": {
+      "RMSE": 0.4770350664062718,
+      "MAE": 0.30187078121143895,
+      "R2": 0.8276591169292795,
+      "N": 6969,
+      "PS_RMSE": 0.4734288076312648,
+      "PS_R2": 0.7878720688396652,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.9206889593349378,
+      "MAE": 0.6214024507977075,
+      "R2": 0.3837204393248167,
+      "N": 4507,
+      "PS_RMSE": 0.8220266364009166,
+      "PS_R2": -6.452162958087285,
+      "N_solvents": 26,
+      "Z_RMSE": 54.36848773629641,
+      "f_aleatoric": 0.04986952739924616,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.881228574809215,
+      "MAE": 0.6037148021448874,
+      "R2": 0.3966716588433441,
+      "N": 5475,
+      "PS_RMSE": 0.7701777163360161,
+      "PS_R2": -4.256489196810219,
+      "N_solvents": 27,
+      "Z_RMSE": 49.47839310209764,
+      "f_aleatoric": 0.08950617283950617,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.850305505993394,
+      "MAE": 0.5902077159186273,
+      "R2": 0.41676236843524095,
+      "N": 6331,
+      "PS_RMSE": 0.7178719112639667,
+      "PS_R2": -1.6334626573347983,
+      "N_solvents": 30,
+      "Z_RMSE": 46.013666245117214,
+      "f_aleatoric": 0.147920508092604,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_021/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_021/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_021/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_021/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_021/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_021/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 21,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 17.44490909576416
+  },
+  "22": {
+    "train_time_s": 18.635107278823853,
+    "best_epoch": 15,
+    "best_val_loss": 0.22291049361228943,
+    "eval": {
+      "RMSE": 0.47213397879426794,
+      "MAE": 0.29858302294292477,
+      "R2": 0.8311822069212408,
+      "N": 6969,
+      "PS_RMSE": 0.46514729188807924,
+      "PS_R2": 0.8003444406217329,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8242682592553718,
+      "MAE": 0.6179828897236366,
+      "R2": 0.5060431109977773,
+      "N": 4507,
+      "PS_RMSE": 0.8686255346127456,
+      "PS_R2": -17.828551646451373,
+      "N_solvents": 26,
+      "Z_RMSE": 48.274566941549615,
+      "f_aleatoric": 0.05421861409104088,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8116685361536436,
+      "MAE": 0.6129332928771852,
+      "R2": 0.48816025482175984,
+      "N": 5475,
+      "PS_RMSE": 0.8214837301074027,
+      "PS_R2": -9.895877376475928,
+      "N_solvents": 27,
+      "Z_RMSE": 44.21350221668141,
+      "f_aleatoric": 0.07858499525166192,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.791061729847518,
+      "MAE": 0.5961980977232113,
+      "R2": 0.4952035356526814,
+      "N": 6331,
+      "PS_RMSE": 0.759937424750655,
+      "PS_R2": -2.8740718354204797,
+      "N_solvents": 30,
+      "Z_RMSE": 41.11949518384798,
+      "f_aleatoric": 0.14607662364269616,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_022/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_022/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_022/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_022/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_022/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_022/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 22,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.05,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 18.635107278823853
+  },
+  "23": {
+    "train_time_s": 19.67149066925049,
+    "best_epoch": 17,
+    "best_val_loss": 0.23471054434776306,
+    "eval": {
+      "RMSE": 0.4844693441493401,
+      "MAE": 0.31216850235887966,
+      "R2": 0.8222456215889606,
+      "N": 6969,
+      "PS_RMSE": 0.47994223903226974,
+      "PS_R2": 0.7881137464736958,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8587973548883827,
+      "MAE": 0.6411080622024005,
+      "R2": 0.4637919988809137,
+      "N": 4507,
+      "PS_RMSE": 0.8749838399184718,
+      "PS_R2": -13.60663079925259,
+      "N_solvents": 26,
+      "Z_RMSE": 50.27499214342275,
+      "f_aleatoric": 0.061467091910698754,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.8329619127095979,
+      "MAE": 0.6193620520888043,
+      "R2": 0.4609527042460797,
+      "N": 5475,
+      "PS_RMSE": 0.8234598944067014,
+      "PS_R2": -9.178741276510463,
+      "N_solvents": 27,
+      "Z_RMSE": 45.96121134362395,
+      "f_aleatoric": 0.10280151946818614,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.8086460954320323,
+      "MAE": 0.6007305154248679,
+      "R2": 0.4725120501142569,
+      "N": 6331,
+      "PS_RMSE": 0.7775519218107895,
+      "PS_R2": -3.7851048562117384,
+      "N_solvents": 30,
+      "Z_RMSE": 42.745021677073005,
+      "f_aleatoric": 0.16574472444171276,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_023/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 23,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 256,
+      "hidden_dims": [
+        512,
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 19.67149066925049
+  },
+  "24": {
+    "train_time_s": 72.60188055038452,
+    "best_epoch": 98,
+    "best_val_loss": 0.20841236412525177,
+    "eval": {
+      "RMSE": 0.4565220325531635,
+      "MAE": 0.2798264172423148,
+      "R2": 0.8421621382974687,
+      "N": 6969,
+      "PS_RMSE": 0.4483294113074981,
+      "PS_R2": 0.811189531899916,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8208220656259596,
+      "MAE": 0.617809091578115,
+      "R2": 0.510164857872333,
+      "N": 4507,
+      "PS_RMSE": 0.8182846419632946,
+      "PS_R2": -10.875497432839355,
+      "N_solvents": 26,
+      "Z_RMSE": 46.855941854404946,
+      "f_aleatoric": 0.07741374311394607,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7931325638911526,
+      "MAE": 0.5948116640892936,
+      "R2": 0.5112709584678408,
+      "N": 5475,
+      "PS_RMSE": 0.7651431754722019,
+      "PS_R2": -6.122313214612198,
+      "N_solvents": 27,
+      "Z_RMSE": 42.78155966915936,
+      "f_aleatoric": 0.11918328584995251,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7721750358684099,
+      "MAE": 0.5769354474280032,
+      "R2": 0.5190199435252305,
+      "N": 6331,
+      "PS_RMSE": 0.7290426407643672,
+      "PS_R2": -2.088692812712416,
+      "N_solvents": 30,
+      "Z_RMSE": 39.77361272266301,
+      "f_aleatoric": 0.17619340299119032,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_024/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_024/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_024/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_024/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_024/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_024/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 24,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 72.60188055038452
+  },
+  "25": {
+    "train_time_s": 85.85475635528564,
+    "best_epoch": 98,
+    "best_val_loss": 0.20841236412525177,
+    "eval": {
+      "RMSE": 0.4565220325531635,
+      "MAE": 0.2798264172423148,
+      "R2": 0.8421621382974687,
+      "N": 6969,
+      "PS_RMSE": 0.4483294113074981,
+      "PS_R2": 0.811189531899916,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8208220656259596,
+      "MAE": 0.617809091578115,
+      "R2": 0.510164857872333,
+      "N": 4507,
+      "PS_RMSE": 0.8182846419632946,
+      "PS_R2": -10.875497432839355,
+      "N_solvents": 26,
+      "Z_RMSE": 46.855941854404946,
+      "f_aleatoric": 0.07741374311394607,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7931325638911526,
+      "MAE": 0.5948116640892936,
+      "R2": 0.5112709584678408,
+      "N": 5475,
+      "PS_RMSE": 0.7651431754722019,
+      "PS_R2": -6.122313214612198,
+      "N_solvents": 27,
+      "Z_RMSE": 42.78155966915936,
+      "f_aleatoric": 0.11918328584995251,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7721750358684099,
+      "MAE": 0.5769354474280032,
+      "R2": 0.5190199435252305,
+      "N": 6331,
+      "PS_RMSE": 0.7290426407643672,
+      "PS_R2": -2.088692812712416,
+      "N_solvents": 30,
+      "Z_RMSE": 39.77361272266301,
+      "f_aleatoric": 0.17619340299119032,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_025/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_025/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_025/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_025/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_025/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_025/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 25,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 150,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 85.85475635528564
+  },
+  "26": {
+    "train_time_s": 85.15991020202637,
+    "best_epoch": 98,
+    "best_val_loss": 0.20841236412525177,
+    "eval": {
+      "RMSE": 0.4565220325531635,
+      "MAE": 0.2798264172423148,
+      "R2": 0.8421621382974687,
+      "N": 6969,
+      "PS_RMSE": 0.4483294113074981,
+      "PS_R2": 0.811189531899916,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.8208220656259596,
+      "MAE": 0.617809091578115,
+      "R2": 0.510164857872333,
+      "N": 4507,
+      "PS_RMSE": 0.8182846419632946,
+      "PS_R2": -10.875497432839355,
+      "N_solvents": 26,
+      "Z_RMSE": 46.855941854404946,
+      "f_aleatoric": 0.07741374311394607,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.7931325638911526,
+      "MAE": 0.5948116640892936,
+      "R2": 0.5112709584678408,
+      "N": 5475,
+      "PS_RMSE": 0.7651431754722019,
+      "PS_R2": -6.122313214612198,
+      "N_solvents": 27,
+      "Z_RMSE": 42.78155966915936,
+      "f_aleatoric": 0.11918328584995251,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.7721750358684099,
+      "MAE": 0.5769354474280032,
+      "R2": 0.5190199435252305,
+      "N": 6331,
+      "PS_RMSE": 0.7290426407643672,
+      "PS_R2": -2.088692812712416,
+      "N_solvents": 30,
+      "Z_RMSE": 39.77361272266301,
+      "f_aleatoric": 0.17619340299119032,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_026/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_026/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_026/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_026/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_026/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-descriptor-runner/results/hpo_mlp_trial_026/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 26,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dims": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "epochs": 200,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 85.15991020202637
+  }
+}

@@ -1,0 +1,95 @@
+#!/usr/bin/env python3
+"""
+SC3 Benchmark CLI.
+
+Usage:
+    python sc3 list                                    # show all methods
+    python sc3 run --method lgb_rdkit                  # train one method (5 seeds)
+    python sc3 run --method gcn --gpu 0                # train GNN on GPU
+    python sc3 run --all                               # train all methods
+    python sc3 status                                  # show results table
+    python sc3 collect                                 # write benchmark_table.csv
+    python sc3 cache                                   # precompute feature caches
+"""
+
+import argparse
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+
+def cmd_list(args):
+    from sc3_bench.collect import list_methods
+    list_methods()
+
+
+def cmd_status(args):
+    from sc3_bench.collect import print_status
+    print_status()
+
+
+def cmd_collect(args):
+    from sc3_bench.collect import write_csv
+    write_csv()
+
+
+def cmd_cache(args):
+    from sc3_bench.data import precompute_features
+    feats = args.featurizers if args.featurizers else None
+    precompute_features(feats)
+
+
+def cmd_run(args):
+    from sc3_bench.train import train_method
+    from sc3_bench.registry import METHOD_ORDER
+
+    if args.all:
+        methods = METHOD_ORDER
+    elif args.method:
+        methods = args.method
+    else:
+        print("Specify --method <name> or --all")
+        sys.exit(1)
+
+    seeds = args.seeds if args.seeds else None
+
+    for m in methods:
+        train_method(m, seeds=seeds, gpu=args.gpu)
+
+
+def main():
+    parser = argparse.ArgumentParser(prog="sc3", description="SC3 Benchmark CLI")
+    sub = parser.add_subparsers(dest="command")
+
+    sub.add_parser("list", help="Show all registered methods")
+    sub.add_parser("status", help="Show results summary")
+    sub.add_parser("collect", help="Write benchmark_table.csv")
+
+    p_cache = sub.add_parser("cache", help="Precompute feature caches")
+    p_cache.add_argument("--featurizers", nargs="+", default=None)
+
+    p_run = sub.add_parser("run", help="Train method(s)")
+    p_run.add_argument("--method", nargs="+", help="Method key(s) to train")
+    p_run.add_argument("--all", action="store_true", help="Train all methods")
+    p_run.add_argument("--seeds", nargs="+", type=int, default=None)
+    p_run.add_argument("--gpu", type=int, default=None)
+
+    args = parser.parse_args()
+
+    if args.command == "list":
+        cmd_list(args)
+    elif args.command == "status":
+        cmd_status(args)
+    elif args.command == "collect":
+        cmd_collect(args)
+    elif args.command == "cache":
+        cmd_cache(args)
+    elif args.command == "run":
+        cmd_run(args)
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()

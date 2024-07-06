@@ -1,0 +1,2072 @@
+{
+  "0": {
+    "train_time_s": 770.5170001983643,
+    "best_epoch": 94,
+    "best_val_loss": 0.414609432220459,
+    "eval": {
+      "RMSE": 0.6439017130438975,
+      "MAE": 0.44735023651997835,
+      "R2": 0.6860020119537893,
+      "N": 6969,
+      "PS_RMSE": 0.6457545277707851,
+      "PS_R2": 0.6042264562152384,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.063223285780596,
+      "MAE": 0.8270653011417897,
+      "R2": 0.17813430541915842,
+      "N": 4507,
+      "PS_RMSE": 0.9095096858930642,
+      "PS_R2": -5.961494002966555,
+      "N_solvents": 26,
+      "Z_RMSE": 59.83759909457475,
+      "f_aleatoric": 0.05827776167004929,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0296490155400144,
+      "MAE": 0.8067606366674158,
+      "R2": 0.17632667488814902,
+      "N": 5475,
+      "PS_RMSE": 0.8802344551841688,
+      "PS_R2": -4.063825603429779,
+      "N_solvents": 27,
+      "Z_RMSE": 54.56444317426199,
+      "f_aleatoric": 0.07905982905982906,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0048924460170083,
+      "MAE": 0.787671583432106,
+      "R2": 0.18541817050346276,
+      "N": 6331,
+      "PS_RMSE": 0.8550422964792076,
+      "PS_R2": -4.12849770714365,
+      "N_solvents": 30,
+      "Z_RMSE": 50.81889322780204,
+      "f_aleatoric": 0.12681827494365908,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_000/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_000/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_000/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_000/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_000/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_000/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 0,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 64,
+      "hidden_dim": 48,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 770.5170001983643
+  },
+  "1": {
+    "train_time_s": 1095.5812027454376,
+    "best_epoch": 95,
+    "best_val_loss": 0.44180023670196533,
+    "eval": {
+      "RMSE": 0.6646805447150671,
+      "MAE": 0.4608227409239232,
+      "R2": 0.6654094748631357,
+      "N": 6969,
+      "PS_RMSE": 0.6758702754097718,
+      "PS_R2": 0.560935233182008,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1434192554423812,
+      "MAE": 0.8750565533538911,
+      "R2": 0.04947641583017315,
+      "N": 4507,
+      "PS_RMSE": 1.0497712599372186,
+      "PS_R2": -30.567230050708233,
+      "N_solvents": 26,
+      "Z_RMSE": 64.81408126294377,
+      "f_aleatoric": 0.044070745143519864,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0876300843076663,
+      "MAE": 0.8279250725891205,
+      "R2": 0.0809502781016046,
+      "N": 5475,
+      "PS_RMSE": 0.9782243111591156,
+      "PS_R2": -23.609861702894,
+      "N_solvents": 27,
+      "Z_RMSE": 59.02132553122942,
+      "f_aleatoric": 0.07763532763532764,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0872178314748242,
+      "MAE": 0.8254011268763936,
+      "R2": 0.04648245534666595,
+      "N": 6331,
+      "PS_RMSE": 0.9528759427661276,
+      "PS_R2": -5.385691393046943,
+      "N_solvents": 30,
+      "Z_RMSE": 55.21450784300583,
+      "f_aleatoric": 0.1141159598442942,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_001/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_001/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_001/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_001/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_001/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_001/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 1,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 64,
+      "hidden_dim": 48,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 1095.5812027454376
+  },
+  "2": {
+    "train_time_s": 910.6632115840912,
+    "best_epoch": 80,
+    "best_val_loss": 0.40049105882644653,
+    "eval": {
+      "RMSE": 0.6328436211608763,
+      "MAE": 0.4401235882552923,
+      "R2": 0.6966943376194931,
+      "N": 6969,
+      "PS_RMSE": 0.6237098955083484,
+      "PS_R2": 0.6379744348940775,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 0.9642039640807186,
+      "MAE": 0.7500948610322553,
+      "R2": 0.3240886813180405,
+      "N": 4507,
+      "PS_RMSE": 0.9795509203911725,
+      "PS_R2": -12.048936448927707,
+      "N_solvents": 26,
+      "Z_RMSE": 54.3476625568395,
+      "f_aleatoric": 0.05798782255726297,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.9396291130068462,
+      "MAE": 0.7328559218974598,
+      "R2": 0.31405465560162693,
+      "N": 5475,
+      "PS_RMSE": 0.9308973294794279,
+      "PS_R2": -9.25698968612693,
+      "N_solvents": 27,
+      "Z_RMSE": 49.582886778146495,
+      "f_aleatoric": 0.08238366571699905,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.9477853432008492,
+      "MAE": 0.7371524081884446,
+      "R2": 0.27537129839449115,
+      "N": 6331,
+      "PS_RMSE": 0.8694057781675275,
+      "PS_R2": -4.195947317207363,
+      "N_solvents": 30,
+      "Z_RMSE": 46.53736836512936,
+      "f_aleatoric": 0.11800860479409957,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_002/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_002/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_002/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_002/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_002/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_002/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 2,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 64,
+      "hidden_dim": 64,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 910.6632115840912
+  },
+  "3": {
+    "train_time_s": 868.0585691928864,
+    "best_epoch": 99,
+    "best_val_loss": 0.32619407773017883,
+    "eval": {
+      "RMSE": 0.571134041105709,
+      "MAE": 0.38334190790915645,
+      "R2": 0.7529619807978981,
+      "N": 6969,
+      "PS_RMSE": 0.5679516049462028,
+      "PS_R2": 0.6926619695056598,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1201365366032852,
+      "MAE": 0.8239679770919905,
+      "R2": 0.08779211818848232,
+      "N": 4507,
+      "PS_RMSE": 1.0146519102273415,
+      "PS_R2": -28.53575487017228,
+      "N_solvents": 26,
+      "Z_RMSE": 64.59729026433008,
+      "f_aleatoric": 0.044360684256306175,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0755448626891857,
+      "MAE": 0.7967135681040196,
+      "R2": 0.10126088251889875,
+      "N": 5475,
+      "PS_RMSE": 1.0065644447092126,
+      "PS_R2": -24.709099760271073,
+      "N_solvents": 27,
+      "Z_RMSE": 58.915919754636356,
+      "f_aleatoric": 0.06885090218423552,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0711391048533965,
+      "MAE": 0.7900578163932676,
+      "R2": 0.0744768108633006,
+      "N": 6331,
+      "PS_RMSE": 0.926555102488356,
+      "PS_R2": -4.661553296520793,
+      "N_solvents": 30,
+      "Z_RMSE": 55.34238553030122,
+      "f_aleatoric": 0.11636959639418153,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_003/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_003/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_003/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_003/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_003/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_003/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 3,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 64,
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 868.0585691928864
+  },
+  "4": {
+    "train_time_s": 778.6287379264832,
+    "best_epoch": 98,
+    "best_val_loss": 0.32972830533981323,
+    "eval": {
+      "RMSE": 0.57421973614324,
+      "MAE": 0.39075504256601207,
+      "R2": 0.7502853999946761,
+      "N": 6969,
+      "PS_RMSE": 0.5591425203662983,
+      "PS_R2": 0.7003979511604007,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1324204097679034,
+      "MAE": 0.8922572523396464,
+      "R2": 0.06767512835359257,
+      "N": 4507,
+      "PS_RMSE": 1.0143060910444897,
+      "PS_R2": -11.501412735577112,
+      "N_solvents": 26,
+      "Z_RMSE": 62.59670066028958,
+      "f_aleatoric": 0.047839953609741956,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.089808353962376,
+      "MAE": 0.8651766162825011,
+      "R2": 0.07726530679176713,
+      "N": 5475,
+      "PS_RMSE": 0.9492979326059606,
+      "PS_R2": -6.921524818231025,
+      "N_solvents": 27,
+      "Z_RMSE": 57.080471327586594,
+      "f_aleatoric": 0.06885090218423552,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.086325087842115,
+      "MAE": 0.859001278060572,
+      "R2": 0.048047729942634065,
+      "N": 6331,
+      "PS_RMSE": 0.9157444718357621,
+      "PS_R2": -3.7161250025078743,
+      "N_solvents": 30,
+      "Z_RMSE": 53.4789166433084,
+      "f_aleatoric": 0.10305265314484736,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_004/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_004/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_004/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_004/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_004/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_004/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 4,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 778.6287379264832
+  },
+  "5": {
+    "train_time_s": 876.4032254219055,
+    "best_epoch": 95,
+    "best_val_loss": 0.3319384753704071,
+    "eval": {
+      "RMSE": 0.5761410476378416,
+      "MAE": 0.385716063459546,
+      "R2": 0.7486115383675785,
+      "N": 6969,
+      "PS_RMSE": 0.5785746344547539,
+      "PS_R2": 0.6720769314789135,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1917298242126377,
+      "MAE": 0.878520860814645,
+      "R2": -0.03254148622516295,
+      "N": 4507,
+      "PS_RMSE": 1.193806908794352,
+      "PS_R2": -36.53129973127232,
+      "N_solvents": 26,
+      "Z_RMSE": 63.35792622978972,
+      "f_aleatoric": 0.04957958828645984,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.1422469290842536,
+      "MAE": 0.841862896268642,
+      "R2": -0.013669974294129972,
+      "N": 5475,
+      "PS_RMSE": 1.1273089048422718,
+      "PS_R2": -31.930591180306717,
+      "N_solvents": 27,
+      "Z_RMSE": 57.77626185825027,
+      "f_aleatoric": 0.07621082621082621,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.143218023042156,
+      "MAE": 0.8458524802720417,
+      "R2": -0.05427444664014014,
+      "N": 6331,
+      "PS_RMSE": 1.0805343739828142,
+      "PS_R2": -7.655006029040373,
+      "N_solvents": 30,
+      "Z_RMSE": 54.42237666569805,
+      "f_aleatoric": 0.10264290104486785,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_005/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_005/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_005/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_005/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_005/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_005/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 5,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 876.4032254219055
+  },
+  "6": {
+    "train_time_s": 425.8914406299591,
+    "best_epoch": 96,
+    "best_val_loss": 0.4512071907520294,
+    "eval": {
+      "RMSE": 0.6717195861668115,
+      "MAE": 0.48554278951865637,
+      "R2": 0.6582852480674102,
+      "N": 6969,
+      "PS_RMSE": 0.6644725918964144,
+      "PS_R2": 0.5880045653356603,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.042864916369815,
+      "MAE": 0.8542237265212458,
+      "R2": 0.20930679150029408,
+      "N": 4507,
+      "PS_RMSE": 0.9351841633105338,
+      "PS_R2": -14.840724629042974,
+      "N_solvents": 26,
+      "Z_RMSE": 59.904935525200436,
+      "f_aleatoric": 0.03450275442157147,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0076492347620998,
+      "MAE": 0.822023761378581,
+      "R2": 0.21114834121823722,
+      "N": 5475,
+      "PS_RMSE": 0.878266950563629,
+      "PS_R2": -2.4546362813566445,
+      "N_solvents": 27,
+      "Z_RMSE": 54.60531280659697,
+      "f_aleatoric": 0.06030389363722697,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.9951373411045742,
+      "MAE": 0.8007896734276811,
+      "R2": 0.20115669315218698,
+      "N": 6331,
+      "PS_RMSE": 0.8825736925301071,
+      "PS_R2": -3.5621629212364097,
+      "N_solvents": 30,
+      "Z_RMSE": 51.05503242266077,
+      "f_aleatoric": 0.11493546404425323,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_006/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_006/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_006/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_006/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_006/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_006/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 6,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dim": 48,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 425.8914406299591
+  },
+  "7": {
+    "train_time_s": 483.95738339424133,
+    "best_epoch": 99,
+    "best_val_loss": 0.4555554687976837,
+    "eval": {
+      "RMSE": 0.6749485022178783,
+      "MAE": 0.48532416998857747,
+      "R2": 0.6549921472470401,
+      "N": 6969,
+      "PS_RMSE": 0.6903365486460897,
+      "PS_R2": 0.5558665652842971,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.157371462360855,
+      "MAE": 0.8930055229561231,
+      "R2": 0.026137970695640056,
+      "N": 4507,
+      "PS_RMSE": 1.0156794687999324,
+      "PS_R2": -8.39853782096691,
+      "N_solvents": 26,
+      "Z_RMSE": 63.01540893576934,
+      "f_aleatoric": 0.04175123224122934,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.1327154778627657,
+      "MAE": 0.8768517120513952,
+      "R2": 0.003176531605586508,
+      "N": 5475,
+      "PS_RMSE": 0.9549101055272889,
+      "PS_R2": -4.554748012369497,
+      "N_solvents": 27,
+      "Z_RMSE": 57.715862545484235,
+      "f_aleatoric": 0.060778727445394115,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.11834758598251,
+      "MAE": 0.8704790001316862,
+      "R2": -0.008902421518413028,
+      "N": 6331,
+      "PS_RMSE": 0.9970307398141177,
+      "PS_R2": -6.942891459609668,
+      "N_solvents": 30,
+      "Z_RMSE": 53.989157809738614,
+      "f_aleatoric": 0.08666256914566688,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_007/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_007/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_007/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_007/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_007/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_007/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 7,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dim": 48,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 483.95738339424133
+  },
+  "8": {
+    "train_time_s": 439.7986214160919,
+    "best_epoch": 100,
+    "best_val_loss": 0.42918941378593445,
+    "eval": {
+      "RMSE": 0.655125505310792,
+      "MAE": 0.45912078412254614,
+      "R2": 0.674960067063554,
+      "N": 6969,
+      "PS_RMSE": 0.6578203440516607,
+      "PS_R2": 0.5892054793524479,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0011685129321142,
+      "MAE": 0.786190947656414,
+      "R2": 0.27127065437290554,
+      "N": 4507,
+      "PS_RMSE": 0.9720401459069554,
+      "PS_R2": -26.268622252211795,
+      "N_solvents": 26,
+      "Z_RMSE": 56.22906415660646,
+      "f_aleatoric": 0.056248187880545086,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.9874188509137449,
+      "MAE": 0.7714460765104368,
+      "R2": 0.24250562445441348,
+      "N": 5475,
+      "PS_RMSE": 0.9448762814868095,
+      "PS_R2": -22.28378672107627,
+      "N_solvents": 27,
+      "Z_RMSE": 51.71346082821259,
+      "f_aleatoric": 0.09306742640075974,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.9771219341941472,
+      "MAE": 0.756328667076724,
+      "R2": 0.2298185048335355,
+      "N": 6331,
+      "PS_RMSE": 0.8396691618610755,
+      "PS_R2": -4.092713910578591,
+      "N_solvents": 30,
+      "Z_RMSE": 48.42113389636815,
+      "f_aleatoric": 0.14648637574267567,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_008/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_008/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_008/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_008/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_008/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_008/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 8,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dim": 64,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 439.7986214160919
+  },
+  "9": {
+    "train_time_s": 503.79066348075867,
+    "best_epoch": 98,
+    "best_val_loss": 0.3941364288330078,
+    "eval": {
+      "RMSE": 0.6278028704655925,
+      "MAE": 0.44105454831565255,
+      "R2": 0.7015068985667257,
+      "N": 6969,
+      "PS_RMSE": 0.6274917117076001,
+      "PS_R2": 0.6347348920945787,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1258093008386558,
+      "MAE": 0.835703148845244,
+      "R2": 0.07852924098147585,
+      "N": 4507,
+      "PS_RMSE": 0.9889141330162624,
+      "PS_R2": -11.354214785119174,
+      "N_solvents": 26,
+      "Z_RMSE": 60.93263912126461,
+      "f_aleatoric": 0.057407944331690344,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.075221578033807,
+      "MAE": 0.7954042832000388,
+      "R2": 0.10180108295080559,
+      "N": 5475,
+      "PS_RMSE": 0.9452971113954745,
+      "PS_R2": -6.649338841678986,
+      "N_solvents": 27,
+      "Z_RMSE": 55.623454574366995,
+      "f_aleatoric": 0.08547008547008547,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0716480027722524,
+      "MAE": 0.7908404904781714,
+      "R2": 0.07359717028644897,
+      "N": 6331,
+      "PS_RMSE": 0.9095809762389584,
+      "PS_R2": -2.9171156461909744,
+      "N_solvents": 30,
+      "Z_RMSE": 52.33754366502632,
+      "f_aleatoric": 0.1210817455439459,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_009/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_009/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_009/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_009/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_009/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_009/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 9,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 503.79066348075867
+  },
+  "10": {
+    "train_time_s": 433.9154441356659,
+    "best_epoch": 99,
+    "best_val_loss": 0.41295871138572693,
+    "eval": {
+      "RMSE": 0.642618611369294,
+      "MAE": 0.4507272989002548,
+      "R2": 0.6872521714602384,
+      "N": 6969,
+      "PS_RMSE": 0.6417907214419233,
+      "PS_R2": 0.6065961964536395,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.052725098376129,
+      "MAE": 0.774438242102942,
+      "R2": 0.19428425922390202,
+      "N": 4507,
+      "PS_RMSE": 0.9733055001638807,
+      "PS_R2": -15.250696741266024,
+      "N_solvents": 26,
+      "Z_RMSE": 58.89161452548856,
+      "f_aleatoric": 0.06610611771527979,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0157175199953312,
+      "MAE": 0.7423647787425184,
+      "R2": 0.19846503618338562,
+      "N": 5475,
+      "PS_RMSE": 0.8826451252149737,
+      "PS_R2": -5.637868093242618,
+      "N_solvents": 27,
+      "Z_RMSE": 53.68752763628092,
+      "f_aleatoric": 0.099002849002849,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0332834930516113,
+      "MAE": 0.7520468063700407,
+      "R2": 0.13873948315980678,
+      "N": 6331,
+      "PS_RMSE": 0.877040389157113,
+      "PS_R2": -3.73506801248642,
+      "N_solvents": 30,
+      "Z_RMSE": 50.706035047775394,
+      "f_aleatoric": 0.1290719114935464,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_010/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_010/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_010/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_010/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_010/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_010/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 10,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dim": 96,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 433.9154441356659
+  },
+  "11": {
+    "train_time_s": 491.7752742767334,
+    "best_epoch": 96,
+    "best_val_loss": 0.3693070411682129,
+    "eval": {
+      "RMSE": 0.6077063681206376,
+      "MAE": 0.42192383009264633,
+      "R2": 0.720311069036183,
+      "N": 6969,
+      "PS_RMSE": 0.6007211186570225,
+      "PS_R2": 0.6362399420205891,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0560004677115746,
+      "MAE": 0.7992856135145175,
+      "R2": 0.1892627734571405,
+      "N": 4507,
+      "PS_RMSE": 0.8941413842191724,
+      "PS_R2": -5.066318370414276,
+      "N_solvents": 26,
+      "Z_RMSE": 58.6093043113239,
+      "f_aleatoric": 0.05595824876775877,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0164943718663633,
+      "MAE": 0.7698379494860549,
+      "R2": 0.1972384903295915,
+      "N": 5475,
+      "PS_RMSE": 0.8620279979686323,
+      "PS_R2": -3.4469363548631464,
+      "N_solvents": 27,
+      "Z_RMSE": 53.45299397498126,
+      "f_aleatoric": 0.07929724596391263,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0306374551438495,
+      "MAE": 0.7783496723229915,
+      "R2": 0.1431448763473192,
+      "N": 6331,
+      "PS_RMSE": 0.8505951211130031,
+      "PS_R2": -3.083900581517045,
+      "N_solvents": 30,
+      "Z_RMSE": 50.30455722384017,
+      "f_aleatoric": 0.11923786109403811,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_011/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_011/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_011/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_011/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_011/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_011/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 11,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.0005,
+      "batch_size": 128,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 491.7752742767334
+  },
+  "12": {
+    "train_time_s": 803.125819683075,
+    "best_epoch": 96,
+    "best_val_loss": 0.4283531606197357,
+    "eval": {
+      "RMSE": 0.6544869348261356,
+      "MAE": 0.448950076846356,
+      "R2": 0.6755934105920971,
+      "N": 6969,
+      "PS_RMSE": 0.6426717715474766,
+      "PS_R2": 0.6020243732381964,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.069084548692733,
+      "MAE": 0.8151167448319184,
+      "R2": 0.16904788140958038,
+      "N": 4507,
+      "PS_RMSE": 0.9668582894730436,
+      "PS_R2": -15.459328401398968,
+      "N_solvents": 26,
+      "Z_RMSE": 59.80608371979505,
+      "f_aleatoric": 0.048999710060887214,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0162667248888237,
+      "MAE": 0.7709147524781,
+      "R2": 0.19759801178516356,
+      "N": 5475,
+      "PS_RMSE": 0.8986300036927858,
+      "PS_R2": -11.691383989318693,
+      "N_solvents": 27,
+      "Z_RMSE": 54.5576775474551,
+      "f_aleatoric": 0.08072174738841406,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0042711521526753,
+      "MAE": 0.7645740311922306,
+      "R2": 0.18642512053743865,
+      "N": 6331,
+      "PS_RMSE": 0.8720152182014237,
+      "PS_R2": -4.386676004399115,
+      "N_solvents": 30,
+      "Z_RMSE": 50.75739982832655,
+      "f_aleatoric": 0.11985248924400738,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_012/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_012/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_012/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_012/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_012/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_012/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 12,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 48,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 803.125819683075
+  },
+  "13": {
+    "train_time_s": 894.9066274166107,
+    "best_epoch": 79,
+    "best_val_loss": 0.336021363735199,
+    "eval": {
+      "RMSE": 0.5796735012344784,
+      "MAE": 0.39385116537772147,
+      "R2": 0.7455194469400426,
+      "N": 6969,
+      "PS_RMSE": 0.5794196295956998,
+      "PS_R2": 0.6720100726030626,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0140559394285864,
+      "MAE": 0.7641957743510434,
+      "R2": 0.2523889358434481,
+      "N": 4507,
+      "PS_RMSE": 0.9353473043879341,
+      "PS_R2": -17.273867785357933,
+      "N_solvents": 26,
+      "Z_RMSE": 55.53881055379146,
+      "f_aleatoric": 0.05769788344447666,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.9781176974230463,
+      "MAE": 0.737751907140328,
+      "R2": 0.2567090964501457,
+      "N": 5475,
+      "PS_RMSE": 0.8818667697634284,
+      "PS_R2": -14.228705126152828,
+      "N_solvents": 27,
+      "Z_RMSE": 50.51581653667345,
+      "f_aleatoric": 0.08452041785375118,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.990348194495209,
+      "MAE": 0.749448111086735,
+      "R2": 0.20882713558574473,
+      "N": 6331,
+      "PS_RMSE": 0.8329754682106539,
+      "PS_R2": -2.057233514534123,
+      "N_solvents": 30,
+      "Z_RMSE": 47.19713102516534,
+      "f_aleatoric": 0.12087686949395615,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_013/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_013/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_013/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_013/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_013/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_013/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 13,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 48,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 894.9066274166107
+  },
+  "14": {
+    "train_time_s": 803.6297070980072,
+    "best_epoch": 100,
+    "best_val_loss": 0.32621756196022034,
+    "eval": {
+      "RMSE": 0.5711545772763846,
+      "MAE": 0.3814164095353879,
+      "R2": 0.752944215069474,
+      "N": 6969,
+      "PS_RMSE": 0.5686512615567384,
+      "PS_R2": 0.6967454559858562,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0251203894124052,
+      "MAE": 0.7921435252182301,
+      "R2": 0.23598543652642245,
+      "N": 4507,
+      "PS_RMSE": 0.9070166423243893,
+      "PS_R2": -6.857057081326188,
+      "N_solvents": 26,
+      "Z_RMSE": 59.29562241563099,
+      "f_aleatoric": 0.05131922296317773,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.9833886771659596,
+      "MAE": 0.759173498141051,
+      "R2": 0.24867646844037616,
+      "N": 5475,
+      "PS_RMSE": 0.8833048039997884,
+      "PS_R2": -5.594695495702308,
+      "N_solvents": 27,
+      "Z_RMSE": 54.105206018184816,
+      "f_aleatoric": 0.07668566001899335,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.9642204949393948,
+      "MAE": 0.7421278465048429,
+      "R2": 0.2500224352182352,
+      "N": 6331,
+      "PS_RMSE": 0.853853115659719,
+      "PS_R2": -4.53855411397503,
+      "N_solvents": 30,
+      "Z_RMSE": 50.547753761501006,
+      "f_aleatoric": 0.12456463839377177,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_014/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_014/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_014/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_014/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_014/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_014/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 14,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 64,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 803.6297070980072
+  },
+  "15": {
+    "train_time_s": 907.351800441742,
+    "best_epoch": 88,
+    "best_val_loss": 0.29818418622016907,
+    "eval": {
+      "RMSE": 0.5460624337764416,
+      "MAE": 0.3720151940487674,
+      "R2": 0.7741748511805095,
+      "N": 6969,
+      "PS_RMSE": 0.5552466829049227,
+      "PS_R2": 0.7070618661969018,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0868770256393367,
+      "MAE": 0.8426952920062728,
+      "R2": 0.14115911390625857,
+      "N": 4507,
+      "PS_RMSE": 1.0046909520699703,
+      "PS_R2": -19.8748717350095,
+      "N_solvents": 26,
+      "Z_RMSE": 60.12935283251462,
+      "f_aleatoric": 0.043780806030733546,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0388472587812212,
+      "MAE": 0.7983639215382048,
+      "R2": 0.16154457211916085,
+      "N": 5475,
+      "PS_RMSE": 0.9589229570667891,
+      "PS_R2": -18.577184903419575,
+      "N_solvents": 27,
+      "Z_RMSE": 55.135578011749566,
+      "f_aleatoric": 0.07716049382716049,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0288354640564636,
+      "MAE": 0.7903615490651068,
+      "R2": 0.14613854878859878,
+      "N": 6331,
+      "PS_RMSE": 0.9051238459456825,
+      "PS_R2": -4.15679931257472,
+      "N_solvents": 30,
+      "Z_RMSE": 51.612399982801584,
+      "f_aleatoric": 0.11780372874410981,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_015/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_015/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_015/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_015/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_015/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_015/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 15,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 907.351800441742
+  },
+  "16": {
+    "train_time_s": 830.3347108364105,
+    "best_epoch": 82,
+    "best_val_loss": 0.32188087701797485,
+    "eval": {
+      "RMSE": 0.567345462256622,
+      "MAE": 0.3744434022135491,
+      "R2": 0.7562285303518577,
+      "N": 6969,
+      "PS_RMSE": 0.5592745800002489,
+      "PS_R2": 0.7087243244246967,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0377019561862946,
+      "MAE": 0.8112651137277304,
+      "R2": 0.2171164554914622,
+      "N": 4507,
+      "PS_RMSE": 1.0753396684907004,
+      "PS_R2": -47.74022138894824,
+      "N_solvents": 26,
+      "Z_RMSE": 59.146553082561795,
+      "f_aleatoric": 0.048419831835314585,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 0.9984980322205332,
+      "MAE": 0.7737909694469893,
+      "R2": 0.22541156060787615,
+      "N": 5475,
+      "PS_RMSE": 0.9950219769993166,
+      "PS_R2": -41.07486717906684,
+      "N_solvents": 27,
+      "Z_RMSE": 53.8295318072605,
+      "f_aleatoric": 0.0933048433048433,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 0.995837568817542,
+      "MAE": 0.7700957113324991,
+      "R2": 0.20003208652835303,
+      "N": 6331,
+      "PS_RMSE": 0.9211865023530794,
+      "PS_R2": -3.8705437935273905,
+      "N_solvents": 30,
+      "Z_RMSE": 50.32280605384672,
+      "f_aleatoric": 0.1384962097930752,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_016/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_016/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_016/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_016/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_016/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_016/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 16,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 830.3347108364105
+  },
+  "17": {
+    "train_time_s": 920.8595385551453,
+    "best_epoch": 81,
+    "best_val_loss": 0.2909880578517914,
+    "eval": {
+      "RMSE": 0.5394330818348881,
+      "MAE": 0.3588566533005587,
+      "R2": 0.7796247295977156,
+      "N": 6969,
+      "PS_RMSE": 0.5290732284054491,
+      "PS_R2": 0.7405666261678475,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1654706684851475,
+      "MAE": 0.9165497589250611,
+      "R2": 0.012460240262503364,
+      "N": 4507,
+      "PS_RMSE": 1.1079431004058689,
+      "PS_R2": -29.40833283548067,
+      "N_solvents": 26,
+      "Z_RMSE": 65.17774343379544,
+      "f_aleatoric": 0.03392287619599884,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.1068048509281494,
+      "MAE": 0.8621997007843029,
+      "R2": 0.04825918972872012,
+      "N": 5475,
+      "PS_RMSE": 1.0271814089927285,
+      "PS_R2": -23.92139775131004,
+      "N_solvents": 27,
+      "Z_RMSE": 59.353493608907364,
+      "f_aleatoric": 0.06908831908831908,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0929180188780339,
+      "MAE": 0.8468228840970096,
+      "R2": 0.03645782780311557,
+      "N": 6331,
+      "PS_RMSE": 1.0139718259185857,
+      "PS_R2": -5.483745243956428,
+      "N_solvents": 30,
+      "Z_RMSE": 55.492671496445226,
+      "f_aleatoric": 0.1206719934439664,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_017/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_017/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_017/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_017/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_017/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_017/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 17,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 920.8595385551453
+  },
+  "18": {
+    "train_time_s": 415.8198390007019,
+    "best_epoch": 100,
+    "best_val_loss": 0.4032530188560486,
+    "eval": {
+      "RMSE": 0.63502205768789,
+      "MAE": 0.44758652319720177,
+      "R2": 0.6946026064865503,
+      "N": 6969,
+      "PS_RMSE": 0.6228434346837001,
+      "PS_R2": 0.6244017243233562,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0761533843515345,
+      "MAE": 0.847324730142369,
+      "R2": 0.15802296649204117,
+      "N": 4507,
+      "PS_RMSE": 1.0574979881342443,
+      "PS_R2": -22.304641165902243,
+      "N_solvents": 26,
+      "Z_RMSE": 61.97152632618885,
+      "f_aleatoric": 0.038851841113366196,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0470048556771414,
+      "MAE": 0.8231231762967275,
+      "R2": 0.14832484960432768,
+      "N": 5475,
+      "PS_RMSE": 1.0208100851994297,
+      "PS_R2": -11.249278765672102,
+      "N_solvents": 27,
+      "Z_RMSE": 56.54180318694025,
+      "f_aleatoric": 0.05887939221272555,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0442294080035504,
+      "MAE": 0.8205868701852979,
+      "R2": 0.12039559668823219,
+      "N": 6331,
+      "PS_RMSE": 0.953102146408592,
+      "PS_R2": -5.812116999854619,
+      "N_solvents": 30,
+      "Z_RMSE": 52.75258171793677,
+      "f_aleatoric": 0.09649661954517517,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_018/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_018/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_018/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_018/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_018/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_018/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 18,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 48,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 415.8198390007019
+  },
+  "19": {
+    "train_time_s": 482.7723243236542,
+    "best_epoch": 99,
+    "best_val_loss": 0.3693758249282837,
+    "eval": {
+      "RMSE": 0.6077629602790264,
+      "MAE": 0.4099689921146611,
+      "R2": 0.7202589750049037,
+      "N": 6969,
+      "PS_RMSE": 0.6109992284092405,
+      "PS_R2": 0.6367476500256267,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0593171992188115,
+      "MAE": 0.811257994562208,
+      "R2": 0.18416197919557797,
+      "N": 4507,
+      "PS_RMSE": 1.0356641088169563,
+      "PS_R2": -16.56257721873015,
+      "N_solvents": 26,
+      "Z_RMSE": 56.8104763983428,
+      "f_aleatoric": 0.05769788344447666,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0603030689173776,
+      "MAE": 0.8181440431930573,
+      "R2": 0.12655287208068644,
+      "N": 5475,
+      "PS_RMSE": 0.9984889356454987,
+      "PS_R2": -12.224902527747297,
+      "N_solvents": 27,
+      "Z_RMSE": 52.319217805147055,
+      "f_aleatoric": 0.07407407407407407,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0551400237147792,
+      "MAE": 0.8169121436325903,
+      "R2": 0.10191850202016339,
+      "N": 6331,
+      "PS_RMSE": 0.9834718398048029,
+      "PS_R2": -7.018261451980773,
+      "N_solvents": 30,
+      "Z_RMSE": 48.94284819902215,
+      "f_aleatoric": 0.10510141364474493,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_019/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_019/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_019/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_019/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_019/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_019/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 19,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 48,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 482.7723243236542
+  },
+  "20": {
+    "train_time_s": 420.6541368961334,
+    "best_epoch": 80,
+    "best_val_loss": 0.3712567090988159,
+    "eval": {
+      "RMSE": 0.6093083899487839,
+      "MAE": 0.41511984894516124,
+      "R2": 0.718834506047505,
+      "N": 6969,
+      "PS_RMSE": 0.6173640837068145,
+      "PS_R2": 0.6443751381378493,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0792184378260057,
+      "MAE": 0.8390898412843272,
+      "R2": 0.1532199713146707,
+      "N": 4507,
+      "PS_RMSE": 1.0723013624721074,
+      "PS_R2": -17.55468967686891,
+      "N_solvents": 26,
+      "Z_RMSE": 64.02290622546116,
+      "f_aleatoric": 0.04610031893302406,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.038756296335297,
+      "MAE": 0.8094824968026706,
+      "R2": 0.161691397587153,
+      "N": 5475,
+      "PS_RMSE": 1.016107258605253,
+      "PS_R2": -10.92148797734486,
+      "N_solvents": 27,
+      "Z_RMSE": 58.396515743470715,
+      "f_aleatoric": 0.07075023741690409,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0473267776177753,
+      "MAE": 0.8212506044294573,
+      "R2": 0.11516973243630113,
+      "N": 6331,
+      "PS_RMSE": 0.9709639313599391,
+      "PS_R2": -6.731949770832712,
+      "N_solvents": 30,
+      "Z_RMSE": 54.482776719431435,
+      "f_aleatoric": 0.08830157754558492,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_020/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_020/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_020/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_020/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_020/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_020/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 20,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 64,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 420.6541368961334
+  },
+  "21": {
+    "train_time_s": 483.3257751464844,
+    "best_epoch": 89,
+    "best_val_loss": 0.33817026019096375,
+    "eval": {
+      "RMSE": 0.5815240821960767,
+      "MAE": 0.39660257296912516,
+      "R2": 0.743892018438597,
+      "N": 6969,
+      "PS_RMSE": 0.579149928703654,
+      "PS_R2": 0.6805402950972375,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.135690534413039,
+      "MAE": 0.8548755236120673,
+      "R2": 0.06228274828620295,
+      "N": 4507,
+      "PS_RMSE": 0.952222216257045,
+      "PS_R2": -7.298613114477854,
+      "N_solvents": 26,
+      "Z_RMSE": 62.25319668555794,
+      "f_aleatoric": 0.0623369092490577,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0816865021967477,
+      "MAE": 0.8051769253713468,
+      "R2": 0.09096751138936243,
+      "N": 5475,
+      "PS_RMSE": 0.9083067613006613,
+      "PS_R2": -6.230204110360181,
+      "N_solvents": 27,
+      "Z_RMSE": 56.897794633261874,
+      "f_aleatoric": 0.08998100664767332,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0697052807325702,
+      "MAE": 0.8012171848570677,
+      "R2": 0.07695295851292305,
+      "N": 6331,
+      "PS_RMSE": 0.9170863532596655,
+      "PS_R2": -4.709374725975333,
+      "N_solvents": 30,
+      "Z_RMSE": 53.274839370882724,
+      "f_aleatoric": 0.12272075394386396,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_021/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 21,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 483.3257751464844
+  },
+  "22": {
+    "train_time_s": 420.5886163711548,
+    "best_epoch": 98,
+    "best_val_loss": 0.370025634765625,
+    "eval": {
+      "RMSE": 0.6082973397738517,
+      "MAE": 0.41103883628482374,
+      "R2": 0.7197668305457052,
+      "N": 6969,
+      "PS_RMSE": 0.5931147802092105,
+      "PS_R2": 0.6752553288193203,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0709181896094309,
+      "MAE": 0.861481798386599,
+      "R2": 0.16619502105135997,
+      "N": 4507,
+      "PS_RMSE": 0.9680193101024975,
+      "PS_R2": -13.93607637617596,
+      "N_solvents": 26,
+      "Z_RMSE": 61.85657347724521,
+      "f_aleatoric": 0.031603363293708324,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0241581752991467,
+      "MAE": 0.815673574276697,
+      "R2": 0.1850881062341203,
+      "N": 5475,
+      "PS_RMSE": 0.8973201197763638,
+      "PS_R2": -10.13617646508711,
+      "N_solvents": 27,
+      "Z_RMSE": 56.33626651205638,
+      "f_aleatoric": 0.059591642924976256,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0086948827458755,
+      "MAE": 0.8029689656472242,
+      "R2": 0.17924187564751848,
+      "N": 6331,
+      "PS_RMSE": 0.844601124603375,
+      "PS_R2": -2.937646194265444,
+      "N_solvents": 30,
+      "Z_RMSE": 52.524923831301976,
+      "f_aleatoric": 0.10182339684490883,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_022/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_022/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_022/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_022/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_022/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_022/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 22,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 96,
+      "num_layers": 3,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 420.5886163711548
+  },
+  "23": {
+    "train_time_s": 490.4762580394745,
+    "best_epoch": 99,
+    "best_val_loss": 0.3059445321559906,
+    "eval": {
+      "RMSE": 0.5531225068007375,
+      "MAE": 0.3677996850252449,
+      "R2": 0.7682976891099862,
+      "N": 6969,
+      "PS_RMSE": 0.5572635394575969,
+      "PS_R2": 0.710435825750827,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1980553072967521,
+      "MAE": 0.8990418433796417,
+      "R2": -0.04353165716020557,
+      "N": 4507,
+      "PS_RMSE": 1.1719775586188619,
+      "PS_R2": -33.918674276331174,
+      "N_solvents": 26,
+      "Z_RMSE": 66.28513049452988,
+      "f_aleatoric": 0.04697013627138301,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.141330964042111,
+      "MAE": 0.8536217581257639,
+      "R2": -0.012044907136318672,
+      "N": 5475,
+      "PS_RMSE": 1.083841590014329,
+      "PS_R2": -29.612011647988393,
+      "N_solvents": 27,
+      "Z_RMSE": 60.35028419464861,
+      "f_aleatoric": 0.08309591642924977,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.122866395737511,
+      "MAE": 0.8420646517344818,
+      "R2": -0.0170720618264808,
+      "N": 6331,
+      "PS_RMSE": 1.016314149286971,
+      "PS_R2": -6.178905906574546,
+      "N_solvents": 30,
+      "Z_RMSE": 56.427369956441076,
+      "f_aleatoric": 0.12292562999385372,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_023/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_023/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_023/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_023/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_023/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_023/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 23,
+    "hpo_phase": "grid_a",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 128,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 490.4762580394745
+  },
+  "24": {
+    "train_time_s": 728.1599631309509,
+    "best_epoch": 80,
+    "best_val_loss": 0.2913612723350525,
+    "eval": {
+      "RMSE": 0.5397789129637158,
+      "MAE": 0.35786252102169264,
+      "R2": 0.7793420733754881,
+      "N": 6969,
+      "PS_RMSE": 0.5302279520671359,
+      "PS_R2": 0.740086155868795,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1029943549300176,
+      "MAE": 0.8402534195812806,
+      "R2": 0.11549870452945632,
+      "N": 4507,
+      "PS_RMSE": 1.090422331401615,
+      "PS_R2": -18.271235305493203,
+      "N_solvents": 26,
+      "Z_RMSE": 61.4412155658695,
+      "f_aleatoric": 0.039721658451725136,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0617701144218534,
+      "MAE": 0.8155604941894664,
+      "R2": 0.1241341803132886,
+      "N": 5475,
+      "PS_RMSE": 1.0180557637350434,
+      "PS_R2": -12.924322835108379,
+      "N_solvents": 27,
+      "Z_RMSE": 55.9952150868896,
+      "f_aleatoric": 0.06481481481481481,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0606710184793604,
+      "MAE": 0.8119052183289448,
+      "R2": 0.09247842186551769,
+      "N": 6331,
+      "PS_RMSE": 1.0390053855099344,
+      "PS_R2": -7.760777707738344,
+      "N_solvents": 30,
+      "Z_RMSE": 52.631661879474976,
+      "f_aleatoric": 0.10161852079491908,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_024/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_024/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_024/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_024/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_024/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_024/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 24,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 80,
+      "patience": 15
+    },
+    "hpo_elapsed_wall_s": 728.1599631309509
+  },
+  "25": {
+    "train_time_s": 755.1980700492859,
+    "best_epoch": 61,
+    "best_val_loss": 0.3604718744754791,
+    "eval": {
+      "RMSE": 0.6003930688570128,
+      "MAE": 0.3946560330227019,
+      "R2": 0.7270022647290546,
+      "N": 6969,
+      "PS_RMSE": 0.583654314346351,
+      "PS_R2": 0.6782202058258021,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1082153025952064,
+      "MAE": 0.8579879864812332,
+      "R2": 0.10710543526018301,
+      "N": 4507,
+      "PS_RMSE": 1.0629166895347362,
+      "PS_R2": -21.517621359560057,
+      "N_solvents": 26,
+      "Z_RMSE": 60.43543644954848,
+      "f_aleatoric": 0.03624238909828936,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0559091690039497,
+      "MAE": 0.811607516840888,
+      "R2": 0.13377700895596933,
+      "N": 5475,
+      "PS_RMSE": 1.0101693984425133,
+      "PS_R2": -17.788451129809616,
+      "N_solvents": 27,
+      "Z_RMSE": 55.14320176434399,
+      "f_aleatoric": 0.07098765432098765,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.035433710070829,
+      "MAE": 0.7987573778626715,
+      "R2": 0.13515126387352527,
+      "N": 6331,
+      "PS_RMSE": 0.9550274669816654,
+      "PS_R2": -4.728378924737876,
+      "N_solvents": 30,
+      "Z_RMSE": 51.537099928059234,
+      "f_aleatoric": 0.11186232329440689,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_025/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_025/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_025/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_025/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_025/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_025/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 25,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 80,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 755.1980700492859
+  },
+  "26": {
+    "train_time_s": 925.972493648529,
+    "best_epoch": 92,
+    "best_val_loss": 0.33420276641845703,
+    "eval": {
+      "RMSE": 0.5781027515140642,
+      "MAE": 0.38688787739560204,
+      "R2": 0.746896717717632,
+      "N": 6969,
+      "PS_RMSE": 0.5830079005462773,
+      "PS_R2": 0.6574500977678958,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1071605137508567,
+      "MAE": 0.8672392710163966,
+      "R2": 0.10880432358711944,
+      "N": 4507,
+      "PS_RMSE": 1.0441153577888338,
+      "PS_R2": -21.324690941203308,
+      "N_solvents": 26,
+      "Z_RMSE": 63.11246750652979,
+      "f_aleatoric": 0.0429109886923746,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0679568766119625,
+      "MAE": 0.8384336545884866,
+      "R2": 0.1138973868301314,
+      "N": 5475,
+      "PS_RMSE": 0.9807137065728474,
+      "PS_R2": -17.95265131983769,
+      "N_solvents": 27,
+      "Z_RMSE": 57.661268495086034,
+      "f_aleatoric": 0.06481481481481481,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0804002090674534,
+      "MAE": 0.8582604757886099,
+      "R2": 0.05840341604747867,
+      "N": 6331,
+      "PS_RMSE": 1.0042061409035434,
+      "PS_R2": -6.623270020334369,
+      "N_solvents": 30,
+      "Z_RMSE": 54.075122319447686,
+      "f_aleatoric": 0.0762138905961893,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_026/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_026/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_026/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_026/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_026/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_026/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 26,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 15
+    },
+    "hpo_elapsed_wall_s": 925.972493648529
+  },
+  "27": {
+    "train_time_s": 950.5278766155243,
+    "best_epoch": 100,
+    "best_val_loss": 0.3116317689418793,
+    "eval": {
+      "RMSE": 0.5582398784108272,
+      "MAE": 0.35836562430033575,
+      "R2": 0.7639905355713257,
+      "N": 6969,
+      "PS_RMSE": 0.5428806016175212,
+      "PS_R2": 0.7260485323767706,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1041364344804516,
+      "MAE": 0.8690350185426825,
+      "R2": 0.11366606808709345,
+      "N": 4507,
+      "PS_RMSE": 1.0309797984558515,
+      "PS_R2": -16.86548752484288,
+      "N_solvents": 26,
+      "Z_RMSE": 61.09223599203372,
+      "f_aleatoric": 0.03769208466222093,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0625206784435386,
+      "MAE": 0.8360203247781063,
+      "R2": 0.12289544564098653,
+      "N": 5475,
+      "PS_RMSE": 0.9730841628071489,
+      "PS_R2": -12.115457782153893,
+      "N_solvents": 27,
+      "Z_RMSE": 55.74699985940222,
+      "f_aleatoric": 0.0584045584045584,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0487375838975463,
+      "MAE": 0.8196478961430265,
+      "R2": 0.11278429762259945,
+      "N": 6331,
+      "PS_RMSE": 0.944405141951986,
+      "PS_R2": -8.395426254965887,
+      "N_solvents": 30,
+      "Z_RMSE": 52.25249447027207,
+      "f_aleatoric": 0.11001843884449908,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_027/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_027/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_027/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_027/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_027/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_027/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 27,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 100,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 950.5278766155243
+  },
+  "28": {
+    "train_time_s": 1040.7408118247986,
+    "best_epoch": 93,
+    "best_val_loss": 0.2977823317050934,
+    "eval": {
+      "RMSE": 0.5456943521930144,
+      "MAE": 0.3645185489479311,
+      "R2": 0.7744791902390964,
+      "N": 6969,
+      "PS_RMSE": 0.5469803358714359,
+      "PS_R2": 0.7179487291548488,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.0909372491415943,
+      "MAE": 0.8598136148078981,
+      "R2": 0.13473042108343425,
+      "N": 4507,
+      "PS_RMSE": 1.0819024068353065,
+      "PS_R2": -25.115889916808985,
+      "N_solvents": 26,
+      "Z_RMSE": 60.07937877683556,
+      "f_aleatoric": 0.04552044070745143,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.0597199647706783,
+      "MAE": 0.8361656817167595,
+      "R2": 0.12751329672102285,
+      "N": 5475,
+      "PS_RMSE": 1.0072302125675305,
+      "PS_R2": -21.087360015755348,
+      "N_solvents": 27,
+      "Z_RMSE": 54.7473779785488,
+      "f_aleatoric": 0.06695156695156695,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0585900368554326,
+      "MAE": 0.8347354595390816,
+      "R2": 0.09603594929840586,
+      "N": 6331,
+      "PS_RMSE": 1.0270185920655623,
+      "PS_R2": -10.29779128939082,
+      "N_solvents": 30,
+      "Z_RMSE": 51.20533864331065,
+      "f_aleatoric": 0.09936488424503176,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_028/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_028/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_028/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_028/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_028/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_028/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 28,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 120,
+      "patience": 15
+    },
+    "hpo_elapsed_wall_s": 1040.7408118247986
+  },
+  "29": {
+    "train_time_s": 1132.320821762085,
+    "best_epoch": 113,
+    "best_val_loss": 0.32614558935165405,
+    "eval": {
+      "RMSE": 0.571091587416529,
+      "MAE": 0.3662676643205062,
+      "R2": 0.7529987052259368,
+      "N": 6969,
+      "PS_RMSE": 0.5619250301576474,
+      "PS_R2": 0.6957579048849755,
+      "N_solvents": 25
+    },
+    "test_hard": {
+      "RMSE": 1.1355494594946336,
+      "MAE": 0.9013993617133246,
+      "R2": 0.06251569936638868,
+      "N": 4507,
+      "PS_RMSE": 0.9762785568704722,
+      "PS_R2": -7.546767191558879,
+      "N_solvents": 26,
+      "Z_RMSE": 60.26920311491133,
+      "f_aleatoric": 0.03682226732386199,
+      "N_with_uncertainty": 3449
+    },
+    "test_medium": {
+      "RMSE": 1.1000370804505744,
+      "MAE": 0.8626924450201946,
+      "R2": 0.059862807997085765,
+      "N": 5475,
+      "PS_RMSE": 0.9563242914123812,
+      "PS_R2": -5.824574620361161,
+      "N_solvents": 27,
+      "Z_RMSE": 54.94348889051411,
+      "f_aleatoric": 0.07193732193732194,
+      "N_with_uncertainty": 4212
+    },
+    "test_easy": {
+      "RMSE": 1.0707240038693455,
+      "MAE": 0.8365097088238374,
+      "R2": 0.07519401209827237,
+      "N": 6331,
+      "PS_RMSE": 0.9334054336249513,
+      "PS_R2": -4.138417903338061,
+      "N_solvents": 30,
+      "Z_RMSE": 51.277691131303875,
+      "f_aleatoric": 0.115959844294202,
+      "N_with_uncertainty": 4881
+    },
+    "artifacts": {
+      "seed_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_029/seed_42",
+      "checkpoints_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_029/seed_42/checkpoints",
+      "predictions_dir": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_029/seed_42/predictions",
+      "epoch_history_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_029/seed_42/epoch_history.json",
+      "best_model_pkl": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_029/seed_42/best_model.pkl",
+      "run_config_json": "/DATATWO/users/solubility/Dhairya/sc3-benchmark-gnn-runner/results/hpo_gcn_trial_029/seed_42/run_config.json"
+    },
+    "hpo_trial_idx": 29,
+    "hpo_phase": "grid_b",
+    "hpo_config": {
+      "lr": 0.001,
+      "batch_size": 64,
+      "hidden_dim": 96,
+      "num_layers": 4,
+      "epochs": 120,
+      "patience": 20
+    },
+    "hpo_elapsed_wall_s": 1132.320821762085
+  }
+}

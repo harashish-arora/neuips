@@ -1,0 +1,18 @@
+{
+  "method_name": "hpo_fastsolv_trial_007",
+  "model_type": "fastsolv",
+  "seed": 42,
+  "device": "cuda",
+  "epochs_requested": 100,
+  "batch_size": 256,
+  "learning_rate": 0.0005,
+  "patience": 20,
+  "hidden_dims": [
+    256,
+    128
+  ],
+  "dropout": 0.1,
+  "in_dim": 320,
+  "n_train": 61403,
+  "n_eval": 6969
+}

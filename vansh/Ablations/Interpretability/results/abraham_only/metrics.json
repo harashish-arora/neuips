@@ -1,0 +1,40 @@
+{
+  "featurizer": "abraham_only",
+  "model": "lightgbm",
+  "hp_key": "lgb_rdkit",
+  "seed": 42,
+  "params": {
+    "n_estimators": 3000,
+    "learning_rate": 0.05,
+    "num_leaves": 127,
+    "min_child_samples": 10,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "reg_alpha": 0.1,
+    "reg_lambda": 5
+  },
+  "n_features": 16,
+  "train_time_s": 10.226754665374756,
+  "best_iter": 735,
+  "metrics": {
+    "eval": {
+      "RMSE": 0.5521965732289238,
+      "MAE": 0.36414793432296133,
+      "R2": 0.7690727850776119,
+      "N": 6969,
+      "PS_RMSE": 0.5308175291147654,
+      "PS_R2": 0.7432910544058544,
+      "N_solvents": 25
+    },
+    "ood": {
+      "RMSE": 0.6817817762108183,
+      "MAE": 0.5082775741490476,
+      "R2": 0.58735542570563,
+      "N": 11940,
+      "PS_RMSE": 0.5952742262846603,
+      "PS_R2": -15.26164674483168,
+      "N_solvents": 146
+    }
+  }
+}
